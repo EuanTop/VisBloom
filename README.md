@@ -1,56 +1,72 @@
-# VisBloom
+<p align="center">
+  <img src="apps/workbench/public/visloom.svg" alt="" width="56" height="56">
+</p>
 
-**A local creative workbench for digital art and data visualization.**
+<h1 align="center">VisBloom</h1>
 
-Use your own coding agent to develop an idea, then edit the artwork's code, data, and parameters in the same project. Build a still, an animation, or an interactive work. Bring CSV or JSON when the piece calls for data, and use [AntV AVA](https://github.com/antvis/AVA) to inspect and transform it.
+<p align="center"><strong>Digital art and data visualization with your own coding agent.</strong></p>
 
-[Browse the gallery](https://artwork.euantop.work/collection.html) · [Create with your agent](https://artwork.euantop.work/help/agent-setup.html?lang=en) · [简体中文](README.zh-CN.md)
+<p align="center">
+  <strong><a href="#make-your-first-work">Get started</a></strong> ·
+  <a href="https://artwork.euantop.work/collection.html">Gallery</a> ·
+  <a href="README.zh-CN.md">简体中文</a>
+</p>
 
-## Quick start
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://artwork.euantop.work/artworks/physarum.html"><img src="apps/workbench/public/collection/physarum.png" alt="Luminous strands forming a branching network on a dark canvas" width="480"></a><br>
+      <strong>Physarum</strong><br>
+      Watch a particle network grow from slime mold scans.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://euantop.github.io/artwork-martover/"><img src="https://euantop.github.io/artwork-martover/cover.jpg" alt="A textured globe of Mars suspended against an orange field" width="480"></a><br>
+      <strong>Martover</strong><br>
+      Rotate Mars and open a crater in the atlas.
+    </td>
+  </tr>
+</table>
 
-1. Open the [setup guide](https://artwork.euantop.work/help/agent-setup.html?lang=en) and paste its prompt into a coding agent that can run commands on your computer.
-2. Describe an idea or give the agent a local file to work with. For a data example, try the built-in [Physarum artwork](https://artwork.euantop.work/artworks/physarum.html).
-3. Open the workbench URL the agent gives you. Refine the draft in conversation, by adjusting parameters on the canvas, or by editing the source. Export a PNG or a standalone HTML work when ready.
+## Make your first work
 
-The Creator Kit supports macOS and Linux with Node.js 22.13 or later. The local workbench opens without an account. The current workbench interface is in Simplified Chinese.
+**1. Start in your agent.** Open the [setup guide](https://artwork.euantop.work/help/agent-setup.html?lang=en) and copy its prompt into a coding agent with access to your computer. Give it an idea, an image, or a local dataset. To try the built-in example, ask it to open Physarum and make the branching finer.
+
+**2. Refine it in the workbench.** Open the local preview your agent gives you. Try a parameter, edit the source, or give the agent another round of feedback. The preview, parameters, source, and versions belong to the same project.
+
+<a href="apps/workbench/public/portal/platform-skinbloom-code.jpg"><img src="apps/workbench/public/portal/platform-skinbloom-code.jpg" alt="VisBloom editing SkinBloom, with the artwork preview above the source editor and live parameters on the right" width="1600"></a>
+
+**3. Share the finished piece.** Export a PNG or a standalone interactive HTML file. The HTML runs on its own and can be hosted on GitHub Pages.
+
+The Creator Kit supports macOS and Linux with Node.js 22.13+. The workbench interface is currently in Simplified Chinese.
+
+## What’s inside
+
+| Component | What it does |
+| --- | --- |
+| [Creative Skills](skills/entries.json) | Develop a concept, compare drafts, and look up techniques or public gallery references during a revision. |
+| Local workbench | Preview and edit Canvas 2D, Three.js, and document artworks. Keep project files and versions on your own machine. |
+| [AntV AVA](https://github.com/antvis/AVA) | Inspect CSV or JSON, query with read-only SQL, and use the result to drive the work. |
+| [CLI](docs/CLI.md) and [MCP adapter](skills/core/data-art/references/mcp.md) | Let your agent read and update the same workbench project. The default setup uses the CLI. |
 
 ## Run from source
 
 ```sh
+git clone https://github.com/EuanTop/VisBloom.git
+cd VisBloom
 npm ci
 npm run dev
 ```
 
-Open [http://127.0.0.1:4318](http://127.0.0.1:4318). Local projects are saved in `.art-workbench/` by default. Set `ART_WORKBENCH_DIR` to use a different directory.
+Open [127.0.0.1:4318](http://127.0.0.1:4318). Projects are saved in `.art-workbench/` by default. Use `ART_WORKBENCH_DIR` to change that location.
 
-## How it fits together
+<details>
+  <summary>Development and deployment</summary>
 
-- **Creative guidance.** The VisBloom Skill starts from either a digital art or a data brief and uses specialist Skills and public gallery examples when they help with a specific creative decision.
-- **Workbench.** Canvas 2D, Three.js, and document artworks run in a browser preview. Source, parameters, data, and checkpoints stay with the project.
-- **Agent access.** The Creator Kit includes a CLI and an optional local MCP adapter for the same workbench API. The standalone Skill download contains guides. A team's private reference library requires separate authorization.
-- **Sharing.** Standalone HTML runs independently of the workbench. Publish a finished piece to your own GitHub Pages or use the optional share service for a versioned link and iframe.
+  Run `npm run check`, `npm test`, and `npm run build` before submitting changes. Include a screenshot or a short recording for changes to artwork or the interface.
 
-## Development
-
-```sh
-npm run check
-npm test
-npm run build
-```
-
-`npm run build:portal` produces the static portal, gallery, community index, and downloads in `dist/portal/`.
-
-| Path | Contents |
-| --- | --- |
-| `apps/` | Workbench, project API, agent adapters, and share service |
-| `packages/` | Project core, data adapter, storage, renderers, and export |
-| `skills/` | Creative guides, specialist Skills, and pinned versions |
-| `cases/` | Bundled example projects and data provenance |
-
-Contributions should include the check that covers the change. Keep authorship, provenance, and license notices with third-party code, media, and data.
-
-[CLI reference](docs/CLI.md) · [Deployment](docs/DEPLOYMENT.md) · [Skill catalog](skills/entries.json)
+  `npm run build:portal` produces the static website, gallery index, and downloads in `dist/portal/`. See the [deployment guide](docs/DEPLOYMENT.md).
+</details>
 
 ## License and credits
 
-VisBloom’s original platform code and original Skills are available under [CC BY-NC 4.0](LICENSE). Credit VisBloom and its contributors when sharing or adapting these materials for noncommercial use, link to the license, and indicate any changes. Third-party code, fonts, data, artwork, and adapted Skills retain their applicable terms and notices. See the [portal credits](https://artwork.euantop.work/portal/credits.html) and the [Skill attribution catalog](skills/catalog.json).
+Original VisBloom code and Skills are shared under [CC BY-NC 4.0](LICENSE). Third-party code, adapted Skills, artwork, fonts, and data retain their own terms. See the [artwork and library credits](https://artwork.euantop.work/portal/credits.html) and [Skill attribution catalog](skills/catalog.json).

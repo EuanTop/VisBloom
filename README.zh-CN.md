@@ -1,56 +1,72 @@
-# VisBloom
+<p align="center">
+  <img src="apps/workbench/public/visloom.svg" alt="" width="56" height="56">
+</p>
 
-**面向数字艺术与数据可视化的本地创作工作台。**
+<h1 align="center">VisBloom</h1>
 
-用自己的编程 Agent 构思，在同一个工程里调整作品的源码、数据和参数。可以做静态画面、动画或交互作品。需要数据时，导入 CSV 或 JSON，通过 [AntV AVA](https://github.com/antvis/AVA) 查看、整理和计算。
+<p align="center"><strong>用自己的编程 Agent 创作数字艺术与数据可视化作品。</strong></p>
 
-[浏览作品集](https://artwork.euantop.work/collection.html) · [用 Agent 开始创作](https://artwork.euantop.work/help/agent-setup.html?lang=zh) · [English](README.md)
+<p align="center">
+  <strong><a href="#做第一件作品">开始创作</a></strong> ·
+  <a href="https://artwork.euantop.work/collection.html">作品集</a> ·
+  <a href="README.md">English</a>
+</p>
 
-## 快速开始
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://artwork.euantop.work/artworks/physarum.html"><img src="apps/workbench/public/collection/physarum.png" alt="深色背景上发光的粒子长成分枝网络" width="480"></a><br>
+      <strong>生长之间</strong><br>
+      看黏菌扫描里的亮度和变化如何驱动粒子生长。
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://euantop.github.io/artwork-martover/"><img src="https://euantop.github.io/artwork-martover/cover.jpg" alt="橙色背景上的火星球体，表面标出陨石坑" width="480"></a><br>
+      <strong>Martover</strong><br>
+      转动火星，在图谱里打开一座陨石坑。
+    </td>
+  </tr>
+</table>
 
-1. 打开[接入指南](https://artwork.euantop.work/help/agent-setup.html?lang=zh)，把提示词发给可以在你的电脑上执行命令的编程 Agent。
-2. 说说你想做的作品，或者提供本地文件。想先试数据作品，可以从内置的[《生长之间》](https://artwork.euantop.work/artworks/physarum.html)开始。
-3. 打开 Agent 给你的工作台地址。可以在对话里继续改，也可以在画布上调参数或直接编辑源码。完成后导出 PNG 或独立 HTML。
+## 做第一件作品
 
-Creator Kit 支持 macOS 和 Linux，要求 Node.js 22.13 或以上版本。本地工作台无需账号，目前界面为简体中文。
+**1. 在 Agent 里构思。** 把[接入指南](https://artwork.euantop.work/help/agent-setup.html?lang=zh)的提示词发给能在本机执行命令的编程 Agent。可以从一个念头、一张图或一份本地数据开始。想试一试内置作品，就让它打开《生长之间》，把分枝调得更细一些。
+
+**2. 在工作台改稿。** 打开 Agent 给你的本地预览。可以拖参数、直接改源码，也可以回到对话里把修改交给 Agent。画面、参数、源码和版本都保存在同一个项目里。
+
+<a href="apps/workbench/public/portal/platform-skinbloom-code.jpg"><img src="apps/workbench/public/portal/platform-skinbloom-code.jpg" alt="工作台正在编辑 SkinBloom，上方是作品预览，下方是源码编辑器，右侧是实时参数" width="1600"></a>
+
+**3. 分享成品。** 导出 PNG 或独立交互 HTML。HTML 可直接在浏览器打开，也可以部署到自己的 GitHub Pages。
+
+Creator Kit 支持 macOS 和 Linux，要求 Node.js 22.13 或以上版本。工作台目前提供简体中文界面。
+
+## 平台能力
+
+| 组件 | 用途 |
+| --- | --- |
+| [创作 Skills](skills/entries.json) | 从灵感发展构思、比较草案，改稿时按需查专项技巧与公开社区作品。 |
+| 本地工作台 | 预览和编辑 Canvas 2D、Three.js 和文档作品，工程文件和版本留在自己的机器。 |
+| [AntV AVA](https://github.com/antvis/AVA) | 查看 CSV 或 JSON，通过只读 SQL 查询数据，用结果驱动作品。 |
+| [CLI](docs/CLI.md) 与 [MCP 接入](skills/core/data-art/references/mcp.md) | 让 Agent 读写同一个工作台工程。默认接入走 CLI。 |
 
 ## 从源码运行
 
 ```sh
+git clone https://github.com/EuanTop/VisBloom.git
+cd VisBloom
 npm ci
 npm run dev
 ```
 
-打开 [http://127.0.0.1:4318](http://127.0.0.1:4318)。项目默认存放在 `.art-workbench/`，也可以用 `ART_WORKBENCH_DIR` 指定目录。
+打开 [127.0.0.1:4318](http://127.0.0.1:4318)。工程默认保存在 `.art-workbench/`，可用 `ART_WORKBENCH_DIR` 指定目录。
 
-## 主要组件
+<details>
+  <summary>开发和部署</summary>
 
-- **创作指引。** VisBloom Skill 按作品意图进入数字艺术或数据创作流程。遇到具体设计问题时可查专项 Skill 和公开社区作品。
-- **工作台。** 在浏览器里预览 Canvas 2D、Three.js 和文档作品。源码、参数、数据和版本随工程保存。
-- **Agent 接入。** Creator Kit 提供 CLI 和可选的本地 MCP，都连接同一个工作台。独立 Skill 下载包提供创作指引。团队私有参考库由管理员另行授权。
-- **分享。** 独立 HTML 可以脱离工作台观看。你可以发布到自己的 GitHub Pages，也可以配置分享服务来生成冻结版本的观看链接和 iframe。
+  提交改动前，请运行 `npm run check`、`npm test` 和 `npm run build`。作品和界面改动请附截图或短录屏。
 
-## 开发与贡献
-
-```sh
-npm run check
-npm test
-npm run build
-```
-
-`npm run build:portal` 会把静态官网、作品集、社区索引和下载包构建到 `dist/portal/`。
-
-| 目录 | 内容 |
-| --- | --- |
-| `apps/` | 工作台、项目 API、Agent 接入和分享服务 |
-| `packages/` | 工程核心、数据适配、存储、渲染和导出 |
-| `skills/` | 创作引导、专项 Skill 和冻结版本 |
-| `cases/` | 内置示例和数据来源 |
-
-提交改动时请附上能覆盖改动的检查结果。引入第三方代码、媒体和数据时，保留作者署名、来源和许可证声明。
-
-[CLI 文档](docs/CLI.md) · [部署文档](docs/DEPLOYMENT.md) · [Skill 目录](skills/entries.json)
+  `npm run build:portal` 会把静态官网、作品索引和下载包构建到 `dist/portal/`。详见[部署文档](docs/DEPLOYMENT.md)。
+</details>
 
 ## 许可与致谢
 
-VisBloom 的原创平台代码和原创 Skills 采用 [CC BY-NC 4.0（署名–非商业性使用）](LICENSE)。用于非商业分享或改编时，请署名 VisBloom 及其贡献者，附上许可证链接并注明改动。第三方代码、字体、数据、作品和改编 Skills 继续遵循各自的许可与署名要求。见[门户致谢](https://artwork.euantop.work/portal/credits.html)及 [Skill 来源与署名清单](skills/catalog.json)。
+VisBloom 的原创代码和原创 Skills 采用 [CC BY-NC 4.0（署名–非商业性使用）](LICENSE)。第三方代码、改编 Skills、作品、字体和数据沿用各自许可。见[作品及依赖致谢](https://artwork.euantop.work/portal/credits.html)和 [Skill 来源目录](skills/catalog.json)。
