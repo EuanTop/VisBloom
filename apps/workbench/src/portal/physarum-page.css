@@ -61,8 +61,8 @@
   line-height: 1.6;
 }
 .physarum-data h2 { font: 500 24px/1.2 var(--body); }
-.physarum-data :is(.physarum-data-meta, .physarum-data-note, figcaption span, dt, .physarum-data-parameters p) { color: var(--muted); }
-.physarum-data-meta { margin-top: 6px; }
+.physarum-data-intro { margin-block: 10px; }
+.physarum-data :is(.physarum-data-meta, .physarum-data-note, figcaption span, dt) { color: var(--muted); }
 .physarum-data-time {
   display: flex;
   align-items: center;

@@ -37,6 +37,9 @@ export default function PhysarumData({ rows, progress }: { rows?: unknown[] | nu
 
   return (
     <>
+      <p className="physarum-data-intro">
+        同一只培养皿的彩色延时扫描，记录多头绒泡菌（<i>Physarum polycephalum</i>）在燕麦片之间的生长。表中数值描述图像的亮度、纹理和相对首张扫描的变化。
+      </p>
       {!frame ? <p role="status">{rows === undefined ? '正在载入数据…' : '暂时无法显示观测数据。'}</p> : (
         <>
           <p className="physarum-data-meta">{frames.length} 个时刻 · {numeric.format(totalSamples)} 条原始网格记录</p>
@@ -74,7 +77,6 @@ export default function PhysarumData({ rows, progress }: { rows?: unknown[] | nu
               <div><dt>转向角度</dt><dd>{DEFAULTS.turnAngle}°</dd></div>
               <div><dt>观测场影响</dt><dd>{DEFAULTS.observationInfluence}</dd></div>
             </dl>
-            <p>AVA 将 64 × 64 网格聚合到 24 × 24。亮度影响感知距离，纹理与相对首帧的变化影响趋向与组织反馈。</p>
           </div>
         </>
       )}
