@@ -1,0 +1,105 @@
+{
+  "source": "https://zenodo.org/records/22868368",
+  "creators": [
+    "Kyle Harrington",
+    "Iris Harrington"
+  ],
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "csvSha256": "e3d1e6a1cbc22c7818e173a70ce294a1ea0ccbb7f7104608d04807aedc505f95",
+  "rowCount": 5730,
+  "observationRows": 5712,
+  "frames": [
+    {
+      "index": 0,
+      "timestamp_utc": "2023-08-26T18:20:49+00:00",
+      "seconds_since_frame_zero": 0
+    },
+    {
+      "index": 154,
+      "timestamp_utc": "2023-08-27T07:11:01+00:00",
+      "seconds_since_frame_zero": 46212
+    },
+    {
+      "index": 308,
+      "timestamp_utc": "2023-08-27T20:01:13+00:00",
+      "seconds_since_frame_zero": 92424
+    },
+    {
+      "index": 462,
+      "timestamp_utc": "2023-08-28T08:51:25+00:00",
+      "seconds_since_frame_zero": 138636
+    },
+    {
+      "index": 616,
+      "timestamp_utc": "2023-08-28T21:41:37+00:00",
+      "seconds_since_frame_zero": 184848
+    },
+    {
+      "index": 770,
+      "timestamp_utc": "2023-08-29T10:31:50+00:00",
+      "seconds_since_frame_zero": 231061
+    },
+    {
+      "index": 925,
+      "timestamp_utc": "2023-08-29T23:27:03+00:00",
+      "seconds_since_frame_zero": 277574
+    },
+    {
+      "index": 1079,
+      "timestamp_utc": "2023-08-30T12:17:14+00:00",
+      "seconds_since_frame_zero": 323785
+    },
+    {
+      "index": 1233,
+      "timestamp_utc": "2023-08-31T01:07:25+00:00",
+      "seconds_since_frame_zero": 369996
+    },
+    {
+      "index": 1387,
+      "timestamp_utc": "2023-08-31T13:57:38+00:00",
+      "seconds_since_frame_zero": 416209
+    },
+    {
+      "index": 1541,
+      "timestamp_utc": "2023-09-01T02:47:51+00:00",
+      "seconds_since_frame_zero": 462422
+    },
+    {
+      "index": 1695,
+      "timestamp_utc": "2023-09-01T15:38:03+00:00",
+      "seconds_since_frame_zero": 508634
+    }
+  ],
+  "observations": {
+    "grid": [
+      24,
+      24
+    ],
+    "aggregation": "Each output cell averages the source 64 × 64 tile measurements without area weighting. samples counts the contributing source tiles.",
+    "time": "seconds is elapsed time from frame zero, taken from the publisher timestamps.",
+    "coordinates": "x increases to the right, y increases upwards. grid_x and grid_y are indices in the aggregated grid.",
+    "sourceTileMeasures": {
+      "rgb": "Native per-tile RGB means divided by255",
+      "luma": "0.2126*r + 0.7152*g + 0.0722*b",
+      "texture": "Mean absolute neighboring per-pixel luma differences, concatenating both axes",
+      "change": "Mean absolute native RGB difference from same pixel rectangle in frame zero divided by255"
+    },
+    "limitations": [
+      "Twelve sampled native RGB crops from experiment001 dish0; no complete temporal reconstruction.",
+      "Publisher support masking is already in native images; no recoloring, downsampling, registration or flip applied to stored PNGs.",
+      "Measurements describe scan appearance and may reflect lighting, food, dish and organism; luma/texture/change are not validated biological coverage or tissue mass.",
+      "Fixed publisher frame-zero circle is unreviewed; center-based tile selection is not a verified physical dish boundary.",
+      "Flatbed scanner view is mirrored relative to an above-dish view.",
+      "Whole-archive MD5/SHA256 and source full-scan PNG hashes are publisher values, unverified by partial extraction.",
+      "Complete small-entry ZIP CRC32 and image shard-index CRC32C verified; image shard ZIP CRC32 unavailable without fetching all frames.",
+      "No food coordinates, inoculum, segmentation, network or scientific conclusions inferred.",
+      "Use publisher-corrected300dpi calibration if physical units are needed; stored OME scale is superseded."
+    ]
+  },
+  "otherRows": {
+    "nutrient": "Manually annotated oat sites from the first scan.",
+    "inoculum": "An authored initial condition. Its location and radius are artistic inputs.",
+    "frame": 0
+  }
+}

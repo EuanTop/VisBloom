@@ -1,0 +1,26 @@
+[
+  {
+    "field": "x,y",
+    "channel": "从实验首帧标注的归一化空间位置；养分点影响局部感知"
+  },
+  {
+    "field": "kind",
+    "channel": "养分位置与初始黏菌区域"
+  },
+  {
+    "field": "origin,source_frame",
+    "channel": "原始观测标注与创作者交互分别溯源"
+  },
+  {
+    "field": "luma",
+    "channel": "真实扫描亮度经AVA空间聚合后影响局部感知距离；艺术映射，不是生物参数"
+  },
+  {
+    "field": "texture,change",
+    "channel": "真实扫描纹理与相对首帧变化影响趋向与组织反馈；不表示黏菌分割或覆盖率"
+  },
+  {
+    "field": "frame,seconds,grid_x,grid_y,samples",
+    "channel": "实际时刻与空间位置；按时间插值24×24空间场并保留原始取样计数"
+  }
+]

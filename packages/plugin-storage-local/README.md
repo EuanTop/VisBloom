@@ -1,0 +1,9 @@
+# Local repository
+
+`createLocalRepository({ directory })` implements the version-1 repository port. SQLite is authoritative for project state, immutable checkpoint snapshots and the event sequence. State and event writes share a transaction. Source files are materialized under `projects/<id>/`; `syncFiles` uses per-file hashes and refuses to overwrite unexpected external changes. An explicitly observed external version may be adopted by committing matching source content. `get()` returns detached snapshots.
+
+`create` is followed by `syncFiles` for initial materialization. `commit` preflights disk hashes, writes changed files and baseline hashes within the SQLite transaction, and compensates file writes if a write/database operation fails before reporting success. Only actor `filesystem` may adopt an already-observed external edit; Agent/workbench writes reject unexpected disk changes. Source updates and SQLite still cannot form a crash-atomic cross-resource transaction: a process crash between a file rename and SQLite commit requires startup reconciliation from source hashes. A compensating rollback never overwrites a third-party change that raced with the operation. Raw dataset/result/capture blobs use restricted relative keys, immutable contents and atomic publication from temporary files; repeated identical writes are idempotent.
+
+Verified 2026-11-09: storage contract tests cover transaction conflicts, restart/checkpoint persistence, source materialization, observed external edits, traversal/symlink rejection, immutable artifacts and compensation on event failure. Integration tests are run from the root workspace.
+
+No AVA, server or UI dependencies. Symlink paths and parent traversal are refused. Use the exact locked better-sqlite3 version and run `tests/storage.test.ts` after upgrades, including restart, transaction conflict, checkpoint and external-edit scenarios.

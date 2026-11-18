@@ -1,0 +1,59 @@
+{
+  "repository": "EL4CTEO/blender-skills",
+  "commit": "389f28addc79b87b28764898e38e7bf408d14b77",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "EL4CTEO",
+      "url": "https://github.com/EL4CTEO"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/SKILL.md",
+      "gitBlob": "be7b38070db47d51a7f56183d13af24d5c9b1311",
+      "bytes": 5094
+    },
+    {
+      "path": "upstream/references/godot-web.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/references/godot-web.md",
+      "gitBlob": "0368e44a83daca2cf41ab57df64d8691493e6621",
+      "bytes": 2828
+    },
+    {
+      "path": "upstream/references/roblox.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/references/roblox.md",
+      "gitBlob": "d07843ba03047e829d9345496c6407ebb920c8a0",
+      "bytes": 3995
+    },
+    {
+      "path": "upstream/references/unity.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/references/unity.md",
+      "gitBlob": "80b5a87f478042bc8032808b86d05a31d3746357",
+      "bytes": 2354
+    },
+    {
+      "path": "upstream/references/unreal.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/references/unreal.md",
+      "gitBlob": "02a19edaa21821c6b4e92b4408bdbab113da27b0",
+      "bytes": 3200
+    },
+    {
+      "path": "upstream/scripts/_bpyx.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/scripts/_bpyx.py",
+      "gitBlob": "9048f6909cdd95254e93a7d478785149beaa4b9a",
+      "bytes": 4503
+    },
+    {
+      "path": "upstream/scripts/export_asset.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/scripts/export_asset.py",
+      "gitBlob": "01fcb5bb49b4db040a5743833dc769b750f0dbc8",
+      "bytes": 8743
+    }
+  ]
+}

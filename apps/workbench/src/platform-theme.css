@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Unbounded;
+  src: url('/portal/fonts/display-latin.woff2') format('woff2');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Smiley;
+  src: url('/portal/fonts/display-cn-v2-full.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --platform-background: #08050d;
+  --platform-surface: #110d17;
+  --platform-raised: #1c1222;
+  --platform-text: #eee7d8;
+  --platform-muted: #a399a6;
+  --platform-accent: #c5a580;
+  --platform-line: #c5a58026;
+  --platform-font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --platform-font-display: Smiley, var(--platform-font-body);
+  --platform-font-display-latin: Unbounded, var(--platform-font-body);
+}
+
+.brand-wordmark {
+  font: 500 14px/1.2 var(--platform-font-display-latin);
+  letter-spacing: -.055em;
+}

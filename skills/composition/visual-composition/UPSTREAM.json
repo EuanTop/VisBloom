@@ -1,0 +1,29 @@
+{
+  "repository": "maestro-ai-stack/maestro-creative",
+  "commit": "079d9426797bd853993cd99941d141815d192402",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Maestro AI Pte. Ltd.",
+      "url": "https://github.com/maestro-ai-stack"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/art-movements.md",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/knowledge/theory/art-movements.md",
+      "gitBlob": "4b022078cb6c3c8da52df714569b366c0afe6afc",
+      "bytes": 8341
+    },
+    {
+      "path": "upstream/composition.md",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/knowledge/theory/composition.md",
+      "gitBlob": "faf9c17ce8647b6671899a3f3a474a4e548f693f",
+      "bytes": 5901
+    }
+  ]
+}

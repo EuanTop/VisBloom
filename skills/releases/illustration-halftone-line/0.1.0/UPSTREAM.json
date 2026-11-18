@@ -1,0 +1,89 @@
+{
+  "repository": "MengTo/Skills",
+  "commit": "d6324a05ca03ce5f6cdba519318d92176dbc43d2",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Meng To",
+      "url": "https://github.com/MengTo"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/SKILL.md",
+      "gitBlob": "49c2910f3128fc2032f921fdee0a8088c2b322f0",
+      "bytes": 18925
+    },
+    {
+      "path": "upstream/agents/openai.yaml",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/agents/openai.yaml",
+      "gitBlob": "a516193c26d5c58a8d467e150735c07fedd26c4b",
+      "bytes": 274
+    },
+    {
+      "path": "upstream/demo/PROMPT.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/demo/PROMPT.md",
+      "gitBlob": "75626255da17cf5709e7cd7a0c443549983622fc",
+      "bytes": 1964
+    },
+    {
+      "path": "upstream/demo/index.html",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/demo/index.html",
+      "gitBlob": "0f38d4333331be3000c4a59150c364ff1b9703b7",
+      "bytes": 611381
+    },
+    {
+      "path": "upstream/examples/design-critique.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/examples/design-critique.svg",
+      "gitBlob": "b5a776b00525555d53b1214bcdcc22423d276596",
+      "bytes": 166867
+    },
+    {
+      "path": "upstream/examples/pair-programming.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/examples/pair-programming.svg",
+      "gitBlob": "8f7c3a9594317bc7e28632f8ae4024bed021cbf1",
+      "bytes": 99852
+    },
+    {
+      "path": "upstream/examples/train-ride.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/examples/train-ride.svg",
+      "gitBlob": "2144f27dde6dff6901d588e5a637907459836d7e",
+      "bytes": 337153
+    },
+    {
+      "path": "upstream/references/craft.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/references/craft.md",
+      "gitBlob": "3f8bb5a1e6013c59c0e60c4786b7e838e6b66e19",
+      "bytes": 10528
+    },
+    {
+      "path": "upstream/scripts/halftone.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/scripts/halftone.mjs",
+      "gitBlob": "86904f7ca77927619f6b75699f2a1a5cd1ec9c6f",
+      "bytes": 23235
+    },
+    {
+      "path": "upstream/scripts/lint.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/scripts/lint.mjs",
+      "gitBlob": "a2b17ac9e429829ce6ddcc358c10ba25ce7ad323",
+      "bytes": 3079
+    },
+    {
+      "path": "upstream/scripts/render.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/scripts/render.mjs",
+      "gitBlob": "73c36aa871e0c2aedac6ffcb34d45e94661c8ff6",
+      "bytes": 5071
+    },
+    {
+      "path": "upstream/style.json",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/style.json",
+      "gitBlob": "8a3e731c8469ffd8b3fcdc3dd5a0fa202899e97e",
+      "bytes": 1831
+    }
+  ]
+}

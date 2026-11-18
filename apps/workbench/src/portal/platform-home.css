@@ -1,0 +1,302 @@
+/* Four type roles per viewport. All supporting copy shares one size. */
+.platform-home {
+  position: relative;
+  z-index: 1;
+  --portal-text: 14px;
+  --portal-subheading: 28px;
+  --portal-heading: 56px;
+  --portal-display: 84px;
+  --portal-leading: 1.9;
+  --portal-copy: #b7afa8;
+  --portal-caption: #a89aaf;
+  font: 400 var(--portal-text)/var(--portal-leading) var(--body);
+}
+.platform-home p,
+.platform-home a,
+.platform-home button,
+.platform-home figcaption {
+  font-size: var(--portal-text);
+  line-height: var(--portal-leading);
+}
+.platform-home .small-brand,
+.platform-home .main-nav,
+.platform-home .workbench-link,
+.platform-home .service-info,
+.platform-home .site-footer>div,
+.platform-home .footer-note {
+  font-size: var(--portal-text);
+  line-height: var(--portal-leading);
+}
+.platform-home .site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  background: linear-gradient(180deg,#08050df5,#08050da6 60%,#08050d00);
+  border-bottom: 0;
+  backdrop-filter: none;
+}
+.platform-home .site-header[data-solid=true] { background: var(--black); border-bottom: 1px solid #c5a58018; }
+.platform-home .navigation-dialog nav a {
+  font: 400 var(--portal-subheading)/1.4 var(--display);
+}
+.magnetic-link>span { display: inline-flex; align-items: center; gap: inherit; min-height: 0; position: relative; }
+
+/* The artwork, header and copy share a continuous stage. */
+.platform-home .physarum-story[data-platform=true] { height: 245svh; }
+.platform-home .physarum-hero { top: 0; height: 100svh; background: transparent; }
+.platform-home .physarum-story[data-platform=true] { background: transparent; }
+.platform-home .physarum-title.platform-hero-copy {
+  top: calc(76px + 48px);
+  max-width: 850px;
+}
+.platform-home .physarum-title.platform-hero-copy h1 {
+  font: 400 var(--portal-display)/1.15 var(--display);
+  letter-spacing: 0;
+}
+.platform-home .platform-hero-description {
+  font: 400 var(--portal-text)/var(--portal-leading) var(--body);
+  letter-spacing: 0;
+  color: var(--portal-copy);
+  margin: 24px 0 0;
+  max-width: 38em;
+  text-wrap: pretty;
+}
+.platform-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; margin-top: 32px; pointer-events: auto; }
+.platform-hero-actions>a { display: inline-flex; align-items: center; gap: 16px; min-height: 48px; color: #d2c4b9; }
+.platform-hero-actions .platform-hero-primary { padding: 12px 24px; background: #e4d5bf; color: #1b1221; font-weight: 500; gap: 24px; }
+.platform-hero-actions .platform-hero-primary:hover { background: #f4e8d6; }
+.platform-hero-actions>a:hover svg { transform: translate(3px,-3px); }
+.platform-hero-actions svg { transition: transform .2s; }
+.physarum-title.platform-hero-copy:before { inset: -72px -112px -72px -5vw; background: radial-gradient(ellipse at 25% 35%,#08050df2,#08050db3 43%,transparent 74%); }
+.platform-home .physarum-footer { z-index: 3; padding-top: 24px; background: none; text-shadow: 0 1px 12px #08050d; }
+.platform-home .physarum-actions { font: 400 var(--portal-text)/var(--portal-leading) var(--body); border-top: 0; padding-top: 0; }
+.platform-home .physarum-loading,
+.platform-home .physarum-portal-error { font-size: var(--portal-text); top: auto; bottom: 176px; left: auto; right: 5vw; z-index: 4; }
+
+/* A single reading grid and the same text rhythm in every section. */
+.platform-directions { padding-top: 112px; }
+.platform-directions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(32px, 4vw, 64px); }
+.platform-directions-grid figure {
+  min-width: 0;
+  margin: 0;
+  position: relative;
+  isolation: isolate;
+}
+.platform-directions-grid figure::before {
+  content: '';
+  position: absolute;
+  inset: -28px -20px -28px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse closest-side, #08050df0 48%, #08050d85 76%, transparent);
+}
+.platform-directions-grid h3 { margin-bottom: 16px; font: 400 var(--portal-subheading)/1.4 var(--display); }
+.platform-direction-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--black);
+  box-shadow: 0 18px 36px -20px #000c;
+}
+.platform-direction-image>img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.platform-direction-image>svg { position: absolute; inset: auto 12px 12px auto; box-sizing: content-box; padding: 10px; color: var(--white); background: var(--black); }
+.platform-direction-image:hover>svg { color: var(--gold); }
+.platform-directions-grid figcaption { margin-top: 16px; }
+.platform-directions-grid figcaption p { color: var(--portal-copy); }
+@media (max-width: 600px) {
+  .platform-directions-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+}
+.platform-workflow { padding-block: 128px; position: relative; }
+.platform-home #practice,
+.platform-home #platform { scroll-margin-top: 0; }
+.platform-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 64px; margin-bottom: 48px; }
+.platform-section-heading h2,
+.platform-data h2,
+.platform-home .portal-start h2 { font: 400 var(--portal-heading)/1.25 var(--display); letter-spacing: 0; color: var(--white); }
+.platform-section-heading>p,
+.platform-section-copy { color: var(--portal-copy); max-width: 34em; }
+.platform-section-copy { margin-top: 24px; }
+.platform-workflow-body { display: grid; grid-template-columns: minmax(0,1.6fr) minmax(320px,.85fr); gap: 64px; align-items: center; }
+.platform-workbench-view { margin: 0; min-width: 0; }
+.platform-preview-topline { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 16px; color: var(--portal-caption); }
+.platform-preview-topline>span:first-child { color: #d9c7b1; font-weight: 500; }
+.platform-preview-topline i { font-style: normal; margin-inline: 8px; }
+.platform-preview-open { position: relative; display: block; width: 100%; aspect-ratio: 1600/836; overflow: hidden; padding: 0; background: var(--black); border: 1px solid #c5a58024; isolation: isolate; }
+.platform-preview-open>img { position: absolute; inset: -7.655% 0 auto; width: 100%; height: auto; }
+.platform-preview-zoom { position: absolute; right: 16px; bottom: 16px; z-index: 2; padding: 8px 16px; display: flex; gap: 8px; align-items: center; color: #ddd1c2; background: #08050de8; opacity: 0; transition: opacity .2s; }
+.platform-preview-open:hover .platform-preview-zoom,
+.platform-preview-open:focus-visible .platform-preview-zoom { opacity: 1; }
+.platform-workbench-view>figcaption { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-top: 16px; color: var(--portal-caption); }
+.platform-preview-progress { display: flex; gap: 8px; }
+.platform-preview-progress>i { display: block; width: 24px; height: 2px; background: #c5a58030; transition: background .25s,width .35s; }
+.platform-preview-progress>i[data-active=true] { width: 48px; background: #d1b18d; }
+.platform-ways { min-width: 0; }
+.platform-ways [role=tablist] { display: flex; flex-direction: column; gap: 0; position: relative; }
+.platform-ways [role=tab] { display: flex; align-items: center; width: 100%; gap: 16px; padding: 16px 8px 16px 24px; min-height: 64px; border-bottom: 1px solid #c5a58025; color: #a89aaf; text-align: left; position: relative; transition: color .2s; }
+.platform-ways [role=tab]:hover { color: #d5c3b2; }
+.platform-ways [role=tab] svg { width: 24px; height: 24px; }
+.platform-ways [role=tab] .platform-way-arrow { width: 16px; height: 16px; margin-left: auto; opacity: 0; transform: translate(-5px,5px); transition: opacity .25s,transform .25s; }
+.platform-ways [role=tab][data-state=active] { color: #e8d2b6; }
+.platform-ways [role=tab][data-state=active] .platform-way-arrow { opacity: 1; transform: none; }
+.platform-way-number { color: #89788f; }
+.platform-way-indicator { position: absolute; left: 0; top: 16px; bottom: 16px; width: 2px; background: #d0ae85; }
+.platform-way-content { min-height: 312px; padding: 32px 0 0 24px; }
+.platform-way-content h3 { font: 400 var(--portal-subheading)/1.4 var(--display); color: var(--white); }
+.platform-way-content p { color: var(--portal-copy); margin-top: 24px; max-width: 34em; }
+.platform-way-content .platform-way-detail { margin-top: 16px; }
+.platform-text-link { display: inline-flex; align-items: center; gap: 16px; min-height: 48px; color: #dec6a7; font-weight: 500; font-size: var(--portal-text,14px); line-height: 1.9; }
+.platform-text-link:hover { color: var(--white); }
+.platform-way-content .platform-text-link { margin-top: 24px; }
+
+/* Preview chrome uses the body role, not a separate collection of tiny sizes. */
+.platform-preview-dialog { padding: 16px 24px; margin: auto; width: min(1600px,96vw); max-width: none; max-height: 94svh; overflow: auto; background: #100b15; border: 1px solid #c5a58040; color: var(--white); }
+.platform-preview-dialog::backdrop { background: #08050deb; backdrop-filter: blur(12px); }
+.platform-preview-dialog-top { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-bottom: 16px; }
+.platform-preview-dialog h2 { font: 500 var(--portal-text)/var(--portal-leading) var(--body); }
+.platform-preview-image { overflow: auto; max-height: 72svh; }
+.platform-preview-image>img { display: block; width: 100%; height: auto; margin-top: -4%; }
+.platform-preview-hint { display: none; }
+.platform-preview-dialog>p { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; color: var(--portal-caption); padding-top: 16px; }
+.platform-preview-dialog a { display: flex; gap: 8px; align-items: center; min-height: 32px; color: #d4b99c; }
+
+/* The data foundation and the artwork detail stay part of the platform story. */
+.platform-data { padding: 96px 0; position: relative; overflow: hidden; }
+.platform-data-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 64px; align-items: center; }
+.platform-data-credit { display: flex; align-items: center; gap: 8px; color: #c3ac94; margin-top: 24px; }
+.platform-data-flow { grid-column: 1/-1; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 32px; border-top: 1px solid #c5a58025; }
+.platform-data-flow>div { min-width: 0; }
+.platform-data-type { display: block; white-space: nowrap; font: 400 var(--portal-subheading)/1.4 var(--platform-font-display-latin); color: #e0c5a2; min-height: 40px; }
+.platform-data-type>i { font: inherit; color: #746777; margin-inline: 8px; }
+.platform-data-type.platform-expression { font-family: var(--display); }
+.platform-data-flow>div>svg { color: #d1b28d; display: block; height: 40px; }
+.platform-data-flow h3 { font: 500 var(--portal-text)/var(--portal-leading) var(--body); color: #d5c8d0; margin-top: 24px; }
+.platform-data-flow p { color: var(--portal-copy); margin-top: 8px; }
+.platform-flow-arrow { transform: rotate(-90deg); color: #766680; width: 24px; }
+.platform-material-study { margin: 0; min-width: 0; width: 100%; max-width: 510px; justify-self: end; position: relative; }
+.platform-material-surface { display: block; position: relative; width: 100%; aspect-ratio: 608/560; overflow: hidden; padding: 0; background: var(--black); touch-action: pan-y; border: 0; }
+.platform-material-surface>img { position: absolute; max-width: none; width: 263.16%; height: auto; left: -18.42%; top: -35.714%; pointer-events: none; mask-image: radial-gradient(ellipse at center,#000 32%,transparent 69%); }
+.platform-material-surface>canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; opacity: 0; pointer-events: none; }
+.platform-material-study[data-interactive=true] .platform-material-surface>canvas { opacity: 1; }
+.platform-material-study[data-interactive=true] .platform-material-surface>img { visibility: hidden; }
+.platform-material-study[data-interactive=false] .platform-material-surface { opacity: 1; cursor: default; }
+.platform-material-study figcaption { display: flex; justify-content: space-between; gap: 16px; color: var(--portal-caption); padding-top: 16px; border-top: 1px solid #c5a58025; }
+.platform-material-study figcaption>span:first-child { color: #c5ae95; }
+.platform-material-surface:hover { cursor: crosshair; }
+.platform-material-surface:focus-visible { outline-offset: -4px; }
+
+/* Delivery and the start block own their layout; no lazy artwork CSS dependency. */
+.platform-delivery { padding-top: 128px; }
+.platform-delivery-options { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 48px; }
+.platform-delivery-options>div { padding-top: 32px; border-top: 1px solid #c5a58030; }
+.platform-delivery-options svg { color: #c7ae90; }
+.platform-delivery-options h3 { font: 400 var(--portal-subheading)/1.4 var(--display); margin-top: 24px; color: #dfd2cf; }
+.platform-delivery-options p { color: var(--portal-copy); margin-top: 16px; max-width: 30em; }
+.platform-collection-link { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-top: 64px; padding: 32px 0; border-top: 1px solid #c5a58025; color: var(--portal-copy); }
+.platform-home .portal-start { padding: 96px 0 64px; }
+.platform-home .portal-start-top { display: grid; grid-template-columns: minmax(0,1fr) 240px; align-items: center; gap: 96px; }
+.platform-home .portal-start-top>div>p { max-width: 40em; margin-top: 24px; color: var(--portal-copy); }
+.platform-home .portal-start-actions { display: flex; flex-direction: column; align-items: stretch; gap: 16px; }
+.platform-home .portal-primary,
+.platform-home .portal-secondary { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 48px; }
+.platform-home .portal-primary { padding: 16px 24px; background: #e4d5bf; color: #1b1221; font-weight: 500; }
+.platform-home .portal-primary:hover { background: #f4e8d6; }
+.platform-home .portal-secondary { color: #dec6a7; padding: 8px 0; }
+.platform-home .portal-primary svg,
+.platform-home .portal-secondary svg { width: 24px; height: 24px; }
+.platform-home .practical-notes { gap: 0 64px; margin-top: 64px; }
+.platform-home .practical-item>button { font-size: var(--portal-text); line-height: var(--portal-leading); min-height: 80px; padding-block: 24px; gap: 16px; color: #c8bfb7; }
+.platform-home .practical-item>p { font-size: var(--portal-text); line-height: var(--portal-leading); color: var(--portal-copy); padding: 0 0 24px 32px; max-width: 40em; }
+.platform-home .service-info { margin-top: 24px; }
+.platform-home .error-notice p,.platform-home .busy-notice { font-size: var(--portal-text); line-height: var(--portal-leading); }
+.platform-home .site-footer { padding: 32px 0; gap: 24px; }
+.platform-home .site-footer>div { gap: 24px; }
+
+/* Independent case-reading pages keep their own established hierarchy. */
+.platform-study-page .site-header { position: relative; }
+.platform-study-page .study-heading { padding-top: 48px; padding-bottom: 0; }
+.platform-study-page .study-heading h1 { font: 400 45px/1.4 var(--display); }
+.platform-study-page .study-heading p { color: var(--muted); font: 400 14px/1.9 var(--body); margin-top: 16px; }
+.platform-study-page .bloom-chapter { padding-top: 56px; }
+.platform-study-back { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #c5a58020; padding-block: 24px; gap: 24px; font-size: 14px; color: #c5b09a; }
+.platform-study-back>a { display: flex; align-items: center; gap: 8px; min-height: 48px; }
+
+@media(max-width:1100px) {
+  .platform-workflow-body { grid-template-columns: minmax(0,1.2fr) minmax(300px,1fr); gap: 32px; }
+  .platform-section-heading { gap: 48px; }
+  .platform-data-layout { gap: 48px 32px; }
+  .platform-delivery-options { gap: 32px; }
+  .platform-home .portal-start-top { gap: 48px; }
+  .platform-home .site-footer { flex-wrap: wrap; }
+}
+@media(max-width:760px) {
+  .platform-home { --portal-heading: 42px; --portal-display: 56px; }
+  .platform-home .physarum-story[data-platform=true] { height: 215svh; }
+  .platform-home .physarum-title.platform-hero-copy { top: 96px; left: 24px; max-width: calc(100% - 48px); }
+  .platform-home .platform-hero-description { max-width: 30em; }
+  .platform-hero-actions { gap: 16px; margin-top: 24px; }
+  .platform-hero-actions .platform-hero-primary { padding-inline: 16px; gap: 16px; }
+  .platform-home .physarum-footer { padding: 40px 24px 16px; }
+  .platform-home .physarum-actions { gap: 16px; }
+  .platform-home .physarum-gesture { display: none; }
+  .platform-home .physarum-loading,
+  .platform-home .physarum-portal-error { bottom: 176px; right: 24px; left: 24px; text-align: right; }
+  .platform-workflow { padding-block: 96px; }
+  .platform-section-heading { display: block; margin-bottom: 32px; }
+  .platform-section-heading>p { margin-top: 24px; }
+  .platform-workflow-body { display: flex; flex-direction: column; gap: 32px; }
+  .platform-workbench-view,.platform-ways { width: 100%; }
+  .platform-preview-topline { gap: 16px; }
+  .platform-preview-zoom { opacity: 1; right: 8px; bottom: 8px; padding: 8px; }
+  .platform-preview-progress { gap: 4px; }
+  .platform-preview-progress>i { width: 16px; }
+  .platform-preview-progress>i[data-active=true] { width: 24px; }
+  .platform-way-content { min-height: 312px; padding: 32px 0 0; }
+  .platform-way-content p { max-width: none; }
+  .platform-data { padding-block: 64px; }
+  .platform-data-layout { grid-template-columns: 1fr; gap: 32px; }
+  .platform-material-study { max-width: 480px; justify-self: center; }
+  .platform-material-study figcaption { flex-wrap: wrap; gap: 8px 16px; }
+  .platform-data-flow { flex-direction: column; align-items: stretch; gap: 24px; grid-column: 1; }
+  .platform-data-flow>div { display: grid; grid-template-columns: 168px minmax(0,1fr); gap: 0 16px; align-items: center; }
+  .platform-data-flow>div>.platform-data-type,
+  .platform-data-flow>div>svg { grid-row: 1/3; grid-column: 1; }
+  .platform-data-flow h3 { grid-column: 2; margin: 0; }
+  .platform-data-flow p { grid-column: 2; margin-top: 8px; }
+  .platform-flow-arrow { transform: none; margin-left: 32px; height: 24px; }
+  .platform-delivery { padding-top: 96px; }
+  .platform-delivery-options { grid-template-columns: 1fr; gap: 32px; }
+  .platform-delivery-options>div { display: grid; grid-template-columns: 32px 1fr; gap: 0 16px; padding-top: 24px; }
+  .platform-delivery-options svg { grid-row: 1/3; width: 24px; margin-top: 8px; }
+  .platform-delivery-options h3 { margin: 0; }
+  .platform-delivery-options p { grid-column: 2; margin-top: 16px; }
+  .platform-collection-link { display: block; margin-top: 48px; padding-block: 24px; }
+  .platform-collection-link>a { margin-top: 16px; }
+  .platform-home .portal-start { padding: 64px 0 48px; }
+  .platform-home .portal-start-top { grid-template-columns: 1fr; gap: 32px; }
+  .platform-home .portal-start-actions { gap: 16px; }
+  .platform-home .practical-notes { grid-template-columns: 1fr; margin-top: 48px; gap: 0; }
+  .platform-home .practical-item>button { font-size: var(--portal-text); line-height: var(--portal-leading); min-height: 80px; }
+  .platform-home .site-footer { align-items: flex-start; gap: 24px; }
+  .platform-home .site-footer>div { flex-wrap: wrap; gap: 8px 24px; }
+  .platform-home .footer-note { flex-basis: auto; }
+  .platform-preview-dialog { padding: 16px; width: 98vw; }
+  .platform-preview-image>img { width: max(100%,1100px); max-width: none; margin-top: min(-4%, -44px); }
+  .platform-preview-hint { display: inline; }
+  .platform-study-page .study-heading { padding-top: 32px; }
+  .platform-study-page .study-heading h1 { font-size: 35px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .platform-home .physarum-story[data-platform=true] { height: 100svh; }
+  .platform-preview-open>img { transform: none !important; clip-path: none !important; }
+}
+
+/* One GPU canvas stays behind every chapter; content and controls stay above it. */
+.physarum-stage.platform-global-art { position: fixed; inset: 0; z-index: 0; pointer-events: none; clip-path: none; }
+.platform-global-art>canvas { outline-offset: -6px; }
+.portal-workbench-actions { display: flex; align-items: center; gap: 16px; }
+.portal-menu-playback { display: inline-flex; align-items: center; gap: 16px; min-height: 48px; margin-top: 24px; color: var(--gold); }
+@media(max-width:760px) {
+  .portal-workbench-actions { display: none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .platform-global-art[data-ambient=true] { visibility: hidden; }
+}

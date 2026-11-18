@@ -1,0 +1,23 @@
+{
+  "repository": "maestro-ai-stack/maestro-creative",
+  "commit": "079d9426797bd853993cd99941d141815d192402",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Maestro AI Pte. Ltd.",
+      "url": "https://github.com/maestro-ai-stack"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/color-harmony.md",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/knowledge/theory/color-harmony.md",
+      "gitBlob": "b7920b28021cf00be719e572450014bd1efd24da",
+      "bytes": 8384
+    }
+  ]
+}

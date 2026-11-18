@@ -1,0 +1,221 @@
+{
+  "repository": "jiannanya/snow-d3",
+  "commit": "f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Jiannanya",
+      "url": "https://github.com/jiannanya"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/SKILL.md",
+      "gitBlob": "733b5201193dc7a21d9ce888c517fcbc0ae24d60",
+      "bytes": 9753
+    },
+    {
+      "path": "upstream/examples/01-bar-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/01-bar-chart.html",
+      "gitBlob": "a07add6af56f8eb03fa3fa475a3b71b33e9e10e9",
+      "bytes": 9115
+    },
+    {
+      "path": "upstream/examples/02-line-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/02-line-chart.html",
+      "gitBlob": "faf3368470a0086a83b3a466ead01d4523394a2c",
+      "bytes": 9139
+    },
+    {
+      "path": "upstream/examples/03-area-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/03-area-chart.html",
+      "gitBlob": "748882cf01cbcc2c506bbf030999a6689121a27c",
+      "bytes": 8711
+    },
+    {
+      "path": "upstream/examples/04-scatter-plot.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/04-scatter-plot.html",
+      "gitBlob": "0a63b23f05ebd7ea04c5e218d1303b8435f4fbc0",
+      "bytes": 8765
+    },
+    {
+      "path": "upstream/examples/05-pie-donut-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/05-pie-donut-chart.html",
+      "gitBlob": "eca74435182fce6869a4610a3760c7bec58f55c7",
+      "bytes": 10599
+    },
+    {
+      "path": "upstream/examples/06-histogram.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/06-histogram.html",
+      "gitBlob": "3e6a98b44f5c988ca065cb6007180736e5cac256",
+      "bytes": 9204
+    },
+    {
+      "path": "upstream/examples/07-force-graph.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/07-force-graph.html",
+      "gitBlob": "536f78f237960fba7e598d650a5dd6cd3c7325bb",
+      "bytes": 9256
+    },
+    {
+      "path": "upstream/examples/08-tree-layout.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/08-tree-layout.html",
+      "gitBlob": "350cd0941d9fcc589eebb18387c55380eb61391a",
+      "bytes": 11490
+    },
+    {
+      "path": "upstream/examples/09-treemap.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/09-treemap.html",
+      "gitBlob": "ed6693a5aa3d8cf5e5d0f227a8a1defeac62d3c3",
+      "bytes": 8949
+    },
+    {
+      "path": "upstream/examples/10-choropleth-map.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/10-choropleth-map.html",
+      "gitBlob": "6025129b5cf80f44084c97219932e4e0514fe18f",
+      "bytes": 12645
+    },
+    {
+      "path": "upstream/examples/11-bubble-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/11-bubble-chart.html",
+      "gitBlob": "b40e7fec80e8172089914c35f10de18a18a7eeb9",
+      "bytes": 8863
+    },
+    {
+      "path": "upstream/examples/12-transitions.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/12-transitions.html",
+      "gitBlob": "6a8d3db5a061daf9117c8903f776e52de6ac7e16",
+      "bytes": 8658
+    },
+    {
+      "path": "upstream/examples/13-brush-zoom.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/13-brush-zoom.html",
+      "gitBlob": "c99c2a7c6c2a50a2241108f516f8edf144581fb5",
+      "bytes": 11684
+    },
+    {
+      "path": "upstream/examples/14-chord-diagram.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/14-chord-diagram.html",
+      "gitBlob": "a93d714da72a5b6bac83b9cee5b6cb8d27456fdb",
+      "bytes": 9147
+    },
+    {
+      "path": "upstream/examples/15-heatmap.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/15-heatmap.html",
+      "gitBlob": "4914363aadb4278a16e9e2bba299482bb066f6eb",
+      "bytes": 7152
+    },
+    {
+      "path": "upstream/examples/16-radial-bar.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/16-radial-bar.html",
+      "gitBlob": "bccf596ec728d1e754afba9c8ea491d4ad2c4d82",
+      "bytes": 6923
+    },
+    {
+      "path": "upstream/examples/17-sankey.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/17-sankey.html",
+      "gitBlob": "1e794b3ab8d11badad77df4fb69d41be5d0833d9",
+      "bytes": 6729
+    },
+    {
+      "path": "upstream/examples/18-box-plot.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/18-box-plot.html",
+      "gitBlob": "b0fa265ba2aa7954521b25b2eb65a36efb39e156",
+      "bytes": 10721
+    },
+    {
+      "path": "upstream/examples/19-waterfall.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/19-waterfall.html",
+      "gitBlob": "6d771c5d3a54713b51213ab90f615e3c56d25157",
+      "bytes": 6800
+    },
+    {
+      "path": "upstream/examples/20-gantt.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/20-gantt.html",
+      "gitBlob": "467d2e2bd76d375dbb67f8114e945da46206b882",
+      "bytes": 10662
+    },
+    {
+      "path": "upstream/examples/21-parallel-coordinates.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/21-parallel-coordinates.html",
+      "gitBlob": "0e7cddcc1421a813bc56f51d3240fdef0b3f2156",
+      "bytes": 8655
+    },
+    {
+      "path": "upstream/examples/22-radar-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/22-radar-chart.html",
+      "gitBlob": "ddf9317b4f058cde8bbe3cc0aeedd8ccd2608684",
+      "bytes": 7924
+    },
+    {
+      "path": "upstream/examples/23-bump-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/23-bump-chart.html",
+      "gitBlob": "61983c7f91422bf053cfd37bf577d0ae312e4cd6",
+      "bytes": 7101
+    },
+    {
+      "path": "upstream/examples/24-sunburst.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/24-sunburst.html",
+      "gitBlob": "2ac97a50cb15a2d190ab266bb72baa019034f0f6",
+      "bytes": 7853
+    },
+    {
+      "path": "upstream/examples/25-voronoi.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/25-voronoi.html",
+      "gitBlob": "cd61ac04e86870175480c4485e5e8f74f731354c",
+      "bytes": 5959
+    },
+    {
+      "path": "upstream/examples/26-contour.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/26-contour.html",
+      "gitBlob": "4c0a1e89f77c9ca2524a9e1c29e418f89ca553ae",
+      "bytes": 6477
+    },
+    {
+      "path": "upstream/examples/27-candlestick.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/27-candlestick.html",
+      "gitBlob": "0eef6645dc2e5f3997828f3e50d9a7f7852d97d4",
+      "bytes": 10201
+    },
+    {
+      "path": "upstream/examples/28-lollipop.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/28-lollipop.html",
+      "gitBlob": "a8a226847a104da39388f50058c17374208215e7",
+      "bytes": 9054
+    },
+    {
+      "path": "upstream/examples/29-matrix-chart.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/29-matrix-chart.html",
+      "gitBlob": "9f53f31c2a95b822cc7a2bbd40c6cbdd68b5cb54",
+      "bytes": 8125
+    },
+    {
+      "path": "upstream/examples/30-ridgeline.html",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/examples/30-ridgeline.html",
+      "gitBlob": "ec84e9bf45453c46ab206eda22b7242fa634957c",
+      "bytes": 7843
+    },
+    {
+      "path": "upstream/references/api-overview.md",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/references/api-overview.md",
+      "gitBlob": "162c3b25b7391de676a2dfe7d6e3f75a954585dc",
+      "bytes": 12594
+    },
+    {
+      "path": "upstream/references/modules.md",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/references/modules.md",
+      "gitBlob": "9a20d4b019918ec72f9e361f4d010fb5915d607d",
+      "bytes": 12682
+    },
+    {
+      "path": "upstream/references/patterns.md",
+      "source": "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/references/patterns.md",
+      "gitBlob": "0b7f53ce982444aff3863107bd11f47d6c33ac67",
+      "bytes": 9914
+    }
+  ]
+}

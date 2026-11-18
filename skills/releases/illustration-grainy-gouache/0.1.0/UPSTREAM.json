@@ -1,0 +1,89 @@
+{
+  "repository": "MengTo/Skills",
+  "commit": "d6324a05ca03ce5f6cdba519318d92176dbc43d2",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Meng To",
+      "url": "https://github.com/MengTo"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/SKILL.md",
+      "gitBlob": "25f27dff343de5799a28059f72e1f80b59605c97",
+      "bytes": 20962
+    },
+    {
+      "path": "upstream/agents/openai.yaml",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/agents/openai.yaml",
+      "gitBlob": "ba4234a054721b3fe4dc9f90e55ee8cb16689188",
+      "bytes": 282
+    },
+    {
+      "path": "upstream/demo/PROMPT.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/demo/PROMPT.md",
+      "gitBlob": "2b935de88829995d71285d4883465e6cc1cbc5f9",
+      "bytes": 2422
+    },
+    {
+      "path": "upstream/demo/index.html",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/demo/index.html",
+      "gitBlob": "c0fe13c3842d323c9c0f766c2b5364b04773751f",
+      "bytes": 124831
+    },
+    {
+      "path": "upstream/examples/cozy-commit.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/examples/cozy-commit.svg",
+      "gitBlob": "61828f0d6a6aa30625856475f4b5725d87569c9d",
+      "bytes": 26247
+    },
+    {
+      "path": "upstream/examples/night-shift.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/examples/night-shift.svg",
+      "gitBlob": "a77333866c267cd7598b358416b42497be82249b",
+      "bytes": 34373
+    },
+    {
+      "path": "upstream/examples/rainy-refactor.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/examples/rainy-refactor.svg",
+      "gitBlob": "78cb57e8c7266c41f0914023663678f0f70cb928",
+      "bytes": 54804
+    },
+    {
+      "path": "upstream/references/craft.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/references/craft.md",
+      "gitBlob": "3f8bb5a1e6013c59c0e60c4786b7e838e6b66e19",
+      "bytes": 10528
+    },
+    {
+      "path": "upstream/scripts/gouache.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/scripts/gouache.mjs",
+      "gitBlob": "81bc1088f05aa8476c8793279d8718785b03e4e3",
+      "bytes": 18750
+    },
+    {
+      "path": "upstream/scripts/lint.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/scripts/lint.mjs",
+      "gitBlob": "a2b17ac9e429829ce6ddcc358c10ba25ce7ad323",
+      "bytes": 3079
+    },
+    {
+      "path": "upstream/scripts/render.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/scripts/render.mjs",
+      "gitBlob": "73c36aa871e0c2aedac6ffcb34d45e94661c8ff6",
+      "bytes": 5071
+    },
+    {
+      "path": "upstream/style.json",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/style.json",
+      "gitBlob": "a524e16949572038e068ddb3a828dfe5d6f7ae20",
+      "bytes": 14335
+    }
+  ]
+}

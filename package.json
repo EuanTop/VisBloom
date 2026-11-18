@@ -1,0 +1,40 @@
+{
+  "name": "visloom",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "predev": "tsx scripts/build-collection.ts",
+    "dev": "tsx apps/server/src/index.ts",
+    "start": "tsx apps/server/src/index.ts --production",
+    "build": "vite build --config apps/workbench/vite.config.ts && tsx scripts/build-collection.ts",
+    "build:portal": "vite build --config apps/workbench/vite.config.ts --mode public-portal && tsx scripts/build-public-portal.ts && tsx scripts/build-collection.ts --public-portal && vite build --config apps/workbench/vite.config.ts --mode creator-kit && tsx scripts/build-creator-kit.ts",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "mcp": "tsx apps/agent/src/mcp.ts",
+    "visloom": "tsx apps/agent/src/cli.ts",
+    "art": "tsx apps/agent/src/cli.ts",
+    "share:serve": "tsx apps/share-server/src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "tsx": "4.23.15",
+    "vite": "8.3.6",
+    "@vitejs/plugin-react": "6.2.1",
+    "vitest": "5.1.0",
+    "@playwright/test": "1.65.0",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.187.0",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/ws": "8.18.2"
+  }
+}

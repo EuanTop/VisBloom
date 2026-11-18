@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "roots": [
+    "data-art@0.2.18"
+  ],
+  "skills": [
+    {
+      "record": {
+        "id": "data-art",
+        "version": "0.2.18",
+        "directory": "skills/releases/data-art/0.2.18",
+        "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
+        "status": "experimental",
+        "facets": {
+          "material": [
+            "structured-data"
+          ],
+          "encoding": [
+            "data-relationships",
+            "bindings"
+          ],
+          "composition": [
+            "visual-direction"
+          ],
+          "interaction": [
+            "creator-continuation"
+          ],
+          "technology": [
+            "workbench-cli",
+            "ava"
+          ],
+          "delivery": [
+            "standalone-web",
+            "poster"
+          ],
+          "method": [
+            "creative-decisions",
+            "co-creation",
+            "prototype-comparison"
+          ]
+        },
+        "requires": [],
+        "conflicts": [],
+        "provenance": {
+          "kind": "project",
+          "sources": [
+            "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+            "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+            "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+            "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+          ],
+          "note": "Adds on-demand reading of published Visloom community works with the agent host’s web tools."
+        }
+      },
+      "resources": [
+        {
+          "path": "references/creative-decisions.md",
+          "bytes": 2293,
+          "sha256": "11fe8e842cdf19a5cfadd0b4be5869ed46d19f4a38c10abba419917e3bd993bd"
+        },
+        {
+          "path": "references/data-expression.md",
+          "bytes": 2822,
+          "sha256": "11beb62db4bf2f1f135676034cdc4d230b263ccd4d5103f49722071e1d535782"
+        },
+        {
+          "path": "references/ink-marks.md",
+          "bytes": 4761,
+          "sha256": "76e5bde255f6d57477a6e059b38d756a94da09b5e954548a1266fa07300c7ef2"
+        },
+        {
+          "path": "references/mcp.md",
+          "bytes": 1336,
+          "sha256": "4f2deb1115474f1586f57b47cf2a779230135d0f118f9cc8bd5ecd0ecc036269"
+        },
+        {
+          "path": "references/production.md",
+          "bytes": 1932,
+          "sha256": "553092b794444a26e016efba86e7096c5f0b695fa2e1ee14489f83f8f1eaeeec"
+        },
+        {
+          "path": "references/visual-direction.md",
+          "bytes": 2257,
+          "sha256": "a62f9dfbfcf4738b23e6dc877d45e3e62ea76ffe7151156967c718b3f8ed7dc3"
+        },
+        {
+          "path": "references/workbench.md",
+          "bytes": 5612,
+          "sha256": "6ef68d228279f95dd2a9c121f4451a331b3c140f370e650ea4c4327043902186"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 3981,
+          "sha256": "038daed154a9bb973ebf9059344ee34f4873ad810a49f8ad1f9d171cffa7f0f5"
+        }
+      ],
+      "digest": "a762ff3eb3968358fd2efe48c4d3548fca5d5fd54c5d40fb4e77a23433168550"
+    }
+  ],
+  "digest": "0d3f1bc3a04b3d379c2adb2f223f02a243a875de6f826f400abf16f00a665231"
+}

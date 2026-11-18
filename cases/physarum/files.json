@@ -1,0 +1,30 @@
+[
+  {
+    "source": "artworks/physarum/artwork.ts",
+    "target": "src/artwork.ts"
+  },
+  {
+    "source": "artworks/physarum/engine.ts",
+    "target": "src/engine.ts"
+  },
+  {
+    "source": "artworks/physarum/model.ts",
+    "target": "src/model.ts"
+  },
+  {
+    "source": "artworks/physarum/shaders.ts",
+    "target": "src/shaders.ts"
+  },
+  {
+    "source": "artworks/physarum/snapshot.ts",
+    "target": "src/snapshot.ts"
+  },
+  {
+    "source": "artworks/physarum/state.ts",
+    "target": "src/state.ts"
+  },
+  {
+    "source": "artworks/physarum/observations.ts",
+    "target": "src/observations.ts"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "spanYears", "label": "轨迹覆盖年数", "type": "number", "default": 320000, "min": 0, "max": 320000, "step": 1000, "group": "时间", "role": "data" },
+  { "id": "epochYear", "label": "观测年份（相对 J2000）", "type": "number", "default": 0, "min": -160000, "max": 160000, "step": 1, "group": "时间", "role": "runtime" },
+  { "id": "immersive", "label": "进入星空", "type": "boolean", "default": false, "group": "观测视角", "role": "art" },
+  { "id": "viewYaw", "label": "天球方位", "type": "number", "default": -36, "min": -180, "max": 180, "step": 1, "group": "观测视角", "role": "art" },
+  { "id": "viewPitch", "label": "天球俯仰", "type": "number", "default": 22, "min": -85, "max": 85, "step": 1, "group": "观测视角", "role": "art" },
+  { "id": "selectedStar", "label": "选中恒星（HYG 编号，0 取消）", "type": "number", "default": 0, "min": 0, "max": 200000, "step": 1, "group": "观测视角", "role": "runtime" }
+]

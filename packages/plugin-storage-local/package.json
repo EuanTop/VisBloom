@@ -1,0 +1,4 @@
+{
+  "name": "@art/plugin-storage-local", "version": "0.1.0", "private": true, "type": "module",
+  "exports": "./src/index.ts", "dependencies": { "@art/contracts": "0.1.0", "better-sqlite3": "13.0.3" }
+}

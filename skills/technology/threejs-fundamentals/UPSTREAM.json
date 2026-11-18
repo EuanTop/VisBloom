@@ -1,0 +1,23 @@
+{
+  "repository": "CloudAI-X/threejs-skills",
+  "commit": "0e181866f095b5f06d005133876e926515390d95",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "CloudAI-X",
+      "url": "https://github.com/CloudAI-X"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-fundamentals/SKILL.md",
+      "gitBlob": "85c223750c222dc91edd2c08383a6b3f7e7b85fe",
+      "bytes": 23598
+    }
+  ]
+}

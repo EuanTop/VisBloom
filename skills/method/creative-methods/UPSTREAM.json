@@ -1,0 +1,189 @@
+{
+  "repository": "NousResearch/hermes-agent",
+  "commit": "546146a7907633b94a8307544c31713f6d931ae9",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "SHL0MS",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/SKILL.md"
+    },
+    {
+      "name": "Nous Research",
+      "url": "https://github.com/NousResearch"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/SKILL.md",
+      "gitBlob": "003f7f49781a6bb0a092315be1eb2ad19392e509",
+      "bytes": 10434
+    },
+    {
+      "path": "upstream/references/anti-slop.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/anti-slop.md",
+      "gitBlob": "afad3470e32b30c11e1f63d9361270e76bfb2854",
+      "bytes": 7223
+    },
+    {
+      "path": "upstream/references/exercises.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/exercises.md",
+      "gitBlob": "c958583cd6046df6f223847d43b699d2bd6671b0",
+      "bytes": 6069
+    },
+    {
+      "path": "upstream/references/full-prompt-library.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/full-prompt-library.md",
+      "gitBlob": "9ae0c4e5b9a446ce1ab44973f538dbd7cfc4c2d2",
+      "bytes": 8119
+    },
+    {
+      "path": "upstream/references/heuristics.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/heuristics.md",
+      "gitBlob": "48b32aba1c818161eb47bd6e94c80cc408ede294",
+      "bytes": 5133
+    },
+    {
+      "path": "upstream/references/method-catalog.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/method-catalog.md",
+      "gitBlob": "5c797348847b602af21d4fdee49e801b5ffc53ca",
+      "bytes": 4932
+    },
+    {
+      "path": "upstream/references/methods/affinity-diagrams.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/affinity-diagrams.md",
+      "gitBlob": "b9341c8922b7033d4ed77a210fc3191cc7f6bd25",
+      "bytes": 4661
+    },
+    {
+      "path": "upstream/references/methods/analogy-and-blending.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/analogy-and-blending.md",
+      "gitBlob": "b4672f7f0f9b8f0df9a46aecf62d560136b9ed9b",
+      "bytes": 5330
+    },
+    {
+      "path": "upstream/references/methods/biomimicry.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/biomimicry.md",
+      "gitBlob": "54b675982eda05dbcfe402c472a401c07fbc2adc",
+      "bytes": 4596
+    },
+    {
+      "path": "upstream/references/methods/chance-and-remix.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/chance-and-remix.md",
+      "gitBlob": "873a38d76a71b472f2b211518b01b66b43222598",
+      "bytes": 3839
+    },
+    {
+      "path": "upstream/references/methods/compression-progress.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/compression-progress.md",
+      "gitBlob": "043fa36cd4e80f0a31df39f7f9a716a2948fdb95",
+      "bytes": 3024
+    },
+    {
+      "path": "upstream/references/methods/creative-discipline.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/creative-discipline.md",
+      "gitBlob": "1dd8e04285f4f1a11e5eb686a5b5607ec261acdb",
+      "bytes": 5057
+    },
+    {
+      "path": "upstream/references/methods/defamiliarization.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/defamiliarization.md",
+      "gitBlob": "59b14220ee630bea6370b217c87312f1d43d1016",
+      "bytes": 4180
+    },
+    {
+      "path": "upstream/references/methods/derive-and-mapping.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/derive-and-mapping.md",
+      "gitBlob": "3257aff71216a84930df317a74a89e3ecd745b7f",
+      "bytes": 4298
+    },
+    {
+      "path": "upstream/references/methods/first-principles.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/first-principles.md",
+      "gitBlob": "8ab64874cc5141451414d5ace9950b603801ebb3",
+      "bytes": 4234
+    },
+    {
+      "path": "upstream/references/methods/jobs-to-be-done.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/jobs-to-be-done.md",
+      "gitBlob": "af467b7f78279d93f69794f585f0db6a4bca9905",
+      "bytes": 4014
+    },
+    {
+      "path": "upstream/references/methods/lateral-provocations.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/lateral-provocations.md",
+      "gitBlob": "9fbb9deda0ec53ff8bcac06f947d40e2dad4ee3e",
+      "bytes": 3780
+    },
+    {
+      "path": "upstream/references/methods/leverage-points.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/leverage-points.md",
+      "gitBlob": "f3c003914b00f026c8db527bd0532bf421415538",
+      "bytes": 4674
+    },
+    {
+      "path": "upstream/references/methods/oblique-strategies.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/oblique-strategies.md",
+      "gitBlob": "c2e7f772154303146ceddc6941e2fdc2463b945f",
+      "bytes": 2916
+    },
+    {
+      "path": "upstream/references/methods/oulipo.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/oulipo.md",
+      "gitBlob": "502ace54dd86af486fe606c9a424612a5527adfc",
+      "bytes": 3313
+    },
+    {
+      "path": "upstream/references/methods/pataphysics.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/pataphysics.md",
+      "gitBlob": "ff652a803ce08bb6f14656d51073d226d480b233",
+      "bytes": 3934
+    },
+    {
+      "path": "upstream/references/methods/pattern-languages.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/pattern-languages.md",
+      "gitBlob": "a902cf697aeb09564b4d72b65a255b9e92b17571",
+      "bytes": 4608
+    },
+    {
+      "path": "upstream/references/methods/polya.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/polya.md",
+      "gitBlob": "837c2728877a048e263363644ba7335c2720ce07",
+      "bytes": 3572
+    },
+    {
+      "path": "upstream/references/methods/premortem-and-inversion.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/premortem-and-inversion.md",
+      "gitBlob": "44f65f2631b45fa8df18b46a5a7609c7a0c3a8bd",
+      "bytes": 3756
+    },
+    {
+      "path": "upstream/references/methods/scamper.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/scamper.md",
+      "gitBlob": "1c9295db598436e2759f6570deaf5d67324cf38d",
+      "bytes": 3575
+    },
+    {
+      "path": "upstream/references/methods/story-skeletons.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/story-skeletons.md",
+      "gitBlob": "df82d970914ef327e8faf1e9247c3700fc941f4b",
+      "bytes": 6211
+    },
+    {
+      "path": "upstream/references/methods/triz-principles.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/triz-principles.md",
+      "gitBlob": "bcbb3d4bd1237751d87c2853d018d1c56c23355c",
+      "bytes": 6021
+    },
+    {
+      "path": "upstream/references/methods/volume-generation.md",
+      "source": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/references/methods/volume-generation.md",
+      "gitBlob": "0b822d4e4cd8b4a06aefad120de4b34b2c067445",
+      "bytes": 3909
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+import {afterEach,expect,it,vi} from 'vitest';
+import {createCanvasRenderer} from '../packages/plugin-renderer-canvas/src/index';
+import type {Project} from '@art/contracts';
+afterEach(()=>{vi.unstubAllGlobals();vi.restoreAllMocks();});
+it('reports a failed capture to its job without covering or disposing a valid artwork',async()=>{
+ let receive:(event:any)=>void=()=>{};const onError=vi.fn(),frames:any[]=[];
+ vi.stubGlobal('window',{addEventListener:(_name:string,fn:any)=>receive=fn,removeEventListener(){}});
+ vi.stubGlobal('document',{createElement:()=>{const frame={style:{cssText:''},contentWindow:{postMessage:vi.fn()},setAttribute:vi.fn(),remove:vi.fn()};frames.push(frame);return frame;}});
+ const host={style:{},append:vi.fn()},onAck=vi.fn(),plugin=createCanvasRenderer({load:async()=>({hash:'build',codeHash:'source',html:'<body/>'}),onError});
+ const instance=plugin.mount(host as unknown as HTMLElement,onAck);
+ const project={id:'p',codeHash:'source',revision:1,state:{parameters:{},mapping:{field:'',target:'weight',transform:'linear'},seed:1,time:0,paused:true}} as Project;
+ instance.apply({project,buildHash:'build',revision:1,time:0});await vi.waitFor(()=>expect(frames).toHaveLength(1));
+ const send=(type:string,body:any)=>receive({source:frames[0].contentWindow,data:{channel:'art-runtime-v1',type,...body}});
+ send('ready',{});send('applied',{ack:{revision:1,buildHash:'build',frameTime:0,objects:[]}});
+ frames[0].contentWindow.postMessage.mockClear();
+ const capture=instance.capture({id:'capture',revision:1,buildHash:'build',width:1200,height:1600,time:10});
+ expect(frames[0].contentWindow.postMessage).toHaveBeenCalledTimes(1);
+ expect(frames[0].contentWindow.postMessage).toHaveBeenCalledWith(expect.objectContaining({type:'capture',request:expect.objectContaining({time:10})}),'*');
+ const rejection=expect(capture).rejects.toThrow('unsupported asset');
+ send('error',{requestId:'capture',message:'unsupported asset'});await rejection;
+ expect(onError).not.toHaveBeenCalled();expect(frames[0].remove).not.toHaveBeenCalled();
+ send('error',{message:'artwork crashed'});expect(onError).toHaveBeenCalledWith('artwork crashed');instance.dispose();
+});

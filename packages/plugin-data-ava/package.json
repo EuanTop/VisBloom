@@ -1,0 +1,5 @@
+{
+  "name": "@art/plugin-data-ava", "version": "0.1.0", "private": true, "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": { "@art/contracts": "0.1.0", "@antv/ava": "4.0.0" }
+}

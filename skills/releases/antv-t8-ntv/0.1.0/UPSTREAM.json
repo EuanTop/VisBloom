@@ -1,0 +1,23 @@
+{
+  "repository": "antvis/chart-visualization-skills",
+  "commit": "a105fa12a9fa41fccccc2eba7f4b34973628f5d3",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "AntV Visualization Team",
+      "url": "https://github.com/antvis"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/skills/antv-t8-ntv/SKILL.md",
+      "gitBlob": "99f868d457e341436a50dd207ca5a2b721d49528",
+      "bytes": 18189
+    }
+  ]
+}

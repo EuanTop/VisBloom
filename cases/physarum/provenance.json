@@ -1,0 +1,831 @@
+{
+  "title": "Physarum polycephalum time-lapse imaging: 24 dish series from four six-dish experiments (OME-Zarr)",
+  "doi": "10.5281/zenodo.22868368",
+  "creators": [
+    "Kyle Harrington",
+    "Iris Harrington"
+  ],
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_record": "https://zenodo.org/records/22868368",
+  "source_page": "https://kyleharrington.com/physarum/",
+  "source_archive": {
+    "filename": "physarum-001-dish0-r0c0.ome.zarr.zip",
+    "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+    "bytes": 4530582127,
+    "publisher_md5": "md5:e090797b24402a486189ed19863520c8",
+    "publisher_sha256": "393b0b5320732f7748cf955a541ff2b9a14524594e259b4893a922c69c9449fb",
+    "whole_archive_checksum_verified": false
+  },
+  "frame": {
+    "index": 0,
+    "width": 1276,
+    "height": 1169,
+    "channels": "RGB",
+    "dtype": "uint8",
+    "timestamp_utc_ns": "1693074049000000000",
+    "timestamp_utc": "2023-08-26T18:20:49+00:00",
+    "timestamp_local": "2023-08-26T14:20:49-04:00",
+    "source_png_filename": "physarum_20230826_142049.png",
+    "source_full_scan_png_sha256": "50979c8b744dfaab17c10f11ea139d628514b68af6a0c56be492340683ab6369",
+    "source_full_scan_shape_yxc": [
+      3508,
+      2552,
+      3
+    ],
+    "crop_origin_yx_in_full_scan": [
+      0,
+      0
+    ],
+    "dish_circle_xyr_px": [
+      608.0,
+      608.0,
+      504.0
+    ],
+    "dish_circle_method": "pilot_segment.detect_circle (Canny + Hough at 1/4 scale), median center/radius",
+    "dish_circle_review_status": "unreviewed",
+    "geometry_review_flags": [
+      "radius varies by more than 3% across fitted frames"
+    ],
+    "dish_support_pixels": 1443336,
+    "qc_flags": 0,
+    "rgb_pixel_sha256": "789ddad3ff2809a1bd3c9034d712ab1452a1b3dac190aae8df53cb5d69b18557",
+    "png_sha256": "385d0323e051838bc8fdc77aa0df205203b72c980d5ec1ac7f3306a24b1fb4f7",
+    "chunks": [
+      {
+        "index_tcyx": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "archive_range_inclusive": [
+          78977,
+          750752
+        ],
+        "compressed_bytes": 671776,
+        "sha256": "59706996ca417a04dd652f2b60356974d3cde7c903b47166acbdff4c10b55253"
+      },
+      {
+        "index_tcyx": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "archive_range_inclusive": [
+          3154047,
+          3290730
+        ],
+        "compressed_bytes": 136684,
+        "sha256": "8a30706bc8ff4973fc4615b421406e4810a75aec81462f65fbe6a17ec4c350fb"
+      },
+      {
+        "index_tcyx": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "archive_range_inclusive": [
+          2821663,
+          2905415
+        ],
+        "compressed_bytes": 83753,
+        "sha256": "8296caf68d49914abaf24f3fb5860d8c7d3881f8726eae45c7d7b52e01ac1631"
+      },
+      {
+        "index_tcyx": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "archive_range_inclusive": [
+          3700342,
+          3712891
+        ],
+        "compressed_bytes": 12550,
+        "sha256": "af93bf5441156ff324ac33b5bba54274624fbc50907b9c50137c5fd0075c5072"
+      },
+      {
+        "index_tcyx": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "archive_range_inclusive": [
+          1421509,
+          2121600
+        ],
+        "compressed_bytes": 700092,
+        "sha256": "5da1ff9e2f8d3bce1c006830be7c032dfca9f5d413372cc29c2e032e0bec9b41"
+      },
+      {
+        "index_tcyx": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "archive_range_inclusive": [
+          3427299,
+          3563573
+        ],
+        "compressed_bytes": 136275,
+        "sha256": "7460a07a9f424df047f54f3e805ec1f34cf9e184b213c727f08f70b237316314"
+      },
+      {
+        "index_tcyx": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "archive_range_inclusive": [
+          2988773,
+          3071330
+        ],
+        "compressed_bytes": 82558,
+        "sha256": "f305d9d237d2d6cffff262d5faa4828600ead0e12b4c4006abf636e28b72bcd3"
+      },
+      {
+        "index_tcyx": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "archive_range_inclusive": [
+          3725535,
+          3738276
+        ],
+        "compressed_bytes": 12742,
+        "sha256": "47dbad903791b4353bdd2ee2c58a562b580679a92bd775269d3bd4fe12f06a40"
+      },
+      {
+        "index_tcyx": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "archive_range_inclusive": [
+          7418416,
+          8021292
+        ],
+        "compressed_bytes": 602877,
+        "sha256": "c59989943231c949acb1fb0f27478d01bbb5a026c1237eacfe1965a80b8a9ff1"
+      },
+      {
+        "index_tcyx": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "archive_range_inclusive": [
+          8780505,
+          8908194
+        ],
+        "compressed_bytes": 127690,
+        "sha256": "e5993de6d341c7ca861873eb42bc58b25fb2a52df2aa1dad686a58e538171718"
+      },
+      {
+        "index_tcyx": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "archive_range_inclusive": [
+          8623597,
+          8702112
+        ],
+        "compressed_bytes": 78516,
+        "sha256": "6f6159c1b51c2ed66488d4c04c21cac0b95c67d2a25574990f7ade20ac6cf659"
+      },
+      {
+        "index_tcyx": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "archive_range_inclusive": [
+          9035765,
+          9047752
+        ],
+        "compressed_bytes": 11988,
+        "sha256": "56091760f9951c1a8c7c15e992a70d79e34977b1a6ad9a6f69c669b5da82ea84"
+      }
+    ]
+  },
+  "calibration": {
+    "pixel_pitch_mm": 0.08467,
+    "scanner_dpi": 300,
+    "exact_mm_per_pixel_from_dpi": 0.08466666666666667,
+    "corrected_by": [
+      "https://zenodo.org/api/records/22868368",
+      "https://kyleharrington.com/physarum/"
+    ],
+    "stored_estimate_mm_per_pixel_do_not_use": 0.08928571428571429,
+    "stored_estimate_basis": "fitted circle diameter assumed to be the 90 mm outer dish"
+  },
+  "extraction": {
+    "script": "scripts/prepare-physarum-data.py",
+    "source_payload_bytes": 2872248,
+    "source_payload_limit_bytes": 33554432,
+    "full_archive_downloaded": false,
+    "method": "ZIP64 directory, end-of-shard CRC32C index, twelve frame-zero Blosc chunks via exact HTTP 206 ranges",
+    "requests": [
+      {
+        "url": "https://zenodo.org/api/records/22868368",
+        "range": null,
+        "bytes": 14561,
+        "sha256": "5e3d45c3c84eba909e02a3601a428e7e79f635de3caa1ff9cf912b84f2a0560a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/README.md/content",
+        "range": null,
+        "bytes": 8901,
+        "sha256": "386b374f91ab64d5f583ca60c0dcfe911ba297c42028994b3d09d4e59080a18d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/release-summary.json/content",
+        "range": null,
+        "bytes": 36246,
+        "sha256": "09927a4c9e4cd9bc743d28a60dc9b85734d7383ff4323967de0d02f73652cb67"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/QC-NOTES.md/content",
+        "range": null,
+        "bytes": 2937,
+        "sha256": "63b256d887ea60e0dcd4028b13c52f1e35824a2020a5452aea7350d1db5a261c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/CITATION.cff/content",
+        "range": null,
+        "bytes": 1103,
+        "sha256": "5c7962d54e9613aef508d9b442be78a3909ae034428f5392b82ddefb58a193e8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/SHA256SUMS/content",
+        "range": null,
+        "bytes": 2472,
+        "sha256": "14fe6b18308aed02310ba647fc24809a0651ddb93f92f181b6a5429da9416a57"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/SHA256SUMS-release-documents/content",
+        "range": null,
+        "bytes": 3376,
+        "sha256": "b081583706842bb3b5cb2346d055904d9768e98b4a895a3ddf1e9d45eee622eb"
+      },
+      {
+        "url": "https://kyleharrington.com/physarum/",
+        "range": null,
+        "bytes": 31348,
+        "sha256": "77f7ef40b9e41318a5118957124ceb18febac88f44acfc4dfdfac711160b2316"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+        "range": null,
+        "bytes": 18657,
+        "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530582105,
+          4530582126
+        ],
+        "bytes": 22,
+        "sha256": "85596ccbc8157e33bb79a61eeb88cd08a5809f2b9cf6c6e0b109d30c0d823223"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530582085,
+          4530582104
+        ],
+        "bytes": 20,
+        "sha256": "96e0c54c9f16f4a7322b67d6019e527b9655a47499485075119f24d03e792a7d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530582029,
+          4530582084
+        ],
+        "bytes": 56,
+        "sha256": "7f3d232de0bb359aebce80e070eb7a6a29e9963367c31540c5f47c788d7c1ec4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530579320,
+          4530582028
+        ],
+        "bytes": 2709,
+        "sha256": "8607240b382ee6dc8b45ce8f483456a26c2d8e60cb3515befb4e42560ab33b50"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          0,
+          29
+        ],
+        "bytes": 30,
+        "sha256": "57d4dcd923c7bf0f67553b52c1463cad7b5cb340358cc18d3eb79c9dc6d0fd6e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          30,
+          38
+        ],
+        "bytes": 9,
+        "sha256": "b03c070e279753168d3fde15f2617363218d32a00078ef32987c74e83f62b8e4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          59,
+          10675
+        ],
+        "bytes": 10617,
+        "sha256": "cb6bf0d3103c60267dbca70832aee70b1963383e9e95651b104fc77b7030814f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          10676,
+          10705
+        ],
+        "bytes": 30,
+        "sha256": "17afe194da2df9acc7cfa7dc4891efce66aba9c2884a43560f9cb06f35188d91"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          10706,
+          10735
+        ],
+        "bytes": 30,
+        "sha256": "a26783c2e9794b3ba541c3a0c59a48032225ac71072537f3251d94eb919dfd6b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          10756,
+          11349
+        ],
+        "bytes": 594,
+        "sha256": "d3b8e3c68b84e0f5ec068f2af190a2b71cb507149c39834a41bf85ca2355fb7b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          65713,
+          65742
+        ],
+        "bytes": 30,
+        "sha256": "6c0512420199d8d4558946af83dca19da31ff8649f66170c076ff4ebc465f74c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          65743,
+          65777
+        ],
+        "bytes": 35,
+        "sha256": "7d9f987a00641d78228125283ba59afecc19cf1ef49efa37f138e1d6b792f704"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          65798,
+          66423
+        ],
+        "bytes": 626,
+        "sha256": "44d2771fffaae63d04c8cb0c00c9d7c07dfa3d163e8c12873e9af46dfe3abbe6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          74492,
+          74521
+        ],
+        "bytes": 30,
+        "sha256": "5418e3f6fdc65e9affc0a1d018a79049df2202175c58da47b6e76371ef4dd5b8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          74522,
+          74559
+        ],
+        "bytes": 38,
+        "sha256": "4eaaacb6ce0e9e3e4d5a6ae880fd4ea58edababfd43aad2e4722b7bb5832703a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          74580,
+          75234
+        ],
+        "bytes": 655,
+        "sha256": "05a2909362fc54d9b626deda1585c7d17da11cb45879fc497199948e741344dd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75235,
+          75264
+        ],
+        "bytes": 30,
+        "sha256": "3901dae0b7cf7d521f395733dfa903808df4a4dc570579cf152ec4c7a400bb18"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75265,
+          75285
+        ],
+        "bytes": 21,
+        "sha256": "dbb0e36c7b64a678c7a164bc117c60f425f5d2e6c04f85cdf5a8592131d7b5fd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75306,
+          75371
+        ],
+        "bytes": 66,
+        "sha256": "36615682d5be9646729635067a75185212eb0c48d708ef06ad34c1f58dd587d2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          76759,
+          76788
+        ],
+        "bytes": 30,
+        "sha256": "183b9efc6c3cabea16370f83ca1837ac7902c4fa14222d0513e4853eb293edfc"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          76789,
+          76810
+        ],
+        "bytes": 22,
+        "sha256": "0f314a402b5a52d02d678107d535bf66335d0734e1c67668a748925aedeefd56"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          76831,
+          77540
+        ],
+        "bytes": 710,
+        "sha256": "39162126028d4ea16dc0f2c8fa0014a8722f77a848524b684aad76998af0b209"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77998,
+          78027
+        ],
+        "bytes": 30,
+        "sha256": "a1c74dce71ec6d420222c09e915f2d73ad9e3ccfb0c2c1c18c98a07c482d4c16"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78028,
+          78068
+        ],
+        "bytes": 41,
+        "sha256": "415983aaf34e212fe90c29b31007b049c44f519a986ba88263af062597f405d9"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78089,
+          78776
+        ],
+        "bytes": 688,
+        "sha256": "e10850b39b8f397f82660da97f91698bbef64024924623bd2a232141c36c9823"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78777,
+          78806
+        ],
+        "bytes": 30,
+        "sha256": "d5d16357d41a1a0ea8ceaedd61a753bdbc88f6dadb9581a0363b1d70c4b9ff6b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78807,
+          78828
+        ],
+        "bytes": 22,
+        "sha256": "980c4705aab0ea9885d5ac68d179576e50497e21ca2a846bbd172aa7f9679fa8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78849,
+          78914
+        ],
+        "bytes": 66,
+        "sha256": "36615682d5be9646729635067a75185212eb0c48d708ef06ad34c1f58dd587d2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530577958,
+          4530577987
+        ],
+        "bytes": 30,
+        "sha256": "2ec55042b00fda1a9f7c12c7ef8bd447a413cb7d30b2f4ac3c1fda699c245e60"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530577988,
+          4530577999
+        ],
+        "bytes": 12,
+        "sha256": "6719ec65fdf0dd43043a72c91e04e19d16015b55a8a8b216ce667a240ce6776d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530578020,
+          4530579319
+        ],
+        "bytes": 1300,
+        "sha256": "db12d6dbb6fcfaddc51ed3871456e9dab14457f639f7502a6502dac21c2f9ac4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78915,
+          78944
+        ],
+        "bytes": 30,
+        "sha256": "165dfcd2fb6b19b312a0db1383880c8ed624699fc16baae53534f66d18b3062f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          169539025,
+          169551316
+        ],
+        "bytes": 12292,
+        "sha256": "d80a60197d1bcb9d49c0c2af1b18571bb7d106c1c14af0ba972cbcc7435a7489"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78977,
+          750752
+        ],
+        "bytes": 671776,
+        "sha256": "59706996ca417a04dd652f2b60356974d3cde7c903b47166acbdff4c10b55253"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3154047,
+          3290730
+        ],
+        "bytes": 136684,
+        "sha256": "8a30706bc8ff4973fc4615b421406e4810a75aec81462f65fbe6a17ec4c350fb"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2821663,
+          2905415
+        ],
+        "bytes": 83753,
+        "sha256": "8296caf68d49914abaf24f3fb5860d8c7d3881f8726eae45c7d7b52e01ac1631"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3700342,
+          3712891
+        ],
+        "bytes": 12550,
+        "sha256": "af93bf5441156ff324ac33b5bba54274624fbc50907b9c50137c5fd0075c5072"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1421509,
+          2121600
+        ],
+        "bytes": 700092,
+        "sha256": "5da1ff9e2f8d3bce1c006830be7c032dfca9f5d413372cc29c2e032e0bec9b41"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3427299,
+          3563573
+        ],
+        "bytes": 136275,
+        "sha256": "7460a07a9f424df047f54f3e805ec1f34cf9e184b213c727f08f70b237316314"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2988773,
+          3071330
+        ],
+        "bytes": 82558,
+        "sha256": "f305d9d237d2d6cffff262d5faa4828600ead0e12b4c4006abf636e28b72bcd3"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3725535,
+          3738276
+        ],
+        "bytes": 12742,
+        "sha256": "47dbad903791b4353bdd2ee2c58a562b580679a92bd775269d3bd4fe12f06a40"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          7418416,
+          8021292
+        ],
+        "bytes": 602877,
+        "sha256": "c59989943231c949acb1fb0f27478d01bbb5a026c1237eacfe1965a80b8a9ff1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          8780505,
+          8908194
+        ],
+        "bytes": 127690,
+        "sha256": "e5993de6d341c7ca861873eb42bc58b25fb2a52df2aa1dad686a58e538171718"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          8623597,
+          8702112
+        ],
+        "bytes": 78516,
+        "sha256": "6f6159c1b51c2ed66488d4c04c21cac0b95c67d2a25574990f7ade20ac6cf659"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          9035765,
+          9047752
+        ],
+        "bytes": 11988,
+        "sha256": "56091760f9951c1a8c7c15e992a70d79e34977b1a6ad9a6f69c669b5da82ea84"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          66424,
+          66453
+        ],
+        "bytes": 30,
+        "sha256": "aa20fd1c55ae8d86ce9baa7002550063afd09a0d7b8c533756f1dee45b3cfa80"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          66454,
+          66485
+        ],
+        "bytes": 32,
+        "sha256": "e893dd2c62d0787a9905c4f86a7ca3adcbff44256f08d33c522fe4757b9343b1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          66506,
+          74491
+        ],
+        "bytes": 7986,
+        "sha256": "1defaabfa9c44d1f108ab2f5808586384a09acafa145f7b5ca9aaa61cf25728b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77541,
+          77570
+        ],
+        "bytes": 30,
+        "sha256": "6654576b5a379e2564ef2dfa00481658a313e631a321a3349420ce8dbb0c6981"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77571,
+          77607
+        ],
+        "bytes": 37,
+        "sha256": "f6537c0a4218536e31c59ac923361918d489baf2e8b8b530a0e5b65af42ed5d0"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77628,
+          77997
+        ],
+        "bytes": 370,
+        "sha256": "347e8791d510e6d30f7bd9dbe1eb16e651b811bc608bd59448b6fe83dfdf364d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          11350,
+          11379
+        ],
+        "bytes": 30,
+        "sha256": "389464308ebb2a3922a566c014fe2326b93316760e61935c6af266d0278fc68c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          11380,
+          11410
+        ],
+        "bytes": 31,
+        "sha256": "7c0b02c7c7318fcdea3d11d9a29cfd75aba43e72dd787ad881371a7fab3365c4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          11431,
+          65712
+        ],
+        "bytes": 54282,
+        "sha256": "7ca6e82cafdca78f93d75fe274b7b7ea926639ebba2a47ec477abcb45d40840c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75372,
+          75401
+        ],
+        "bytes": 30,
+        "sha256": "2d93f10a4e510075a2b5dfb7b50409dd4b75a113bf84fe21ab1b9b8b0b2f2f47"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75402,
+          75419
+        ],
+        "bytes": 18,
+        "sha256": "de74ba0f02a1d24c059073b683bfc5c79b94dc1b463c8efdcbb01de2dc30d141"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75440,
+          76758
+        ],
+        "bytes": 1319,
+        "sha256": "8e141d2871df70ad71f4a92434a81609d7f4188ccf5ffb6dc81ce2e02c5fd18f"
+      }
+    ]
+  },
+  "limitations": [
+    "Only frame zero, experiment 001 dish 0, is extracted; no biological time series or observed growth trajectory is reproduced.",
+    "Native RGB dish crop with publisher dish-support masking; no downsampling, recoloring, registration or flip is applied.",
+    "Flatbed scanner images through the dish base; image is mirrored relative to an above-dish view.",
+    "Per-frame Hough circle fit is publisher-provided and unreviewed; it is not a verified physical dish boundary.",
+    "Use corrected 300-dpi calibration; archive OME spatial scale is an estimate superseded by author correction.",
+    "Whole-archive MD5/SHA256 and full-scan source-PNG SHA256 are publisher values, not verified by this partial extraction.",
+    "ZIP CRC32 verified for complete small entries; shard-index CRC32C verified; full image-shard ZIP CRC cannot be verified without downloading other frames.",
+    "No food coordinates, segmentation, inoculum annotation, network measurements or experimental conclusions are inferred."
+  ],
+  "derived_layout": {
+    "path": "data/sites.csv",
+    "sha256": "531e8095b0de1a1708421b771694c8d85c8860fe16e06a76baa1a7d33f9ed2c3",
+    "nutrient_regions": 17,
+    "creator_seeds": 1,
+    "annotation": "reference/annotations.json",
+    "review_status": "main-agent visual review; not independently verified biological labels",
+    "creator_initialization": "Diffuse circular field (center .5,.5; radius .46), an artistic initialization; not observed inoculum"
+  }
+}

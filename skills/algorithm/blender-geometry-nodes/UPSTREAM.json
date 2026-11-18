@@ -1,0 +1,41 @@
+{
+  "repository": "EL4CTEO/blender-skills",
+  "commit": "389f28addc79b87b28764898e38e7bf408d14b77",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "EL4CTEO",
+      "url": "https://github.com/EL4CTEO"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-geometry-nodes/SKILL.md",
+      "gitBlob": "16717c1a1ce0187721cc5c0706f475bc17757149",
+      "bytes": 6020
+    },
+    {
+      "path": "upstream/references/recipes.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-geometry-nodes/references/recipes.md",
+      "gitBlob": "ca9097995d83fcfe6dd454c308f7aa7f7c532c22",
+      "bytes": 3938
+    },
+    {
+      "path": "upstream/scripts/_bpyx.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-geometry-nodes/scripts/_bpyx.py",
+      "gitBlob": "9048f6909cdd95254e93a7d478785149beaa4b9a",
+      "bytes": 4503
+    },
+    {
+      "path": "upstream/scripts/gn_builder.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-geometry-nodes/scripts/gn_builder.py",
+      "gitBlob": "5ade425e198a6829eea40eb915d7dab18b2fd7f2",
+      "bytes": 9377
+    }
+  ]
+}

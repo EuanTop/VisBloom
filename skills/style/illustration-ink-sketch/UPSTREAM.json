@@ -1,0 +1,89 @@
+{
+  "repository": "MengTo/Skills",
+  "commit": "d6324a05ca03ce5f6cdba519318d92176dbc43d2",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Meng To",
+      "url": "https://github.com/MengTo"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/SKILL.md",
+      "gitBlob": "129451077f11bc71816c3be87bf3439e36841828",
+      "bytes": 18455
+    },
+    {
+      "path": "upstream/agents/openai.yaml",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/agents/openai.yaml",
+      "gitBlob": "87a5bef9639d691825c9ee8a2c50de42914cf707",
+      "bytes": 274
+    },
+    {
+      "path": "upstream/demo/PROMPT.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/demo/PROMPT.md",
+      "gitBlob": "35769038a214a89c4833c9c141b03a06fdedbee4",
+      "bytes": 2367
+    },
+    {
+      "path": "upstream/demo/index.html",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/demo/index.html",
+      "gitBlob": "bf01370b46e3a664061a57d9933fd9734446f077",
+      "bytes": 886152
+    },
+    {
+      "path": "upstream/examples/hello-world.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/examples/hello-world.svg",
+      "gitBlob": "89792e6360e6097370276ff528f3ba2d096a6a2a",
+      "bytes": 229189
+    },
+    {
+      "path": "upstream/examples/merge-conflict.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/examples/merge-conflict.svg",
+      "gitBlob": "00d3e57f3a171dc5050e74a6348e4d738e5888f3",
+      "bytes": 317124
+    },
+    {
+      "path": "upstream/examples/slow-build.svg",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/examples/slow-build.svg",
+      "gitBlob": "e8513cccc75b388bb8fe5e6bf725a3fd883cfe23",
+      "bytes": 330885
+    },
+    {
+      "path": "upstream/references/craft.md",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/references/craft.md",
+      "gitBlob": "3f8bb5a1e6013c59c0e60c4786b7e838e6b66e19",
+      "bytes": 10528
+    },
+    {
+      "path": "upstream/scripts/ink-kit.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs",
+      "gitBlob": "e68c80fb367b551df616b94b12a8a199a8be2f91",
+      "bytes": 38009
+    },
+    {
+      "path": "upstream/scripts/lint.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/scripts/lint.mjs",
+      "gitBlob": "a2b17ac9e429829ce6ddcc358c10ba25ce7ad323",
+      "bytes": 3079
+    },
+    {
+      "path": "upstream/scripts/render.mjs",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/scripts/render.mjs",
+      "gitBlob": "73c36aa871e0c2aedac6ffcb34d45e94661c8ff6",
+      "bytes": 5071
+    },
+    {
+      "path": "upstream/style.json",
+      "source": "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/style.json",
+      "gitBlob": "b96c7c407915beaa14db7c1fd4dabdcd26c11d7e",
+      "bytes": 4252
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>与 Agent 继续创作 · Visloom</title><link rel="icon" type="image/svg+xml" href="/visloom.svg"><style>body{max-width:760px;margin:70px auto;padding:0 24px;background:#f8f7f2;color:#333d30;font:16px/1.9 system-ui}h1{font-size:30px}h2{font-size:20px;margin-top:36px}pre{background:#eeeee5;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:8px}a{color:#526a45}details{margin-top:32px}summary{cursor:pointer}small{color:#78816f}</style><body><a href="/">← 返回 Visloom</a><h1>与 Agent 继续创作</h1><p>在工作台点“复制给 Agent”，把内容粘贴到已有对话，再告诉它你想改什么。保持工作台运行，修改会在画面中接上。</p><h2>让 Agent 开始</h2><p>复制的信息包括工程目录、项目 ID 和服务地址。让它先读取工程里的 <code>skills/core/data-art/SKILL.md</code>，然后使用项目 CLI：</p><pre>npm run --silent visloom -- --help
+npm run --silent visloom -- context --project 项目ID</pre><p>先读取当前作品，再继续修改。创作方法在 Skill 中，命令负责执行；默认总览只提供必要信息，源码与数据按需读取。</p><h2>查询与画面</h2><p>查询用于分析。只有明确“应用到画面”才会更改作品使用的数据。截图需要当前作品的画布保持打开；导出文件确认完成后再交付。</p><details><summary>需要 MCP 的宿主</summary><p>如果宿主通过 MCP 使用工具，可配置以下服务。它与 CLI 共用同一份项目。</p><pre>command: npm
+args: ["run", "--silent", "mcp"]
+cwd: 本工程的绝对路径
+env:
+  ART_WORKBENCH_URL: http://127.0.0.1:4318</pre><p>使用 project_context 的 summary 视图读取概览，dataset_inspect 临时分析，dataset_query 应用到画面。配置生效方式以宿主为准。</p></details></body></html>

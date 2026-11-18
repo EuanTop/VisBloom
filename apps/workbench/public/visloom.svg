@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="ochre" x1=".22" y1="1" x2=".77" y2="0">
+      <stop stop-color="#886347"/>
+      <stop offset=".38" stop-color="#b89368"/>
+      <stop offset=".73" stop-color="#dbbc8d"/>
+      <stop offset="1" stop-color="#9b754f"/>
+    </linearGradient>
+    <pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx=".8" cy="1" r=".38" fill="#f6dcb0"/>
+      <circle cx="3" cy="2.8" r=".48" fill="#281a15"/>
+    </pattern>
+    <g id="bloom">
+      <path d="M-1-5C-5-18-8-33-2-43C-2-34 5-28 5-18C5-13 2-8-1-5Z"/>
+      <path opacity=".84" transform="rotate(46)" d="M-1-5C-6-15-9-28-5-36C-4-28 3-25 4-17C5-12 2-8-1-5Z"/>
+      <path transform="rotate(91)" d="M-1-5C-6-16-9-32-4-42C-4-32 4-26 5-17C5-12 2-8-1-5Z"/>
+      <path opacity=".9" transform="rotate(143)" d="M-1-5C-4-14-8-27-4-35C-3-27 3-22 4-15C4-11 2-7-1-5Z"/>
+      <path transform="rotate(193)" d="M-1-5C-5-18-9-33-4-42C-4-32 4-26 5-17C5-12 2-8-1-5Z"/>
+      <path opacity=".82" transform="rotate(250)" d="M-1-5C-5-14-7-25-4-32C-3-25 3-21 4-14C4-10 2-7-1-5Z"/>
+      <path opacity=".94" transform="rotate(304)" d="M-1-5C-5-15-10-28-7-38C-5-29 3-25 4-17C5-12 2-8-1-5Z"/>
+    </g>
+  </defs>
+  <rect width="96" height="96" rx="18" fill="#08050d"/>
+  <use href="#bloom" transform="translate(48 49)" fill="url(#ochre)"/>
+  <use href="#bloom" transform="translate(48 49)" fill="url(#grain)" opacity=".22"/>
+</svg>

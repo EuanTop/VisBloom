@@ -1,0 +1,47 @@
+{
+  "repository": "maestro-ai-stack/maestro-creative",
+  "commit": "079d9426797bd853993cd99941d141815d192402",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Maestro AI Pte. Ltd.",
+      "url": "https://github.com/maestro-ai-stack"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/skills/generative-art/SKILL.md",
+      "gitBlob": "4146b9e8b3746b5647315fb3edf37d72cd7ab7d8",
+      "bytes": 11603
+    },
+    {
+      "path": "upstream/reference/algorithm-guide.md",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/skills/generative-art/reference/algorithm-guide.md",
+      "gitBlob": "8c3f0413698d7a3905c6b2326eeef12ffcc2b109",
+      "bytes": 9408
+    },
+    {
+      "path": "upstream/scripts/inspire.ts",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/skills/generative-art/scripts/inspire.ts",
+      "gitBlob": "cbb169b302846d77ed3d9410fd9cc8cb5e9b3081",
+      "bytes": 709
+    },
+    {
+      "path": "upstream/scripts/qa.ts",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/skills/generative-art/scripts/qa.ts",
+      "gitBlob": "ce8be4ae666ca36212fc22ee1a848fd0b8654fc5",
+      "bytes": 635
+    },
+    {
+      "path": "upstream/scripts/scaffold.ts",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/skills/generative-art/scripts/scaffold.ts",
+      "gitBlob": "1ec97fced9c4cdaa8aec8dffa62dafed63e992a9",
+      "bytes": 819
+    }
+  ]
+}

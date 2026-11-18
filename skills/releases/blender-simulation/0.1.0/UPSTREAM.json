@@ -1,0 +1,35 @@
+{
+  "repository": "EL4CTEO/blender-skills",
+  "commit": "389f28addc79b87b28764898e38e7bf408d14b77",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "EL4CTEO",
+      "url": "https://github.com/EL4CTEO"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-simulation/SKILL.md",
+      "gitBlob": "082662e07b854b4c0227278dcd6d4b893fc9438f",
+      "bytes": 5883
+    },
+    {
+      "path": "upstream/scripts/_bpyx.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-simulation/scripts/_bpyx.py",
+      "gitBlob": "9048f6909cdd95254e93a7d478785149beaa4b9a",
+      "bytes": 4503
+    },
+    {
+      "path": "upstream/scripts/sim_setup.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-simulation/scripts/sim_setup.py",
+      "gitBlob": "3b0abc85d63739689178d15ee1d1b00f7d7dea46",
+      "bytes": 10097
+    }
+  ]
+}

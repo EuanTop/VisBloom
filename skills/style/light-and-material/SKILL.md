@@ -1,0 +1,21 @@
+---
+name: light-and-material
+description: Make light and material effects for digital or data artwork, including curved-surface reveals, reflection, glass, iridescence and soft transmission. Use for material behavior and light placement in 2D, 3D or mixed imagery.
+---
+
+# Light and material
+
+Identify where the desired effect occurs in a reference. Separate the underlying surface color, the highlight, the light source and the background. Ask whether the interesting property is a moving specular highlight, an emissive surface, light passing through an edge, thin-film color, or a perceptual impression you can draw directly.
+
+- Give specular highlights a reason to appear. Choose a light or environment that creates highlights where the object turns toward it. Tune highlight size and sharpness through surface roughness and light shape. Reserve peak contrast for a few visible edges or facets.
+- For iridescent edges, concentrate the hue shift near selected glancing or curved regions. Keep sufficient surface area in a quieter value range to reveal shape. For sparkle, use sparse localized glints with a visible onset and falloff. Test the silhouette and a close crop so bloom does not cover the surface.
+- For a fixed 2D image, a masked highlight, cutout gradient or pre-rendered layer can express the effect. For a changing view, test the material from multiple angles. Check that perceived color or brightness still reads the intended data relationship under those conditions, or carry that relationship in another channel.
+- Test the exact output size on the actual background. Compare an unlit or neutral version with the material study to see what the treatment added.
+
+## Reveal a second image on the same surface
+
+Establish a material clue first, such as thread direction, thickness or a moving fold. Then let selected parts of that same surface catch the new image. For a fixed view, deform drawn lines or a textured layer once and use the resulting position to decide which parts fall inside the light or image mask. The illuminated shape should inherit enough of the surface movement and spacing to feel attached, and keep enough contour contrast to stay recognizable.
+
+Compare the surface just before the reveal, during it and afterward. If the image reads as a separate layer floating in front, reconnect its edge or texture to the moving surface. If the shape gets lost, try adjusting its edge contrast or the amount of deformation at the defining moment.
+
+References: [Three.js MeshPhysicalMaterial](https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial) and [Lusion's Lost in Parallel Universe](https://exp-lost-in-parallel-universe.lusion.co/).

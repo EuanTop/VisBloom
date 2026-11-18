@@ -1,0 +1,1 @@
+{"name":"@art/agent","version":"0.1.0","private":true,"type":"module","dependencies":{"@art/contracts":"0.1.0","@modelcontextprotocol/server":"2.4.0","playwright":"1.65.0","zod":"4.6.7"}}

@@ -1,0 +1,4242 @@
+{
+  "title": "Physarum polycephalum time-lapse imaging: 24 dish series from four six-dish experiments (OME-Zarr)",
+  "doi": "10.5281/zenodo.22868368",
+  "creators": [
+    "Kyle Harrington",
+    "Iris Harrington"
+  ],
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_record": "https://zenodo.org/records/22868368",
+  "source_page": "https://kyleharrington.com/physarum/",
+  "source_record_sha256": "5e3d45c3c84eba909e02a3601a428e7e79f635de3caa1ff9cf912b84f2a0560a",
+  "source_archive": {
+    "filename": "physarum-001-dish0-r0c0.ome.zarr.zip",
+    "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+    "bytes": 4530582127,
+    "publisher_md5": "md5:e090797b24402a486189ed19863520c8",
+    "publisher_sha256": "393b0b5320732f7748cf955a541ff2b9a14524594e259b4893a922c69c9449fb",
+    "whole_archive_checksum_verified": false
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "frames/frame-0000.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693074049000000000",
+      "timestamp_utc": "2023-08-26T18:20:49+00:00",
+      "seconds_since_frame_zero": 0.0,
+      "source_full_scan_png_sha256": "50979c8b744dfaab17c10f11ea139d628514b68af6a0c56be492340683ab6369",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "789ddad3ff2809a1bd3c9034d712ab1452a1b3dac190aae8df53cb5d69b18557",
+      "png_sha256": "385d0323e051838bc8fdc77aa0df205203b72c980d5ec1ac7f3306a24b1fb4f7",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            78977,
+            750752
+          ],
+          "compressed_bytes": 671776,
+          "sha256": "59706996ca417a04dd652f2b60356974d3cde7c903b47166acbdff4c10b55253"
+        },
+        {
+          "index_tcyx": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3154047,
+            3290730
+          ],
+          "compressed_bytes": 136684,
+          "sha256": "8a30706bc8ff4973fc4615b421406e4810a75aec81462f65fbe6a17ec4c350fb"
+        },
+        {
+          "index_tcyx": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2821663,
+            2905415
+          ],
+          "compressed_bytes": 83753,
+          "sha256": "8296caf68d49914abaf24f3fb5860d8c7d3881f8726eae45c7d7b52e01ac1631"
+        },
+        {
+          "index_tcyx": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3700342,
+            3712891
+          ],
+          "compressed_bytes": 12550,
+          "sha256": "af93bf5441156ff324ac33b5bba54274624fbc50907b9c50137c5fd0075c5072"
+        },
+        {
+          "index_tcyx": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1421509,
+            2121600
+          ],
+          "compressed_bytes": 700092,
+          "sha256": "5da1ff9e2f8d3bce1c006830be7c032dfca9f5d413372cc29c2e032e0bec9b41"
+        },
+        {
+          "index_tcyx": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3427299,
+            3563573
+          ],
+          "compressed_bytes": 136275,
+          "sha256": "7460a07a9f424df047f54f3e805ec1f34cf9e184b213c727f08f70b237316314"
+        },
+        {
+          "index_tcyx": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2988773,
+            3071330
+          ],
+          "compressed_bytes": 82558,
+          "sha256": "f305d9d237d2d6cffff262d5faa4828600ead0e12b4c4006abf636e28b72bcd3"
+        },
+        {
+          "index_tcyx": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3725535,
+            3738276
+          ],
+          "compressed_bytes": 12742,
+          "sha256": "47dbad903791b4353bdd2ee2c58a562b580679a92bd775269d3bd4fe12f06a40"
+        },
+        {
+          "index_tcyx": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            7418416,
+            8021292
+          ],
+          "compressed_bytes": 602877,
+          "sha256": "c59989943231c949acb1fb0f27478d01bbb5a026c1237eacfe1965a80b8a9ff1"
+        },
+        {
+          "index_tcyx": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            8780505,
+            8908194
+          ],
+          "compressed_bytes": 127690,
+          "sha256": "e5993de6d341c7ca861873eb42bc58b25fb2a52df2aa1dad686a58e538171718"
+        },
+        {
+          "index_tcyx": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            8623597,
+            8702112
+          ],
+          "compressed_bytes": 78516,
+          "sha256": "6f6159c1b51c2ed66488d4c04c21cac0b95c67d2a25574990f7ade20ac6cf659"
+        },
+        {
+          "index_tcyx": [
+            0,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            9035765,
+            9047752
+          ],
+          "compressed_bytes": 11988,
+          "sha256": "56091760f9951c1a8c7c15e992a70d79e34977b1a6ad9a6f69c669b5da82ea84"
+        }
+      ]
+    },
+    {
+      "index": 154,
+      "file": "frames/frame-0154.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693120261000000000",
+      "timestamp_utc": "2023-08-27T07:11:01+00:00",
+      "seconds_since_frame_zero": 46212.0,
+      "source_full_scan_png_sha256": "fa7a02244b64cabedf6251fdad6623698a249b1c8166dce6a1d4e6915dd62f07",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "c5f99dd5f79bd9c2f3fe9760b93733405a286a0bf97bc7e6225464065c575b06",
+      "png_sha256": "de26438cf612255454732857a84646a06fac6e9b16e65bced31c93246f3064e6",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            154,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2114486841,
+            2115157417
+          ],
+          "compressed_bytes": 670577,
+          "sha256": "001f01df45d6cf9787a0c481a6ace4c3c6d59633060e9314986b90dada0f577f"
+        },
+        {
+          "index_tcyx": [
+            154,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2117531821,
+            2117668391
+          ],
+          "compressed_bytes": 136571,
+          "sha256": "da30429f62d4b17f2c837c1bcea78b1165f6067e6f431336675140652e3fd5c1"
+        },
+        {
+          "index_tcyx": [
+            154,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2117199452,
+            2117282867
+          ],
+          "compressed_bytes": 83416,
+          "sha256": "012aea32ad5d7e12af88846e4aeaec09faea16bef59536864942385ef97ca19e"
+        },
+        {
+          "index_tcyx": [
+            154,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2118076401,
+            2118088888
+          ],
+          "compressed_bytes": 12488,
+          "sha256": "5b52c1b590fbe16722b42389a850832d9e71ba4a7b7299eaa6044d7049b6102f"
+        },
+        {
+          "index_tcyx": [
+            154,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2115827649,
+            2116513874
+          ],
+          "compressed_bytes": 686226,
+          "sha256": "72ebfee4c9432869f9dadeef26db0b8cbc30d5f332d0cd1bc428b3115a5e1af0"
+        },
+        {
+          "index_tcyx": [
+            154,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2117804366,
+            2117940356
+          ],
+          "compressed_bytes": 135991,
+          "sha256": "42350ccc02b196a0bdfa734ba5d73ac1efabf794c1385b2dd656eaf7dd38fa7e"
+        },
+        {
+          "index_tcyx": [
+            154,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2117365584,
+            2117448786
+          ],
+          "compressed_bytes": 83203,
+          "sha256": "059e407bb0082f283fca13d12d0fe44c78ed34ad0e8ab12980f9a6a8a3f877a6"
+        },
+        {
+          "index_tcyx": [
+            154,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2118101413,
+            2118114017
+          ],
+          "compressed_bytes": 12605,
+          "sha256": "47bd8cfa811b81269dab6454f4ed0cd2540dbf48f30ec51d9d5f462acedfd3df"
+        },
+        {
+          "index_tcyx": [
+            154,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2119764108,
+            2120359967
+          ],
+          "compressed_bytes": 595860,
+          "sha256": "bf78c67341ed58f26ebeddd2726443b2e2fe13163aa9ec4314de9e4cb7a50ed4"
+        },
+        {
+          "index_tcyx": [
+            154,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2121117793,
+            2121244936
+          ],
+          "compressed_bytes": 127144,
+          "sha256": "d6a16305e8b0234b1115580d199b30b15ccefedd21cbdbbbaf1b2449e82e30d1"
+        },
+        {
+          "index_tcyx": [
+            154,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2120960312,
+            2121038944
+          ],
+          "compressed_bytes": 78633,
+          "sha256": "e13e30e2a389ad57c576e306c8e995710157297550cdfbc3baeb4de0f7232803"
+        },
+        {
+          "index_tcyx": [
+            154,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2121373127,
+            2121385199
+          ],
+          "compressed_bytes": 12073,
+          "sha256": "918e4021915be4f94eb9c1cb5c37143df5c766ceb6480f28e94e7a7dd68f75f7"
+        }
+      ]
+    },
+    {
+      "index": 308,
+      "file": "frames/frame-0308.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693166473000000000",
+      "timestamp_utc": "2023-08-27T20:01:13+00:00",
+      "seconds_since_frame_zero": 92424.0,
+      "source_full_scan_png_sha256": "6587998a1ee3972cd36b21dc338cc3ab00a9c893b52fbeb7a6fd8f3ffc1ddb57",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "7536b32423119489426c7a8e8b4ff6dcecf74ac1513c6ad8668bd2349066f717",
+      "png_sha256": "409efdfd2c5c357559e53d33dc93c9f6096f7aac4be3ef46f03a7895df842f9e",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            308,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            3650912302,
+            3651595418
+          ],
+          "compressed_bytes": 683117,
+          "sha256": "01b3ab690e0a8b9d00d5e3b70ab5b4f9e1d1085361fc0fe31348f856981efea6"
+        },
+        {
+          "index_tcyx": [
+            308,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3653956376,
+            3654093175
+          ],
+          "compressed_bytes": 136800,
+          "sha256": "3e98350d6d28a2889308af357520bba3cba4ea857578d4f636c30b8df72fcccb"
+        },
+        {
+          "index_tcyx": [
+            308,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            3653619876,
+            3653704002
+          ],
+          "compressed_bytes": 84127,
+          "sha256": "d88c6a44d0688102d9e48dc3cc720abb9728c4870fc6581d3d9ce724e51b7447"
+        },
+        {
+          "index_tcyx": [
+            308,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3654501865,
+            3654514441
+          ],
+          "compressed_bytes": 12577,
+          "sha256": "2e04be6c00cd4df86df2238a8ba6122ced7724b1190a3c47d7360d6141a75a4b"
+        },
+        {
+          "index_tcyx": [
+            308,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            3652279457,
+            3652949473
+          ],
+          "compressed_bytes": 670017,
+          "sha256": "56878a8ad98ef222b15c8c4bb7966e4312069743e07d628ffb16ef4c9dfed027"
+        },
+        {
+          "index_tcyx": [
+            308,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3654230169,
+            3654366089
+          ],
+          "compressed_bytes": 135921,
+          "sha256": "c996f576ec6b689435c885c06cee01ce8920f76602c14dffc0f347636cd7a1ad"
+        },
+        {
+          "index_tcyx": [
+            308,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            3653788552,
+            3653872540
+          ],
+          "compressed_bytes": 83989,
+          "sha256": "af65f8ed78fa4685d05603d77931178c07f23958805195c677deb373e1593ecc"
+        },
+        {
+          "index_tcyx": [
+            308,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3654527092,
+            3654539660
+          ],
+          "compressed_bytes": 12569,
+          "sha256": "3ea1eda19ad5973beea23e4465e39a9f9e8522eb3b8c5aa18e04c047dc92fe6f"
+        },
+        {
+          "index_tcyx": [
+            308,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            3658183980,
+            3658792622
+          ],
+          "compressed_bytes": 608643,
+          "sha256": "1df904943b6a437eba6e03a33cc6040c742fe2a4eb71d31cfff3b0c704d0ed00"
+        },
+        {
+          "index_tcyx": [
+            308,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3659554993,
+            3659682439
+          ],
+          "compressed_bytes": 127447,
+          "sha256": "b8e4b53d1847fce18ed97c5b5d64b9eae9e1676b65142625458b365ce754cb34"
+        },
+        {
+          "index_tcyx": [
+            308,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            3659396298,
+            3659475878
+          ],
+          "compressed_bytes": 79581,
+          "sha256": "340968058490b273ce16a4bf57051606f9a4666b70d9a9cd8bf0423ae5dba332"
+        },
+        {
+          "index_tcyx": [
+            308,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3659809116,
+            3659821096
+          ],
+          "compressed_bytes": 11981,
+          "sha256": "143e695ed0fc94fd025802e1a5f7f7890b366fa9c4b3d807b07d6e3e33a44e84"
+        }
+      ]
+    },
+    {
+      "index": 462,
+      "file": "frames/frame-0462.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693212685000000000",
+      "timestamp_utc": "2023-08-28T08:51:25+00:00",
+      "seconds_since_frame_zero": 138636.0,
+      "source_full_scan_png_sha256": "d59d878a6fcd29bcd7a3d1af4a2a2154c64fc2e8a1602571b4058e460e9a5f41",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "e2f7785119eebe1e10c78c6249c7175e8faad7945c77c42d80134ca7c629aebf",
+      "png_sha256": "7ba03a3f30a0d3cd70f6229eccecfc2ab2112a67fe1cae844137274c86203ded",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            462,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            4057510519,
+            4058200016
+          ],
+          "compressed_bytes": 689498,
+          "sha256": "2138845e2e346b0cd83df173239f5acd28773937349ff947e660c81e25535eff"
+        },
+        {
+          "index_tcyx": [
+            462,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            4060565269,
+            4060701383
+          ],
+          "compressed_bytes": 136115,
+          "sha256": "3def0d7ff691ad0ef93a15d590db6d2f7e69d1bc947da32e844fbac445301f2f"
+        },
+        {
+          "index_tcyx": [
+            462,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            4060229474,
+            4060313420
+          ],
+          "compressed_bytes": 83947,
+          "sha256": "5420593585cdf504bd47f3896327a1f7607dd2c0729f23c36795c33afc48bb35"
+        },
+        {
+          "index_tcyx": [
+            462,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            4061107180,
+            4061119725
+          ],
+          "compressed_bytes": 12546,
+          "sha256": "a4e7e9cfbf26ed1defab9b544c5c6a74dd98e871b359cad0cc5cb7bf90406f05"
+        },
+        {
+          "index_tcyx": [
+            462,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            4058888871,
+            4059560882
+          ],
+          "compressed_bytes": 672012,
+          "sha256": "f0ca76b3249ff35ff17b109f1007090241db9f6a4239e2ffb5e24c8eb853a14d"
+        },
+        {
+          "index_tcyx": [
+            462,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            4060836912,
+            4060972412
+          ],
+          "compressed_bytes": 135501,
+          "sha256": "f6e46501f8f8f15cec6bde26ef14d44e9c41761e62e38e816cd8d126e5ae9c8d"
+        },
+        {
+          "index_tcyx": [
+            462,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            4060397251,
+            4060481206
+          ],
+          "compressed_bytes": 83956,
+          "sha256": "570d5251a5aca02f00de894fcc363607c550e3a35d019fd571e18172751916b6"
+        },
+        {
+          "index_tcyx": [
+            462,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            4061132181,
+            4061144756
+          ],
+          "compressed_bytes": 12576,
+          "sha256": "c33a5d3cc6e48f9c9222b5b999b44752adedb81a006107ee688bdd6b269abfaa"
+        },
+        {
+          "index_tcyx": [
+            462,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            4062830120,
+            4063449838
+          ],
+          "compressed_bytes": 619719,
+          "sha256": "e8ae65217647dcde155e1832a3f517dbfb6ae8dd4586425e60efe0e191a5b403"
+        },
+        {
+          "index_tcyx": [
+            462,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            4064227175,
+            4064354870
+          ],
+          "compressed_bytes": 127696,
+          "sha256": "febfbbd8faa860c52ccb12a08c512bf776f7f23bf199e0720e5ac26fcd6e5e67"
+        },
+        {
+          "index_tcyx": [
+            462,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            4064068167,
+            4064147719
+          ],
+          "compressed_bytes": 79553,
+          "sha256": "cb5acc78589093d3aa8b01de6a8b3ea8eed0cbb82c7fd42fff84fe8631b989c0"
+        },
+        {
+          "index_tcyx": [
+            462,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            4064481716,
+            4064493817
+          ],
+          "compressed_bytes": 12102,
+          "sha256": "7a345d0074543c81d5e0e352787c16d16323c9b374613c584f690a4fc6926c39"
+        }
+      ]
+    },
+    {
+      "index": 616,
+      "file": "frames/frame-0616.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693258897000000000",
+      "timestamp_utc": "2023-08-28T21:41:37+00:00",
+      "seconds_since_frame_zero": 184848.0,
+      "source_full_scan_png_sha256": "b5b0b84736d9dbc2c45a02cc04ba03bee10f2be5016a0bf3ac8232d8b129cdc8",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "55948e33c9ae7ea2c31d2f088bb11a40c7fc2bdbdefa2d87d785d09ef1118eb2",
+      "png_sha256": "18278bf2479b72ebd51d547f5f335973009d63b2defad317cd845c66feb7b105",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            616,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            4467165673,
+            4467847156
+          ],
+          "compressed_bytes": 681484,
+          "sha256": "2733406b16661b7ae7378375b0419f2e18147abc0826d525b88b8eac0d5dd881"
+        },
+        {
+          "index_tcyx": [
+            616,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            4470192563,
+            4470327876
+          ],
+          "compressed_bytes": 135314,
+          "sha256": "9fea16a3f10469eb3e4b68c573d18d08956661507eb06f4fab13895bab5e926e"
+        },
+        {
+          "index_tcyx": [
+            616,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            4469857580,
+            4469941480
+          ],
+          "compressed_bytes": 83901,
+          "sha256": "367b20792d88697af0bfccb6b4d655f5a7ddee8e58266282832867a66fec6625"
+        },
+        {
+          "index_tcyx": [
+            616,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            4470733034,
+            4470745522
+          ],
+          "compressed_bytes": 12489,
+          "sha256": "453f25490b840350a9ab11aa8a221b02aa7ab42e16827a3e67755c7126ed7ac3"
+        },
+        {
+          "index_tcyx": [
+            616,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            4468528115,
+            4469192989
+          ],
+          "compressed_bytes": 664875,
+          "sha256": "34baf4bc2774f377d34a9168f9f6fdc5c9b71a02e5bd84789b45a354419c86c6"
+        },
+        {
+          "index_tcyx": [
+            616,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            4470463633,
+            4470598396
+          ],
+          "compressed_bytes": 134764,
+          "sha256": "3666afd6feafab57dca0ebdf29525be15dd38e3425de4e0f345a47350cb2dbfd"
+        },
+        {
+          "index_tcyx": [
+            616,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            4470025030,
+            4470108826
+          ],
+          "compressed_bytes": 83797,
+          "sha256": "35ce3eb457b7bc93c38cd49d912743d95ca00c380f3b368ed40b39f601c0530e"
+        },
+        {
+          "index_tcyx": [
+            616,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            4470758045,
+            4470770663
+          ],
+          "compressed_bytes": 12619,
+          "sha256": "97c14721cafd02346cd8c795f94730e99eec54d90da4f408df8e6ab2e68533c3"
+        },
+        {
+          "index_tcyx": [
+            616,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            4474394368,
+            4475011662
+          ],
+          "compressed_bytes": 617295,
+          "sha256": "063a41961280c62b85d9ded9dd5fc506cc2242ae01a797a9d5620dc6121aae99"
+        },
+        {
+          "index_tcyx": [
+            616,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            4475784054,
+            4475910410
+          ],
+          "compressed_bytes": 126357,
+          "sha256": "55e1ec8e19a0e1df7eb8f4245d4cae148e50c099929c58b847ef099c5de43cfb"
+        },
+        {
+          "index_tcyx": [
+            616,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            4475625413,
+            4475704926
+          ],
+          "compressed_bytes": 79514,
+          "sha256": "4564e99f6537536aae548a432a26e42b5725e5ed6a81094d8fd658266391b829"
+        },
+        {
+          "index_tcyx": [
+            616,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            4476037543,
+            4476049469
+          ],
+          "compressed_bytes": 11927,
+          "sha256": "5a5bb2a107e16f67502e9d3a2d59ae2348fdc3424e8e7270a14c06eb92f24e81"
+        }
+      ]
+    },
+    {
+      "index": 770,
+      "file": "frames/frame-0770.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693305110000000000",
+      "timestamp_utc": "2023-08-29T10:31:50+00:00",
+      "seconds_since_frame_zero": 231061.0,
+      "source_full_scan_png_sha256": "19e8555acd31c53e92058c4df567b995726de6c8b9c2c164ede43987b8dd1a1c",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "0d47676259d012bf6dbde455c975f5c053eb523e921d7653388c728378da4e13",
+      "png_sha256": "ce399998cd47e4e04b9d9b8c5bebe2787c6b0ce59833d98c5d8df197162ab80f",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            770,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            680073504,
+            680755092
+          ],
+          "compressed_bytes": 681589,
+          "sha256": "ebc8d907c6e71faf92f518b2bddf2e80d316eb1e34780d4dbf6e7c03d6563d49"
+        },
+        {
+          "index_tcyx": [
+            770,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            683105477,
+            683240376
+          ],
+          "compressed_bytes": 134900,
+          "sha256": "03d4db9d91d9753fc8f4b0d5b6e69801317e1e1ebeb4ff0f80a9e0e7ebf3df11"
+        },
+        {
+          "index_tcyx": [
+            770,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            682769557,
+            682853905
+          ],
+          "compressed_bytes": 84349,
+          "sha256": "7719d7ee66cea387e5b6a5b030fd04281b1cfd280790cb133c43dfe3e91841cf"
+        },
+        {
+          "index_tcyx": [
+            770,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            683644444,
+            683656955
+          ],
+          "compressed_bytes": 12512,
+          "sha256": "834f6e0c6a7913c1352c22445cafb4eaa71e22089677f0127d8f7d2514d96c59"
+        },
+        {
+          "index_tcyx": [
+            770,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            681436896,
+            682102575
+          ],
+          "compressed_bytes": 665680,
+          "sha256": "23a8d0baad2d99352a8337d46161e50a0836cf493da8a2096b3152b53c8a6543"
+        },
+        {
+          "index_tcyx": [
+            770,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            683375784,
+            683509768
+          ],
+          "compressed_bytes": 133985,
+          "sha256": "259ac1074f10cf6866885a6472ead6b2a26e6c7be02c3f2c1f899c5d81fc6a00"
+        },
+        {
+          "index_tcyx": [
+            770,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            682938097,
+            683021652
+          ],
+          "compressed_bytes": 83556,
+          "sha256": "5d77943f739469aafb2ec49ebb73f30677b7393b2a4b071059c75a732043228e"
+        },
+        {
+          "index_tcyx": [
+            770,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            683669417,
+            683681945
+          ],
+          "compressed_bytes": 12529,
+          "sha256": "edf90c08faa93d167cf9253909dcff26ba91ceb95ddf7f86519b3705926b8a00"
+        },
+        {
+          "index_tcyx": [
+            770,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            685354968,
+            685968366
+          ],
+          "compressed_bytes": 613399,
+          "sha256": "09227c19b5a6ccc2b613c5c5bd76c8d3622031a10da8e1ed085c2ef72c85261d"
+        },
+        {
+          "index_tcyx": [
+            770,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            686736859,
+            686863195
+          ],
+          "compressed_bytes": 126337,
+          "sha256": "b415eddd62b6e1ed826cf3971ff44499afedf7a9a1dd43d619d10057a146692b"
+        },
+        {
+          "index_tcyx": [
+            770,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            686579105,
+            686657664
+          ],
+          "compressed_bytes": 78560,
+          "sha256": "5e4ec761f82b4bb8735f8c29967103566cc6619f1b7f4adcc73fdd9ccb3c146c"
+        },
+        {
+          "index_tcyx": [
+            770,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            686991101,
+            687003124
+          ],
+          "compressed_bytes": 12024,
+          "sha256": "2456e66fbbfa5c36cec17767badaa241eb3a0729e74dacb2ff7d4b53d7456df0"
+        }
+      ]
+    },
+    {
+      "index": 925,
+      "file": "frames/frame-0925.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693351623000000000",
+      "timestamp_utc": "2023-08-29T23:27:03+00:00",
+      "seconds_since_frame_zero": 277574.0,
+      "source_full_scan_png_sha256": "79752695ddb55a5e8e4952e197650d72326daf02c724d0984047a8a54c88af93",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "ad722e0db4fc5f53e8da2e234c698ca7b9bfa843076b3e3ad484a612fb82c148",
+      "png_sha256": "0a854b11f2b38d580bd98270d17544c0c8c92049863875081f2c2b227d9a79ac",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            925,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1091581635,
+            1092272478
+          ],
+          "compressed_bytes": 690844,
+          "sha256": "8428684d5dbb8fd775597cf88947ea03d79e30e34d17f8740ca082351f1c21fb"
+        },
+        {
+          "index_tcyx": [
+            925,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1094094847,
+            1094231284
+          ],
+          "compressed_bytes": 136438,
+          "sha256": "262b06e0806207eca28986343d23cf700db0ee034f8b16269acbac2233f6d80e"
+        },
+        {
+          "index_tcyx": [
+            925,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1093704058,
+            1093790327
+          ],
+          "compressed_bytes": 86270,
+          "sha256": "28aaac5500a0b39dc6e131145cece204bb3b48e37bab930e4f939b72be432ac8"
+        },
+        {
+          "index_tcyx": [
+            925,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1094513986,
+            1094526598
+          ],
+          "compressed_bytes": 12613,
+          "sha256": "aef8ce07d61d6bb8ce11648f8d8d78b503de3ca250a5fb66ba8cbfb666774da6"
+        },
+        {
+          "index_tcyx": [
+            925,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1092942971,
+            1093618267
+          ],
+          "compressed_bytes": 675297,
+          "sha256": "a064ce3ada795d20acbe42d8d74e187e237d8f6b48d2cc38a8c37fac4abc4155"
+        },
+        {
+          "index_tcyx": [
+            925,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1094366079,
+            1094501534
+          ],
+          "compressed_bytes": 135456,
+          "sha256": "0b48f42a5efa29fd1ecdc1d26775f78a81777747d5ad6f59b8144c7ec3f33618"
+        },
+        {
+          "index_tcyx": [
+            925,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1093874487,
+            1093958730
+          ],
+          "compressed_bytes": 84244,
+          "sha256": "11aefade5f44cfbd6eb53bf09e6a0d694547131d714f60bbba11b14359b237bd"
+        },
+        {
+          "index_tcyx": [
+            925,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1094539156,
+            1094551775
+          ],
+          "compressed_bytes": 12620,
+          "sha256": "51b18365cf428f4e79cc40b2fd76841496349f3e8306f6e3b8ba1e3429a0cd5b"
+        },
+        {
+          "index_tcyx": [
+            925,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1098826402,
+            1099445101
+          ],
+          "compressed_bytes": 618700,
+          "sha256": "d02afdb66f9e4544fe0a44abc81dfb05ae555c4f73768e4e7f136e8586f73f2c"
+        },
+        {
+          "index_tcyx": [
+            925,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1099730009,
+            1099857236
+          ],
+          "compressed_bytes": 127228,
+          "sha256": "53327f9ee1b4237b07126f2179383b41913dd6e4f80ff1a1dffd50ab2c1aaa1f"
+        },
+        {
+          "index_tcyx": [
+            925,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1099524874,
+            1099605915
+          ],
+          "compressed_bytes": 81042,
+          "sha256": "010baca0c6b77b2a0dea0a684c26d1f938f411a0edcbaba56c2abf31804c28b8"
+        },
+        {
+          "index_tcyx": [
+            925,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1099869033,
+            1099881133
+          ],
+          "compressed_bytes": 12101,
+          "sha256": "a6b3bc1c639703160b49c3b03e0c00a981a202d7e8ddb06c03f0a6fab5d2aa75"
+        }
+      ]
+    },
+    {
+      "index": 1079,
+      "file": "frames/frame-1079.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693397834000000000",
+      "timestamp_utc": "2023-08-30T12:17:14+00:00",
+      "seconds_since_frame_zero": 323785.0,
+      "source_full_scan_png_sha256": "247cf9d9a10894b9c1e869b26dcb4a95117d86c6bd7eea5931d9e904bb923f87",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "3b5d599e7b4fa4f34ffda8e1a9d498e01bc06a8dd049e8d51f74fd487d6df420",
+      "png_sha256": "fc49e03d8ed20c2cf67bb513b496ae6eceb735f9940b00e8b9ccfedb927156dc",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            1079,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1500924004,
+            1501622090
+          ],
+          "compressed_bytes": 698087,
+          "sha256": "db0af1cb376aa03736b7e7272d286c089d5a3c8428b045fbf48bef19e9b05807"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1503441013,
+            1503577342
+          ],
+          "compressed_bytes": 136330,
+          "sha256": "5b3690d66b8df90bd5569a543890f0f23e2730f600deffb92a7c695ff8e1719d"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1503052264,
+            1503136599
+          ],
+          "compressed_bytes": 84336,
+          "sha256": "8c31ee253eb5828875a7c95a2a18b44281f57ffd0648bd3b9c330f2ab94097a5"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1503862335,
+            1503874770
+          ],
+          "compressed_bytes": 12436,
+          "sha256": "cc7863f3d1f2d6e74e141c192dcd90145650d7049489f70915c71df079733b51"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1502295115,
+            1502968236
+          ],
+          "compressed_bytes": 673122,
+          "sha256": "f5449482581f07253978f9078e3bab3bfa38a838c2dc448ea1acd4ef6e4470ce"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1503713478,
+            1503849898
+          ],
+          "compressed_bytes": 136421,
+          "sha256": "93a55ea628bb4aa7290a056fbbadbdbdef9c64736265a5a6c1c30d862a2eed0f"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1503220303,
+            1503304433
+          ],
+          "compressed_bytes": 84131,
+          "sha256": "71e2dbee3063fee1086aad37f9dd84072d8a9245ab8a880f8bea746672f794ec"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1503887347,
+            1503900054
+          ],
+          "compressed_bytes": 12708,
+          "sha256": "2df4482a53eda4a51cfa72192e87adb7e0d7175c2490264756b8a62bd628ea0e"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1506233594,
+            1506865794
+          ],
+          "compressed_bytes": 632201,
+          "sha256": "ef7979eca348ac986b5f568702234d52be43bb554f5e6d2f18723a8179bc9c87"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1507153054,
+            1507280902
+          ],
+          "compressed_bytes": 127849,
+          "sha256": "04034d5291c425b285d90ad46616a29801fe16f35eee5b7338200c82c98181d4"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1506945133,
+            1507024729
+          ],
+          "compressed_bytes": 79597,
+          "sha256": "9c6438c75129cf81fc9402c225abb416225ddbdf27632f721dc2aef50ed921c9"
+        },
+        {
+          "index_tcyx": [
+            1079,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1507293064,
+            1507305136
+          ],
+          "compressed_bytes": 12073,
+          "sha256": "37a005a2a3470c3d4d84dc3f34940593bfcd9141a449c4ef7dde30e242043ebf"
+        }
+      ]
+    },
+    {
+      "index": 1233,
+      "file": "frames/frame-1233.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693444045000000000",
+      "timestamp_utc": "2023-08-31T01:07:25+00:00",
+      "seconds_since_frame_zero": 369996.0,
+      "source_full_scan_png_sha256": "50e7eb10c4d853b6c41dedfc8d0a4e0477efbe0df8f9dc9dd314428a695f3f01",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "87124c3bf9e466e9c8740854515af54004fe65b5a83617577ca925babcb34d00",
+      "png_sha256": "fab650939078731683b4ee8d2b5dfdd4df70a4ed007590f9e14feab25c4dda39",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            1233,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1918203769,
+            1918911884
+          ],
+          "compressed_bytes": 708116,
+          "sha256": "3b9e0f449581956b7ff0213b6d5fd9a90d9d9af6a0071c32778dc427c4fff12a"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1920753577,
+            1920891753
+          ],
+          "compressed_bytes": 138177,
+          "sha256": "679c1f6572c3e76a6f68a9a5aaee82c6b22c73ffb0b701f9c4fbac75c22f4481"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1920363543,
+            1920447507
+          ],
+          "compressed_bytes": 83965,
+          "sha256": "233c08066fe1282c134f97963239862b99d4542c4840c0612f42bc96fcb11a80"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1921176128,
+            1921188676
+          ],
+          "compressed_bytes": 12549,
+          "sha256": "73bd5dc9f9d25498f434f5a32c915793005ac15928e805105ecd05d369a97f80"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1919595630,
+            1920279062
+          ],
+          "compressed_bytes": 683433,
+          "sha256": "c20793e434d02b7d52bcfa6487ec24eab85d44e30787448660a226ac9f18109a"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1921027978,
+            1921163618
+          ],
+          "compressed_bytes": 135641,
+          "sha256": "772f99f70738b8f3f0fdf4e2e62f7a2bde95fa2e6b2986fe325bfe0cc0eb0624"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1920531268,
+            1920615167
+          ],
+          "compressed_bytes": 83900,
+          "sha256": "3e75c0633e7a893600c1a2022c093953dbcedb24c49e1c2999226cd9f62b909a"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1921201191,
+            1921213804
+          ],
+          "compressed_bytes": 12614,
+          "sha256": "251dbc7cbcbe1caebe7aa234167c5015c9039bc446777164a24ab39441962480"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            1925569981,
+            1926214113
+          ],
+          "compressed_bytes": 644133,
+          "sha256": "7929a32c262d742b7be7c20b4d22b366320e944a12001dcf998894068851734f"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            1926498040,
+            1926624964
+          ],
+          "compressed_bytes": 126925,
+          "sha256": "beb0dfab9e83d36c322ada40a541670b4919adb812aa0009a970dc685d15448d"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            1926293148,
+            1926372306
+          ],
+          "compressed_bytes": 79159,
+          "sha256": "8940d8ed1ca0dccd04bbf1a430a4872e847526a43f58f50d27264a4ac1164d98"
+        },
+        {
+          "index_tcyx": [
+            1233,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            1926636998,
+            1926648985
+          ],
+          "compressed_bytes": 11988,
+          "sha256": "cefa7adf341912dc362519c2a5f3035bed4a59c112d84f21a901c48bd5f6aa09"
+        }
+      ]
+    },
+    {
+      "index": 1387,
+      "file": "frames/frame-1387.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693490258000000000",
+      "timestamp_utc": "2023-08-31T13:57:38+00:00",
+      "seconds_since_frame_zero": 416209.0,
+      "source_full_scan_png_sha256": "9dd1186e24bb1fcf938e38777501eac013e012073d1a42e4c20fb28a78c41346",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "ae1a617857b72703bc87c00930554506e462d6ce5af4ec08154f79fb0dd8a41e",
+      "png_sha256": "1f5d5ead8618ac18413266c7207c665d2fd0fca73f559feed5f12273faf559c5",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            1387,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2501905204,
+            2502606713
+          ],
+          "compressed_bytes": 701510,
+          "sha256": "df407e7ffe3aca54daecf5c494cf5f9dfe11e09a456ce9a26e7db6f3c3847d85"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2504439554,
+            2504577023
+          ],
+          "compressed_bytes": 137470,
+          "sha256": "3f028e660e34457fa5691069e8898414ca385b071ecd4e4fe183c9fbded4089e"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2504049138,
+            2504133870
+          ],
+          "compressed_bytes": 84733,
+          "sha256": "53b49aad60c65ef2dfae8e9e97cb2d8f43381de2686330d557f02e5014575e3f"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2504858627,
+            2504871153
+          ],
+          "compressed_bytes": 12527,
+          "sha256": "14e24c18070cd0447c2c93c876e97a8998951bd9ef870502badda31aa8f196d8"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2503285050,
+            2503964672
+          ],
+          "compressed_bytes": 679623,
+          "sha256": "6162b4dfb43cf8c74d88905b3020cb0852906d5c269604badbc7e9e61b1c9dcd"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2504711259,
+            2504846066
+          ],
+          "compressed_bytes": 134808,
+          "sha256": "2f66900e6018cfb63f2a77306804742fc92b44a542b940b158d9c809c56a0fa2"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2504217939,
+            2504302231
+          ],
+          "compressed_bytes": 84293,
+          "sha256": "7e42050092a8544c48777cdd34d4ac73b996d980c2a474c7dc41161e002ea4e9"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2504883748,
+            2504896329
+          ],
+          "compressed_bytes": 12582,
+          "sha256": "d39077c3bbd9dc2de74870644d4dde537ff6c3fe63d00dd635466125290f7355"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2507249937,
+            2507886199
+          ],
+          "compressed_bytes": 636263,
+          "sha256": "2651b26c607b8bdb6f5b1e1bb244de57e03355bae2f6a3644ef85b0d13dccc2c"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2508171387,
+            2508298182
+          ],
+          "compressed_bytes": 126796,
+          "sha256": "e83a5fb4080b2dedf0d7c8140c6995596e313353a9d28dc949e30e5fcf555d76"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2507965542,
+            2508044685
+          ],
+          "compressed_bytes": 79144,
+          "sha256": "6cf1b80600390bc992aa6c9b0e7c9e27bdc1026db52b7fdff3f5e179128284de"
+        },
+        {
+          "index_tcyx": [
+            1387,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2508310266,
+            2508322323
+          ],
+          "compressed_bytes": 12058,
+          "sha256": "0d7a83f4da38e144d11821a6d60a81467b9390fa130677d29d7cfb57608928d0"
+        }
+      ]
+    },
+    {
+      "index": 1541,
+      "file": "frames/frame-1541.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693536471000000000",
+      "timestamp_utc": "2023-09-01T02:47:51+00:00",
+      "seconds_since_frame_zero": 462422.0,
+      "source_full_scan_png_sha256": "5276afcea40796e5a70eb896c1a219ddcb1551ac71dbc296fbf86ad78e327329",
+      "publisher_dish_circle_xyr_px": [
+        604.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "6e7dc6c29a44cdf846311ce858f5adb1ed7451fe24b6913a54435e2e598b5d75",
+      "png_sha256": "b136d5ca6847c37e273f3741d408af4624b52c877b778722091519443385b0c0",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            1541,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2921045338,
+            2921753061
+          ],
+          "compressed_bytes": 707724,
+          "sha256": "f67d97026b95964a956c8359ab0b9a73cba23819161956d5aeff6c0dc8aa695b"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2923605516,
+            2923742980
+          ],
+          "compressed_bytes": 137465,
+          "sha256": "4536c13ace137a43c28fb25945d64a60a31670514d440b8f613f4fef0c38cc5c"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2923216362,
+            2923300393
+          ],
+          "compressed_bytes": 84032,
+          "sha256": "49a3b7415d11a6b9d7590e7fb5e2f32bb2d2413646fb28adf05ce7cc05999942"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2924027708,
+            2924040241
+          ],
+          "compressed_bytes": 12534,
+          "sha256": "12e8f6968a7c550eac57ea247fb49baf4d380f7c500aca2acd6a02df4b4ee50e"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2922442954,
+            2923132413
+          ],
+          "compressed_bytes": 689460,
+          "sha256": "3cbeee5ebfd9efe45dbca1c1d5d6f007ec074463e06102d61b625c18ff86a8db"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2923879563,
+            2924015036
+          ],
+          "compressed_bytes": 135474,
+          "sha256": "d0fdbdee335f1ab5f8a5bd265e8dccc87487d75a9133d71cdafac550d41888c2"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2923384476,
+            2923468274
+          ],
+          "compressed_bytes": 83799,
+          "sha256": "76d4d7544a84afed9a521c7d9eb440e5b71666077396057c9fbf88073621da1a"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2924052846,
+            2924065472
+          ],
+          "compressed_bytes": 12627,
+          "sha256": "04c3d6bc2e7e85bc906a9ff78bc6bcc91b24d8c05b75bd7dc9796e1554d28156"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            2928426914,
+            2929059684
+          ],
+          "compressed_bytes": 632771,
+          "sha256": "34adc338e10757cf85d2c52e56f7955f7942f4f1c410e89808e4953867a3e639"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            2929346164,
+            2929473884
+          ],
+          "compressed_bytes": 127721,
+          "sha256": "30b986f13e9070fa2d0caa0ba5a77f2c8af7d6509b0e223f67264466588bcd17"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            2929139335,
+            2929218406
+          ],
+          "compressed_bytes": 79072,
+          "sha256": "abd0003a741965822cd062466e1e9165aed5d1c229359bf7416163080375a314"
+        },
+        {
+          "index_tcyx": [
+            1541,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            2929485947,
+            2929497956
+          ],
+          "compressed_bytes": 12010,
+          "sha256": "9fc8dd27bf742740f594f65d1b749dee327db96ec80f047f3d62c41362cb801b"
+        }
+      ]
+    },
+    {
+      "index": 1695,
+      "file": "frames/frame-1695.png",
+      "width": 1276,
+      "height": 1169,
+      "channels": "RGB",
+      "dtype": "uint8",
+      "timestamp_utc_ns": "1693582683000000000",
+      "timestamp_utc": "2023-09-01T15:38:03+00:00",
+      "seconds_since_frame_zero": 508634.0,
+      "source_full_scan_png_sha256": "c83be1639ad45cef12a0560af883e2a8251d49f5785c913fafba164868d841a6",
+      "publisher_dish_circle_xyr_px": [
+        608.0,
+        608.0,
+        504.0
+      ],
+      "qc_flags": 0,
+      "rgb_pixel_sha256": "25f2f9c62c044659b023f9bd6b5e17ce88f377da105e9541b52953efe47bc25b",
+      "png_sha256": "3f86ecd404678544c552045dbaf79d5f3309724df19ce5cf52a1d32f09481df2",
+      "shard_index_crc32c_verified": true,
+      "chunks": [
+        {
+          "index_tcyx": [
+            1695,
+            0,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            3338618703,
+            3339329641
+          ],
+          "compressed_bytes": 710939,
+          "sha256": "cd85b8783819a39207f9e7ab47bbf7a3da8c9db8ee75347d95acb56cb1b5f80e"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            0,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3341194075,
+            3341331899
+          ],
+          "compressed_bytes": 137825,
+          "sha256": "5765924350384da3470bdebe318c67a832652c4e37f037d05658f69ec1509baa"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            0,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            3340800034,
+            3340886370
+          ],
+          "compressed_bytes": 86337,
+          "sha256": "2bc76ab8a90002b7d60484fd8aeb560a705370518a9b8a2359aad28710f7fe8b"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            0,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3341614648,
+            3341627092
+          ],
+          "compressed_bytes": 12445,
+          "sha256": "b38cb8bb62076a7c0643ee4e7e69a18057617c3e7003cd397ba9897f43072809"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            1,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            3340021621,
+            3340713652
+          ],
+          "compressed_bytes": 692032,
+          "sha256": "77b30d053918f4653578c03e10d0bbd65165f29320566e87a91d959164a8adff"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            1,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3341467222,
+            3341602244
+          ],
+          "compressed_bytes": 135023,
+          "sha256": "a9fa8e2b4128abbb1bf3b75e12d43de15d0a9fa8a385b55c236cc3c2698baeb2"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            1,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            3340971788,
+            3341056970
+          ],
+          "compressed_bytes": 85183,
+          "sha256": "75d07a55743da61ac738a41e1ad8d9a912fc9b8355228586ee496442c4ef2e94"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            1,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3341639714,
+            3341652319
+          ],
+          "compressed_bytes": 12606,
+          "sha256": "cd7496a8d108b5c62268a29364336b820a830bc614d42032ea53f96e8910ac0c"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            2,
+            0,
+            0
+          ],
+          "archive_range_inclusive": [
+            3343984668,
+            3344623105
+          ],
+          "compressed_bytes": 638438,
+          "sha256": "92f4534d5b32fb612e3d2376cc12684a34b7d9b0f5aa18919e36e36648548d3c"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            2,
+            0,
+            1
+          ],
+          "archive_range_inclusive": [
+            3344911651,
+            3345039356
+          ],
+          "compressed_bytes": 127706,
+          "sha256": "a9e153cb284b958aee46302caf86b224f954ffd0507769ae647cc376b306d5df"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            2,
+            1,
+            0
+          ],
+          "archive_range_inclusive": [
+            3344703553,
+            3344784387
+          ],
+          "compressed_bytes": 80835,
+          "sha256": "f81246a89b87cce0d433ecfb62d5ab135e57c940c47479b9c793028db349fddd"
+        },
+        {
+          "index_tcyx": [
+            1695,
+            2,
+            1,
+            1
+          ],
+          "archive_range_inclusive": [
+            3345051449,
+            3345063656
+          ],
+          "compressed_bytes": 12208,
+          "sha256": "36ec54628295b2e11a37c2546cf31290fb81cf21fb5f0db59ef9d0d38132b555"
+        }
+      ]
+    }
+  ],
+  "measurements": {
+    "file": "tiles.csv",
+    "rows": 38736,
+    "tiles_per_frame": 3228,
+    "bytes": 4463447,
+    "sha256": "baa43c1ccefe13239ddc06d724f1a54f34275cb27a7471615c48d3d0a3f6e1b9",
+    "grid": [
+      64,
+      64
+    ],
+    "native_bounding_square_xywh": [
+      104,
+      104,
+      1008,
+      1008
+    ],
+    "tile_selection": "Tile center within fixed circle cx608 cy608 r504, publisher frame-zero circle; not organism segmentation.",
+    "native_tile_bounds": "round(104+i*1008/64), half-open; no interpolation",
+    "coordinate_system": "x=(gx+.5)/64, y=1-(gy+.5)/64; source images remain in original orientation",
+    "r_g_b": "Native per-tile RGB means divided by255",
+    "luma": "0.2126*r + 0.7152*g + 0.0722*b",
+    "texture": "Mean absolute neighboring per-pixel luma differences, concatenating both axes",
+    "change": "Mean absolute native RGB difference from same pixel rectangle in frame zero divided by255",
+    "rounding": "At most six fractional decimals",
+    "seconds": "Publisher timestamp nanoseconds minus frame-zero timestamp, divided by1e9"
+  },
+  "extraction": {
+    "script": "scripts/prepare-physarum-series.py",
+    "dependencies": {
+      "numpy": "2.3.3",
+      "numcodecs": "0.16.3"
+    },
+    "source_payload_bytes": 32362733,
+    "source_payload_limit_bytes": 100663296,
+    "full_archive_downloaded": false,
+    "requests": [
+      {
+        "url": "https://zenodo.org/api/records/22868368",
+        "range": null,
+        "bytes": 14561,
+        "sha256": "5e3d45c3c84eba909e02a3601a428e7e79f635de3caa1ff9cf912b84f2a0560a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530582105,
+          4530582126
+        ],
+        "bytes": 22,
+        "sha256": "85596ccbc8157e33bb79a61eeb88cd08a5809f2b9cf6c6e0b109d30c0d823223"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530582085,
+          4530582104
+        ],
+        "bytes": 20,
+        "sha256": "96e0c54c9f16f4a7322b67d6019e527b9655a47499485075119f24d03e792a7d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530582029,
+          4530582084
+        ],
+        "bytes": 56,
+        "sha256": "7f3d232de0bb359aebce80e070eb7a6a29e9963367c31540c5f47c788d7c1ec4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530579320,
+          4530582028
+        ],
+        "bytes": 2709,
+        "sha256": "8607240b382ee6dc8b45ce8f483456a26c2d8e60cb3515befb4e42560ab33b50"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          0,
+          29
+        ],
+        "bytes": 30,
+        "sha256": "57d4dcd923c7bf0f67553b52c1463cad7b5cb340358cc18d3eb79c9dc6d0fd6e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          30,
+          38
+        ],
+        "bytes": 9,
+        "sha256": "b03c070e279753168d3fde15f2617363218d32a00078ef32987c74e83f62b8e4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          59,
+          10675
+        ],
+        "bytes": 10617,
+        "sha256": "cb6bf0d3103c60267dbca70832aee70b1963383e9e95651b104fc77b7030814f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          10676,
+          10705
+        ],
+        "bytes": 30,
+        "sha256": "17afe194da2df9acc7cfa7dc4891efce66aba9c2884a43560f9cb06f35188d91"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          10706,
+          10735
+        ],
+        "bytes": 30,
+        "sha256": "a26783c2e9794b3ba541c3a0c59a48032225ac71072537f3251d94eb919dfd6b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          10756,
+          11349
+        ],
+        "bytes": 594,
+        "sha256": "d3b8e3c68b84e0f5ec068f2af190a2b71cb507149c39834a41bf85ca2355fb7b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          65713,
+          65742
+        ],
+        "bytes": 30,
+        "sha256": "6c0512420199d8d4558946af83dca19da31ff8649f66170c076ff4ebc465f74c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          65743,
+          65777
+        ],
+        "bytes": 35,
+        "sha256": "7d9f987a00641d78228125283ba59afecc19cf1ef49efa37f138e1d6b792f704"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          65798,
+          66423
+        ],
+        "bytes": 626,
+        "sha256": "44d2771fffaae63d04c8cb0c00c9d7c07dfa3d163e8c12873e9af46dfe3abbe6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          74492,
+          74521
+        ],
+        "bytes": 30,
+        "sha256": "5418e3f6fdc65e9affc0a1d018a79049df2202175c58da47b6e76371ef4dd5b8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          74522,
+          74559
+        ],
+        "bytes": 38,
+        "sha256": "4eaaacb6ce0e9e3e4d5a6ae880fd4ea58edababfd43aad2e4722b7bb5832703a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          74580,
+          75234
+        ],
+        "bytes": 655,
+        "sha256": "05a2909362fc54d9b626deda1585c7d17da11cb45879fc497199948e741344dd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75235,
+          75264
+        ],
+        "bytes": 30,
+        "sha256": "3901dae0b7cf7d521f395733dfa903808df4a4dc570579cf152ec4c7a400bb18"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75265,
+          75285
+        ],
+        "bytes": 21,
+        "sha256": "dbb0e36c7b64a678c7a164bc117c60f425f5d2e6c04f85cdf5a8592131d7b5fd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          75306,
+          75371
+        ],
+        "bytes": 66,
+        "sha256": "36615682d5be9646729635067a75185212eb0c48d708ef06ad34c1f58dd587d2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          76759,
+          76788
+        ],
+        "bytes": 30,
+        "sha256": "183b9efc6c3cabea16370f83ca1837ac7902c4fa14222d0513e4853eb293edfc"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          76789,
+          76810
+        ],
+        "bytes": 22,
+        "sha256": "0f314a402b5a52d02d678107d535bf66335d0734e1c67668a748925aedeefd56"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          76831,
+          77540
+        ],
+        "bytes": 710,
+        "sha256": "39162126028d4ea16dc0f2c8fa0014a8722f77a848524b684aad76998af0b209"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77998,
+          78027
+        ],
+        "bytes": 30,
+        "sha256": "a1c74dce71ec6d420222c09e915f2d73ad9e3ccfb0c2c1c18c98a07c482d4c16"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78028,
+          78068
+        ],
+        "bytes": 41,
+        "sha256": "415983aaf34e212fe90c29b31007b049c44f519a986ba88263af062597f405d9"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78089,
+          78776
+        ],
+        "bytes": 688,
+        "sha256": "e10850b39b8f397f82660da97f91698bbef64024924623bd2a232141c36c9823"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78777,
+          78806
+        ],
+        "bytes": 30,
+        "sha256": "d5d16357d41a1a0ea8ceaedd61a753bdbc88f6dadb9581a0363b1d70c4b9ff6b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78807,
+          78828
+        ],
+        "bytes": 22,
+        "sha256": "980c4705aab0ea9885d5ac68d179576e50497e21ca2a846bbd172aa7f9679fa8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78849,
+          78914
+        ],
+        "bytes": 66,
+        "sha256": "36615682d5be9646729635067a75185212eb0c48d708ef06ad34c1f58dd587d2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530577958,
+          4530577987
+        ],
+        "bytes": 30,
+        "sha256": "2ec55042b00fda1a9f7c12c7ef8bd447a413cb7d30b2f4ac3c1fda699c245e60"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530577988,
+          4530577999
+        ],
+        "bytes": 12,
+        "sha256": "6719ec65fdf0dd43043a72c91e04e19d16015b55a8a8b216ce667a240ce6776d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530578020,
+          4530579319
+        ],
+        "bytes": 1300,
+        "sha256": "db12d6dbb6fcfaddc51ed3871456e9dab14457f639f7502a6502dac21c2f9ac4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          66424,
+          66453
+        ],
+        "bytes": 30,
+        "sha256": "aa20fd1c55ae8d86ce9baa7002550063afd09a0d7b8c533756f1dee45b3cfa80"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          66454,
+          66485
+        ],
+        "bytes": 32,
+        "sha256": "e893dd2c62d0787a9905c4f86a7ca3adcbff44256f08d33c522fe4757b9343b1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          66506,
+          74491
+        ],
+        "bytes": 7986,
+        "sha256": "1defaabfa9c44d1f108ab2f5808586384a09acafa145f7b5ca9aaa61cf25728b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          11350,
+          11379
+        ],
+        "bytes": 30,
+        "sha256": "389464308ebb2a3922a566c014fe2326b93316760e61935c6af266d0278fc68c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          11380,
+          11410
+        ],
+        "bytes": 31,
+        "sha256": "7c0b02c7c7318fcdea3d11d9a29cfd75aba43e72dd787ad881371a7fab3365c4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          11431,
+          65712
+        ],
+        "bytes": 54282,
+        "sha256": "7ca6e82cafdca78f93d75fe274b7b7ea926639ebba2a47ec477abcb45d40840c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77541,
+          77570
+        ],
+        "bytes": 30,
+        "sha256": "6654576b5a379e2564ef2dfa00481658a313e631a321a3349420ce8dbb0c6981"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77571,
+          77607
+        ],
+        "bytes": 37,
+        "sha256": "f6537c0a4218536e31c59ac923361918d489baf2e8b8b530a0e5b65af42ed5d0"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          77628,
+          77997
+        ],
+        "bytes": 370,
+        "sha256": "347e8791d510e6d30f7bd9dbe1eb16e651b811bc608bd59448b6fe83dfdf364d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78915,
+          78944
+        ],
+        "bytes": 30,
+        "sha256": "165dfcd2fb6b19b312a0db1383880c8ed624699fc16baae53534f66d18b3062f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          169539025,
+          169551316
+        ],
+        "bytes": 12292,
+        "sha256": "d80a60197d1bcb9d49c0c2af1b18571bb7d106c1c14af0ba972cbcc7435a7489"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          78977,
+          750752
+        ],
+        "bytes": 671776,
+        "sha256": "59706996ca417a04dd652f2b60356974d3cde7c903b47166acbdff4c10b55253"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3154047,
+          3290730
+        ],
+        "bytes": 136684,
+        "sha256": "8a30706bc8ff4973fc4615b421406e4810a75aec81462f65fbe6a17ec4c350fb"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2821663,
+          2905415
+        ],
+        "bytes": 83753,
+        "sha256": "8296caf68d49914abaf24f3fb5860d8c7d3881f8726eae45c7d7b52e01ac1631"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3700342,
+          3712891
+        ],
+        "bytes": 12550,
+        "sha256": "af93bf5441156ff324ac33b5bba54274624fbc50907b9c50137c5fd0075c5072"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1421509,
+          2121600
+        ],
+        "bytes": 700092,
+        "sha256": "5da1ff9e2f8d3bce1c006830be7c032dfca9f5d413372cc29c2e032e0bec9b41"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3427299,
+          3563573
+        ],
+        "bytes": 136275,
+        "sha256": "7460a07a9f424df047f54f3e805ec1f34cf9e184b213c727f08f70b237316314"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2988773,
+          3071330
+        ],
+        "bytes": 82558,
+        "sha256": "f305d9d237d2d6cffff262d5faa4828600ead0e12b4c4006abf636e28b72bcd3"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3725535,
+          3738276
+        ],
+        "bytes": 12742,
+        "sha256": "47dbad903791b4353bdd2ee2c58a562b580679a92bd775269d3bd4fe12f06a40"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          7418416,
+          8021292
+        ],
+        "bytes": 602877,
+        "sha256": "c59989943231c949acb1fb0f27478d01bbb5a026c1237eacfe1965a80b8a9ff1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          8780505,
+          8908194
+        ],
+        "bytes": 127690,
+        "sha256": "e5993de6d341c7ca861873eb42bc58b25fb2a52df2aa1dad686a58e538171718"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          8623597,
+          8702112
+        ],
+        "bytes": 78516,
+        "sha256": "6f6159c1b51c2ed66488d4c04c21cac0b95c67d2a25574990f7ade20ac6cf659"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          9035765,
+          9047752
+        ],
+        "bytes": 11988,
+        "sha256": "56091760f9951c1a8c7c15e992a70d79e34977b1a6ad9a6f69c669b5da82ea84"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2047512451,
+          2047512480
+        ],
+        "bytes": 30,
+        "sha256": "689c7c41024d83d047c9482d2234166b43849155827b15550bec0460eab9edfd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2216286713,
+          2216299004
+        ],
+        "bytes": 12292,
+        "sha256": "cf93df38624f534c4e79ad317e1b7912e5474cc21f9ca3b8c1ac2896a894872e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2114486841,
+          2115157417
+        ],
+        "bytes": 670577,
+        "sha256": "001f01df45d6cf9787a0c481a6ace4c3c6d59633060e9314986b90dada0f577f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2117531821,
+          2117668391
+        ],
+        "bytes": 136571,
+        "sha256": "da30429f62d4b17f2c837c1bcea78b1165f6067e6f431336675140652e3fd5c1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2117199452,
+          2117282867
+        ],
+        "bytes": 83416,
+        "sha256": "012aea32ad5d7e12af88846e4aeaec09faea16bef59536864942385ef97ca19e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2118076401,
+          2118088888
+        ],
+        "bytes": 12488,
+        "sha256": "5b52c1b590fbe16722b42389a850832d9e71ba4a7b7299eaa6044d7049b6102f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2115827649,
+          2116513874
+        ],
+        "bytes": 686226,
+        "sha256": "72ebfee4c9432869f9dadeef26db0b8cbc30d5f332d0cd1bc428b3115a5e1af0"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2117804366,
+          2117940356
+        ],
+        "bytes": 135991,
+        "sha256": "42350ccc02b196a0bdfa734ba5d73ac1efabf794c1385b2dd656eaf7dd38fa7e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2117365584,
+          2117448786
+        ],
+        "bytes": 83203,
+        "sha256": "059e407bb0082f283fca13d12d0fe44c78ed34ad0e8ab12980f9a6a8a3f877a6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2118101413,
+          2118114017
+        ],
+        "bytes": 12605,
+        "sha256": "47bd8cfa811b81269dab6454f4ed0cd2540dbf48f30ec51d9d5f462acedfd3df"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2119764108,
+          2120359967
+        ],
+        "bytes": 595860,
+        "sha256": "bf78c67341ed58f26ebeddd2726443b2e2fe13163aa9ec4314de9e4cb7a50ed4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2121117793,
+          2121244936
+        ],
+        "bytes": 127144,
+        "sha256": "d6a16305e8b0234b1115580d199b30b15ccefedd21cbdbbbaf1b2449e82e30d1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2120960312,
+          2121038944
+        ],
+        "bytes": 78633,
+        "sha256": "e13e30e2a389ad57c576e306c8e995710157297550cdfbc3baeb4de0f7232803"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2121373127,
+          2121385199
+        ],
+        "bytes": 12073,
+        "sha256": "918e4021915be4f94eb9c1cb5c37143df5c766ceb6480f28e94e7a7dd68f75f7"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3513777760,
+          3513777789
+        ],
+        "bytes": 30,
+        "sha256": "524db96c0e83f505e615ac82d7f6bc84ee06557b9cc030f788a42dd9b8b29a79"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3682604078,
+          3682616369
+        ],
+        "bytes": 12292,
+        "sha256": "2a111f19c72dc643b5080fb57bf59de1b734e5a2e96b79e895228044a6f5a3bc"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3650912302,
+          3651595418
+        ],
+        "bytes": 683117,
+        "sha256": "01b3ab690e0a8b9d00d5e3b70ab5b4f9e1d1085361fc0fe31348f856981efea6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3653956376,
+          3654093175
+        ],
+        "bytes": 136800,
+        "sha256": "3e98350d6d28a2889308af357520bba3cba4ea857578d4f636c30b8df72fcccb"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3653619876,
+          3653704002
+        ],
+        "bytes": 84127,
+        "sha256": "d88c6a44d0688102d9e48dc3cc720abb9728c4870fc6581d3d9ce724e51b7447"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3654501865,
+          3654514441
+        ],
+        "bytes": 12577,
+        "sha256": "2e04be6c00cd4df86df2238a8ba6122ced7724b1190a3c47d7360d6141a75a4b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3652279457,
+          3652949473
+        ],
+        "bytes": 670017,
+        "sha256": "56878a8ad98ef222b15c8c4bb7966e4312069743e07d628ffb16ef4c9dfed027"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3654230169,
+          3654366089
+        ],
+        "bytes": 135921,
+        "sha256": "c996f576ec6b689435c885c06cee01ce8920f76602c14dffc0f347636cd7a1ad"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3653788552,
+          3653872540
+        ],
+        "bytes": 83989,
+        "sha256": "af65f8ed78fa4685d05603d77931178c07f23958805195c677deb373e1593ecc"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3654527092,
+          3654539660
+        ],
+        "bytes": 12569,
+        "sha256": "3ea1eda19ad5973beea23e4465e39a9f9e8522eb3b8c5aa18e04c047dc92fe6f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3658183980,
+          3658792622
+        ],
+        "bytes": 608643,
+        "sha256": "1df904943b6a437eba6e03a33cc6040c742fe2a4eb71d31cfff3b0c704d0ed00"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3659554993,
+          3659682439
+        ],
+        "bytes": 127447,
+        "sha256": "b8e4b53d1847fce18ed97c5b5d64b9eae9e1676b65142625458b365ce754cb34"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3659396298,
+          3659475878
+        ],
+        "bytes": 79581,
+        "sha256": "340968058490b273ce16a4bf57051606f9a4666b70d9a9cd8bf0423ae5dba332"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3659809116,
+          3659821096
+        ],
+        "bytes": 11981,
+        "sha256": "143e695ed0fc94fd025802e1a5f7f7890b366fa9c4b3d807b07d6e3e33a44e84"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4021946098,
+          4021946127
+        ],
+        "bytes": 30,
+        "sha256": "c8bb19316c4ba35a2301b20c86bbc2e6b71eaa56ace3b6cb29ac3b3167d9bc97"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4192051329,
+          4192063620
+        ],
+        "bytes": 12292,
+        "sha256": "186ffbaa7d8a9fb20aa0e7416dc55fc830aa583f0f7a5e3ccb4c0a6d0f397038"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4057510519,
+          4058200016
+        ],
+        "bytes": 689498,
+        "sha256": "2138845e2e346b0cd83df173239f5acd28773937349ff947e660c81e25535eff"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4060565269,
+          4060701383
+        ],
+        "bytes": 136115,
+        "sha256": "3def0d7ff691ad0ef93a15d590db6d2f7e69d1bc947da32e844fbac445301f2f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4060229474,
+          4060313420
+        ],
+        "bytes": 83947,
+        "sha256": "5420593585cdf504bd47f3896327a1f7607dd2c0729f23c36795c33afc48bb35"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4061107180,
+          4061119725
+        ],
+        "bytes": 12546,
+        "sha256": "a4e7e9cfbf26ed1defab9b544c5c6a74dd98e871b359cad0cc5cb7bf90406f05"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4058888871,
+          4059560882
+        ],
+        "bytes": 672012,
+        "sha256": "f0ca76b3249ff35ff17b109f1007090241db9f6a4239e2ffb5e24c8eb853a14d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4060836912,
+          4060972412
+        ],
+        "bytes": 135501,
+        "sha256": "f6e46501f8f8f15cec6bde26ef14d44e9c41761e62e38e816cd8d126e5ae9c8d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4060397251,
+          4060481206
+        ],
+        "bytes": 83956,
+        "sha256": "570d5251a5aca02f00de894fcc363607c550e3a35d019fd571e18172751916b6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4061132181,
+          4061144756
+        ],
+        "bytes": 12576,
+        "sha256": "c33a5d3cc6e48f9c9222b5b999b44752adedb81a006107ee688bdd6b269abfaa"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4062830120,
+          4063449838
+        ],
+        "bytes": 619719,
+        "sha256": "e8ae65217647dcde155e1832a3f517dbfb6ae8dd4586425e60efe0e191a5b403"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4064227175,
+          4064354870
+        ],
+        "bytes": 127696,
+        "sha256": "febfbbd8faa860c52ccb12a08c512bf776f7f23bf199e0720e5ac26fcd6e5e67"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4064068167,
+          4064147719
+        ],
+        "bytes": 79553,
+        "sha256": "cb5acc78589093d3aa8b01de6a8b3ea8eed0cbb82c7fd42fff84fe8631b989c0"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4064481716,
+          4064493817
+        ],
+        "bytes": 12102,
+        "sha256": "7a345d0074543c81d5e0e352787c16d16323c9b374613c584f690a4fc6926c39"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4361471994,
+          4361472023
+        ],
+        "bytes": 30,
+        "sha256": "aaa95c05f18fc67cd2ee122581d45595d619aedd56fe93b7e4490e2690da4897"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4530565666,
+          4530577957
+        ],
+        "bytes": 12292,
+        "sha256": "ad8db8e015b35698612924c7eb0ed7ed27272360d11f5d46ad18dcd2cd9d5885"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4467165673,
+          4467847156
+        ],
+        "bytes": 681484,
+        "sha256": "2733406b16661b7ae7378375b0419f2e18147abc0826d525b88b8eac0d5dd881"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4470192563,
+          4470327876
+        ],
+        "bytes": 135314,
+        "sha256": "9fea16a3f10469eb3e4b68c573d18d08956661507eb06f4fab13895bab5e926e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4469857580,
+          4469941480
+        ],
+        "bytes": 83901,
+        "sha256": "367b20792d88697af0bfccb6b4d655f5a7ddee8e58266282832867a66fec6625"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4470733034,
+          4470745522
+        ],
+        "bytes": 12489,
+        "sha256": "453f25490b840350a9ab11aa8a221b02aa7ab42e16827a3e67755c7126ed7ac3"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4468528115,
+          4469192989
+        ],
+        "bytes": 664875,
+        "sha256": "34baf4bc2774f377d34a9168f9f6fdc5c9b71a02e5bd84789b45a354419c86c6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4470463633,
+          4470598396
+        ],
+        "bytes": 134764,
+        "sha256": "3666afd6feafab57dca0ebdf29525be15dd38e3425de4e0f345a47350cb2dbfd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4470025030,
+          4470108826
+        ],
+        "bytes": 83797,
+        "sha256": "35ce3eb457b7bc93c38cd49d912743d95ca00c380f3b368ed40b39f601c0530e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4470758045,
+          4470770663
+        ],
+        "bytes": 12619,
+        "sha256": "97c14721cafd02346cd8c795f94730e99eec54d90da4f408df8e6ab2e68533c3"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4474394368,
+          4475011662
+        ],
+        "bytes": 617295,
+        "sha256": "063a41961280c62b85d9ded9dd5fc506cc2242ae01a797a9d5620dc6121aae99"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4475784054,
+          4475910410
+        ],
+        "bytes": 126357,
+        "sha256": "55e1ec8e19a0e1df7eb8f4245d4cae148e50c099929c58b847ef099c5de43cfb"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4475625413,
+          4475704926
+        ],
+        "bytes": 79514,
+        "sha256": "4564e99f6537536aae548a432a26e42b5725e5ed6a81094d8fd658266391b829"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          4476037543,
+          4476049469
+        ],
+        "bytes": 11927,
+        "sha256": "5a5bb2a107e16f67502e9d3a2d59ae2348fdc3424e8e7270a14c06eb92f24e81"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          676442348,
+          676442377
+        ],
+        "bytes": 30,
+        "sha256": "68a551292b4e749a023bd95a17c71c29b3b60fc9068d9e64954f735ac13ea056"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          846281984,
+          846294275
+        ],
+        "bytes": 12292,
+        "sha256": "44024591333b318a28eb24be1101bea00654c80e539b40c002f556106c35b6b9"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          680073504,
+          680755092
+        ],
+        "bytes": 681589,
+        "sha256": "ebc8d907c6e71faf92f518b2bddf2e80d316eb1e34780d4dbf6e7c03d6563d49"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          683105477,
+          683240376
+        ],
+        "bytes": 134900,
+        "sha256": "03d4db9d91d9753fc8f4b0d5b6e69801317e1e1ebeb4ff0f80a9e0e7ebf3df11"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          682769557,
+          682853905
+        ],
+        "bytes": 84349,
+        "sha256": "7719d7ee66cea387e5b6a5b030fd04281b1cfd280790cb133c43dfe3e91841cf"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          683644444,
+          683656955
+        ],
+        "bytes": 12512,
+        "sha256": "834f6e0c6a7913c1352c22445cafb4eaa71e22089677f0127d8f7d2514d96c59"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          681436896,
+          682102575
+        ],
+        "bytes": 665680,
+        "sha256": "23a8d0baad2d99352a8337d46161e50a0836cf493da8a2096b3152b53c8a6543"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          683375784,
+          683509768
+        ],
+        "bytes": 133985,
+        "sha256": "259ac1074f10cf6866885a6472ead6b2a26e6c7be02c3f2c1f899c5d81fc6a00"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          682938097,
+          683021652
+        ],
+        "bytes": 83556,
+        "sha256": "5d77943f739469aafb2ec49ebb73f30677b7393b2a4b071059c75a732043228e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          683669417,
+          683681945
+        ],
+        "bytes": 12529,
+        "sha256": "edf90c08faa93d167cf9253909dcff26ba91ceb95ddf7f86519b3705926b8a00"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          685354968,
+          685968366
+        ],
+        "bytes": 613399,
+        "sha256": "09227c19b5a6ccc2b613c5c5bd76c8d3622031a10da8e1ed085c2ef72c85261d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          686736859,
+          686863195
+        ],
+        "bytes": 126337,
+        "sha256": "b415eddd62b6e1ed826cf3971ff44499afedf7a9a1dd43d619d10057a146692b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          686579105,
+          686657664
+        ],
+        "bytes": 78560,
+        "sha256": "5e4ec761f82b4bb8735f8c29967103566cc6619f1b7f4adcc73fdd9ccb3c146c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          686991101,
+          687003124
+        ],
+        "bytes": 12024,
+        "sha256": "2456e66fbbfa5c36cec17767badaa241eb3a0729e74dacb2ff7d4b53d7456df0"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1016319835,
+          1016319864
+        ],
+        "bytes": 30,
+        "sha256": "fd6f5f72856cdf067fe41822df2636b852766dfd708b43ffb5b3c57c10c00f63"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1186996962,
+          1187009253
+        ],
+        "bytes": 12292,
+        "sha256": "1ecda7d2b21e275301fdf43bba61897b90a066ddab37aec374e49d1951ab6841"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1091581635,
+          1092272478
+        ],
+        "bytes": 690844,
+        "sha256": "8428684d5dbb8fd775597cf88947ea03d79e30e34d17f8740ca082351f1c21fb"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1094094847,
+          1094231284
+        ],
+        "bytes": 136438,
+        "sha256": "262b06e0806207eca28986343d23cf700db0ee034f8b16269acbac2233f6d80e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1093704058,
+          1093790327
+        ],
+        "bytes": 86270,
+        "sha256": "28aaac5500a0b39dc6e131145cece204bb3b48e37bab930e4f939b72be432ac8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1094513986,
+          1094526598
+        ],
+        "bytes": 12613,
+        "sha256": "aef8ce07d61d6bb8ce11648f8d8d78b503de3ca250a5fb66ba8cbfb666774da6"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1092942971,
+          1093618267
+        ],
+        "bytes": 675297,
+        "sha256": "a064ce3ada795d20acbe42d8d74e187e237d8f6b48d2cc38a8c37fac4abc4155"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1094366079,
+          1094501534
+        ],
+        "bytes": 135456,
+        "sha256": "0b48f42a5efa29fd1ecdc1d26775f78a81777747d5ad6f59b8144c7ec3f33618"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1093874487,
+          1093958730
+        ],
+        "bytes": 84244,
+        "sha256": "11aefade5f44cfbd6eb53bf09e6a0d694547131d714f60bbba11b14359b237bd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1094539156,
+          1094551775
+        ],
+        "bytes": 12620,
+        "sha256": "51b18365cf428f4e79cc40b2fd76841496349f3e8306f6e3b8ba1e3429a0cd5b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1098826402,
+          1099445101
+        ],
+        "bytes": 618700,
+        "sha256": "d02afdb66f9e4544fe0a44abc81dfb05ae555c4f73768e4e7f136e8586f73f2c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1099730009,
+          1099857236
+        ],
+        "bytes": 127228,
+        "sha256": "53327f9ee1b4237b07126f2179383b41913dd6e4f80ff1a1dffd50ab2c1aaa1f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1099524874,
+          1099605915
+        ],
+        "bytes": 81042,
+        "sha256": "010baca0c6b77b2a0dea0a684c26d1f938f411a0edcbaba56c2abf31804c28b8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1099869033,
+          1099881133
+        ],
+        "bytes": 12101,
+        "sha256": "a6b3bc1c639703160b49c3b03e0c00a981a202d7e8ddb06c03f0a6fab5d2aa75"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1357594898,
+          1357594927
+        ],
+        "bytes": 30,
+        "sha256": "5ad0f6b7ada45ed9af909ab633c14dd39812b6174174b1d76071a7e85a83fff4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1528795051,
+          1528807342
+        ],
+        "bytes": 12292,
+        "sha256": "3ed0fd8c12fb4f867b435993d7ce36c511c50f238cda42b945c811f8aa527b02"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1500924004,
+          1501622090
+        ],
+        "bytes": 698087,
+        "sha256": "db0af1cb376aa03736b7e7272d286c089d5a3c8428b045fbf48bef19e9b05807"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1503441013,
+          1503577342
+        ],
+        "bytes": 136330,
+        "sha256": "5b3690d66b8df90bd5569a543890f0f23e2730f600deffb92a7c695ff8e1719d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1503052264,
+          1503136599
+        ],
+        "bytes": 84336,
+        "sha256": "8c31ee253eb5828875a7c95a2a18b44281f57ffd0648bd3b9c330f2ab94097a5"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1503862335,
+          1503874770
+        ],
+        "bytes": 12436,
+        "sha256": "cc7863f3d1f2d6e74e141c192dcd90145650d7049489f70915c71df079733b51"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1502295115,
+          1502968236
+        ],
+        "bytes": 673122,
+        "sha256": "f5449482581f07253978f9078e3bab3bfa38a838c2dc448ea1acd4ef6e4470ce"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1503713478,
+          1503849898
+        ],
+        "bytes": 136421,
+        "sha256": "93a55ea628bb4aa7290a056fbbadbdbdef9c64736265a5a6c1c30d862a2eed0f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1503220303,
+          1503304433
+        ],
+        "bytes": 84131,
+        "sha256": "71e2dbee3063fee1086aad37f9dd84072d8a9245ab8a880f8bea746672f794ec"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1503887347,
+          1503900054
+        ],
+        "bytes": 12708,
+        "sha256": "2df4482a53eda4a51cfa72192e87adb7e0d7175c2490264756b8a62bd628ea0e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1506233594,
+          1506865794
+        ],
+        "bytes": 632201,
+        "sha256": "ef7979eca348ac986b5f568702234d52be43bb554f5e6d2f18723a8179bc9c87"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1507153054,
+          1507280902
+        ],
+        "bytes": 127849,
+        "sha256": "04034d5291c425b285d90ad46616a29801fe16f35eee5b7338200c82c98181d4"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1506945133,
+          1507024729
+        ],
+        "bytes": 79597,
+        "sha256": "9c6438c75129cf81fc9402c225abb416225ddbdf27632f721dc2aef50ed921c9"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1507293064,
+          1507305136
+        ],
+        "bytes": 12073,
+        "sha256": "37a005a2a3470c3d4d84dc3f34940593bfcd9141a449c4ef7dde30e242043ebf"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1874099445,
+          1874099474
+        ],
+        "bytes": 30,
+        "sha256": "9989f85a0a7f9f58b22c71c38ec896aea823d1e1a63cda7a6d41a59f0eb4012b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2047500159,
+          2047512450
+        ],
+        "bytes": 12292,
+        "sha256": "cbf547b405b114914f6f61e025eebe601965ef5c63128c573427570e703df412"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1918203769,
+          1918911884
+        ],
+        "bytes": 708116,
+        "sha256": "3b9e0f449581956b7ff0213b6d5fd9a90d9d9af6a0071c32778dc427c4fff12a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1920753577,
+          1920891753
+        ],
+        "bytes": 138177,
+        "sha256": "679c1f6572c3e76a6f68a9a5aaee82c6b22c73ffb0b701f9c4fbac75c22f4481"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1920363543,
+          1920447507
+        ],
+        "bytes": 83965,
+        "sha256": "233c08066fe1282c134f97963239862b99d4542c4840c0612f42bc96fcb11a80"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1921176128,
+          1921188676
+        ],
+        "bytes": 12549,
+        "sha256": "73bd5dc9f9d25498f434f5a32c915793005ac15928e805105ecd05d369a97f80"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1919595630,
+          1920279062
+        ],
+        "bytes": 683433,
+        "sha256": "c20793e434d02b7d52bcfa6487ec24eab85d44e30787448660a226ac9f18109a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1921027978,
+          1921163618
+        ],
+        "bytes": 135641,
+        "sha256": "772f99f70738b8f3f0fdf4e2e62f7a2bde95fa2e6b2986fe325bfe0cc0eb0624"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1920531268,
+          1920615167
+        ],
+        "bytes": 83900,
+        "sha256": "3e75c0633e7a893600c1a2022c093953dbcedb24c49e1c2999226cd9f62b909a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1921201191,
+          1921213804
+        ],
+        "bytes": 12614,
+        "sha256": "251dbc7cbcbe1caebe7aa234167c5015c9039bc446777164a24ab39441962480"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1925569981,
+          1926214113
+        ],
+        "bytes": 644133,
+        "sha256": "7929a32c262d742b7be7c20b4d22b366320e944a12001dcf998894068851734f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1926498040,
+          1926624964
+        ],
+        "bytes": 126925,
+        "sha256": "beb0dfab9e83d36c322ada40a541670b4919adb812aa0009a970dc685d15448d"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1926293148,
+          1926372306
+        ],
+        "bytes": 79159,
+        "sha256": "8940d8ed1ca0dccd04bbf1a430a4872e847526a43f58f50d27264a4ac1164d98"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          1926636998,
+          1926648985
+        ],
+        "bytes": 11988,
+        "sha256": "cefa7adf341912dc362519c2a5f3035bed4a59c112d84f21a901c48bd5f6aa09"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2389291850,
+          2389291879
+        ],
+        "bytes": 30,
+        "sha256": "6a6f8371263b7e88ce83d926dd7813fd3a7b8e6be8438a511ffc2ed3dbde285f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2562437654,
+          2562449945
+        ],
+        "bytes": 12292,
+        "sha256": "38ca16ff6604e2d04fadab6c7c934ce95fb9a2f42591801b569e58bce293a869"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2501905204,
+          2502606713
+        ],
+        "bytes": 701510,
+        "sha256": "df407e7ffe3aca54daecf5c494cf5f9dfe11e09a456ce9a26e7db6f3c3847d85"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2504439554,
+          2504577023
+        ],
+        "bytes": 137470,
+        "sha256": "3f028e660e34457fa5691069e8898414ca385b071ecd4e4fe183c9fbded4089e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2504049138,
+          2504133870
+        ],
+        "bytes": 84733,
+        "sha256": "53b49aad60c65ef2dfae8e9e97cb2d8f43381de2686330d557f02e5014575e3f"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2504858627,
+          2504871153
+        ],
+        "bytes": 12527,
+        "sha256": "14e24c18070cd0447c2c93c876e97a8998951bd9ef870502badda31aa8f196d8"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2503285050,
+          2503964672
+        ],
+        "bytes": 679623,
+        "sha256": "6162b4dfb43cf8c74d88905b3020cb0852906d5c269604badbc7e9e61b1c9dcd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2504711259,
+          2504846066
+        ],
+        "bytes": 134808,
+        "sha256": "2f66900e6018cfb63f2a77306804742fc92b44a542b940b158d9c809c56a0fa2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2504217939,
+          2504302231
+        ],
+        "bytes": 84293,
+        "sha256": "7e42050092a8544c48777cdd34d4ac73b996d980c2a474c7dc41161e002ea4e9"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2504883748,
+          2504896329
+        ],
+        "bytes": 12582,
+        "sha256": "d39077c3bbd9dc2de74870644d4dde537ff6c3fe63d00dd635466125290f7355"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2507249937,
+          2507886199
+        ],
+        "bytes": 636263,
+        "sha256": "2651b26c607b8bdb6f5b1e1bb244de57e03355bae2f6a3644ef85b0d13dccc2c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2508171387,
+          2508298182
+        ],
+        "bytes": 126796,
+        "sha256": "e83a5fb4080b2dedf0d7c8140c6995596e313353a9d28dc949e30e5fcf555d76"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2507965542,
+          2508044685
+        ],
+        "bytes": 79144,
+        "sha256": "6cf1b80600390bc992aa6c9b0e7c9e27bdc1026db52b7fdff3f5e179128284de"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2508310266,
+          2508322323
+        ],
+        "bytes": 12058,
+        "sha256": "0d7a83f4da38e144d11821a6d60a81467b9390fa130677d29d7cfb57608928d0"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2909476589,
+          2909476618
+        ],
+        "bytes": 30,
+        "sha256": "47807301593562c4690a608f0781017d7af2117c6bd7075cb1559b0e0ae0487b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3083449887,
+          3083462178
+        ],
+        "bytes": 12292,
+        "sha256": "c88a06995608781a388c6f51d3164f1055cbe9bf846b0486dcd751424bbfb747"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2921045338,
+          2921753061
+        ],
+        "bytes": 707724,
+        "sha256": "f67d97026b95964a956c8359ab0b9a73cba23819161956d5aeff6c0dc8aa695b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2923605516,
+          2923742980
+        ],
+        "bytes": 137465,
+        "sha256": "4536c13ace137a43c28fb25945d64a60a31670514d440b8f613f4fef0c38cc5c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2923216362,
+          2923300393
+        ],
+        "bytes": 84032,
+        "sha256": "49a3b7415d11a6b9d7590e7fb5e2f32bb2d2413646fb28adf05ce7cc05999942"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2924027708,
+          2924040241
+        ],
+        "bytes": 12534,
+        "sha256": "12e8f6968a7c550eac57ea247fb49baf4d380f7c500aca2acd6a02df4b4ee50e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2922442954,
+          2923132413
+        ],
+        "bytes": 689460,
+        "sha256": "3cbeee5ebfd9efe45dbca1c1d5d6f007ec074463e06102d61b625c18ff86a8db"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2923879563,
+          2924015036
+        ],
+        "bytes": 135474,
+        "sha256": "d0fdbdee335f1ab5f8a5bd265e8dccc87487d75a9133d71cdafac550d41888c2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2923384476,
+          2923468274
+        ],
+        "bytes": 83799,
+        "sha256": "76d4d7544a84afed9a521c7d9eb440e5b71666077396057c9fbf88073621da1a"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2924052846,
+          2924065472
+        ],
+        "bytes": 12627,
+        "sha256": "04c3d6bc2e7e85bc906a9ff78bc6bcc91b24d8c05b75bd7dc9796e1554d28156"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2928426914,
+          2929059684
+        ],
+        "bytes": 632771,
+        "sha256": "34adc338e10757cf85d2c52e56f7955f7942f4f1c410e89808e4953867a3e639"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2929346164,
+          2929473884
+        ],
+        "bytes": 127721,
+        "sha256": "30b986f13e9070fa2d0caa0ba5a77f2c8af7d6509b0e223f67264466588bcd17"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2929139335,
+          2929218406
+        ],
+        "bytes": 79072,
+        "sha256": "abd0003a741965822cd062466e1e9165aed5d1c229359bf7416163080375a314"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          2929485947,
+          2929497956
+        ],
+        "bytes": 12010,
+        "sha256": "9fc8dd27bf742740f594f65d1b749dee327db96ec80f047f3d62c41362cb801b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3257839789,
+          3257839818
+        ],
+        "bytes": 30,
+        "sha256": "0687aa4d2ff182e66a1c3f13ac36250485a31158695d1ef620fe4e9ac31f0abb"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3345063657,
+          3345075948
+        ],
+        "bytes": 12292,
+        "sha256": "066dc9b44569bc4df864b537e01b6ae2c26a37b21efc7b77cfb2077a84602dc9"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3338618703,
+          3339329641
+        ],
+        "bytes": 710939,
+        "sha256": "cd85b8783819a39207f9e7ab47bbf7a3da8c9db8ee75347d95acb56cb1b5f80e"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3341194075,
+          3341331899
+        ],
+        "bytes": 137825,
+        "sha256": "5765924350384da3470bdebe318c67a832652c4e37f037d05658f69ec1509baa"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3340800034,
+          3340886370
+        ],
+        "bytes": 86337,
+        "sha256": "2bc76ab8a90002b7d60484fd8aeb560a705370518a9b8a2359aad28710f7fe8b"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3341614648,
+          3341627092
+        ],
+        "bytes": 12445,
+        "sha256": "b38cb8bb62076a7c0643ee4e7e69a18057617c3e7003cd397ba9897f43072809"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3340021621,
+          3340713652
+        ],
+        "bytes": 692032,
+        "sha256": "77b30d053918f4653578c03e10d0bbd65165f29320566e87a91d959164a8adff"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3341467222,
+          3341602244
+        ],
+        "bytes": 135023,
+        "sha256": "a9fa8e2b4128abbb1bf3b75e12d43de15d0a9fa8a385b55c236cc3c2698baeb2"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3340971788,
+          3341056970
+        ],
+        "bytes": 85183,
+        "sha256": "75d07a55743da61ac738a41e1ad8d9a912fc9b8355228586ee496442c4ef2e94"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3341639714,
+          3341652319
+        ],
+        "bytes": 12606,
+        "sha256": "cd7496a8d108b5c62268a29364336b820a830bc614d42032ea53f96e8910ac0c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3343984668,
+          3344623105
+        ],
+        "bytes": 638438,
+        "sha256": "92f4534d5b32fb612e3d2376cc12684a34b7d9b0f5aa18919e36e36648548d3c"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3344911651,
+          3345039356
+        ],
+        "bytes": 127706,
+        "sha256": "a9e153cb284b958aee46302caf86b224f954ffd0507769ae647cc376b306d5df"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3344703553,
+          3344784387
+        ],
+        "bytes": 80835,
+        "sha256": "f81246a89b87cce0d433ecfb62d5ab135e57c940c47479b9c793028db349fddd"
+      },
+      {
+        "url": "https://zenodo.org/api/records/22868368/files/physarum-001-dish0-r0c0.ome.zarr.zip/content",
+        "range": [
+          3345051449,
+          3345063656
+        ],
+        "bytes": 12208,
+        "sha256": "36ec54628295b2e11a37c2546cf31290fb81cf21fb5f0db59ef9d0d38132b555"
+      }
+    ]
+  },
+  "limitations": [
+    "Twelve sampled native RGB crops from experiment001 dish0; no complete temporal reconstruction.",
+    "Publisher support masking is already in native images; no recoloring, downsampling, registration or flip applied to stored PNGs.",
+    "Measurements describe scan appearance and may reflect lighting, food, dish and organism; luma/texture/change are not validated biological coverage or tissue mass.",
+    "Fixed publisher frame-zero circle is unreviewed; center-based tile selection is not a verified physical dish boundary.",
+    "Flatbed scanner view is mirrored relative to an above-dish view.",
+    "Whole-archive MD5/SHA256 and source full-scan PNG hashes are publisher values, unverified by partial extraction.",
+    "Complete small-entry ZIP CRC32 and image shard-index CRC32C verified; image shard ZIP CRC32 unavailable without fetching all frames.",
+    "No food coordinates, inoculum, segmentation, network or scientific conclusions inferred.",
+    "Use publisher-corrected300dpi calibration if physical units are needed; stored OME scale is superseded."
+  ]
+}

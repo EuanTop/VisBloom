@@ -1,0 +1,4 @@
+interface:
+  display_name: "蜡笔与油画棒材质"
+  short_description: "用纸齿、颜料沉积与笔触叠色实现可近看的蜡笔材质，保留数据表达与创作者选择"
+  default_prompt: "使用 $wax-crayon 为当前作品实现细腻的蜡笔颗粒和自然断边，保留原有数据编码。"

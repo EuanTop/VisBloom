@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "data-art",
+      "version": "0.2.18",
+      "group": "core"
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.13",
+      "group": "core"
+    },
+    {
+      "id": "wax-crayon",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "threejs-fundamentals",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-geometry",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-materials",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-shaders",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-lighting",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-textures",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-performance",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "threejs-animation",
+      "version": "0.1.0",
+      "group": "time"
+    },
+    {
+      "id": "threejs-interaction",
+      "version": "0.1.0",
+      "group": "interaction"
+    },
+    {
+      "id": "blender-geometry-nodes",
+      "version": "0.1.0",
+      "group": "algorithm"
+    },
+    {
+      "id": "blender-stylized-npr",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "blender-simulation",
+      "version": "0.1.0",
+      "group": "algorithm"
+    },
+    {
+      "id": "blender-export-pipelines",
+      "version": "0.1.0",
+      "group": "delivery"
+    },
+    {
+      "id": "p5js-reference",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "d3-data-expression",
+      "version": "0.1.0",
+      "group": "encoding"
+    },
+    {
+      "id": "illustration-ink-sketch",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "illustration-grainy-gouache",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "illustration-halftone-line",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "visual-composition",
+      "version": "0.1.1",
+      "group": "composition"
+    },
+    {
+      "id": "color-relationships",
+      "version": "0.1.0",
+      "group": "composition"
+    },
+    {
+      "id": "motion-principles",
+      "version": "0.1.2",
+      "group": "time"
+    },
+    {
+      "id": "generative-art",
+      "version": "0.1.0",
+      "group": "algorithm"
+    },
+    {
+      "id": "data-materials",
+      "version": "0.1.0",
+      "group": "material"
+    },
+    {
+      "id": "creative-methods",
+      "version": "0.1.0",
+      "group": "method"
+    },
+    {
+      "id": "ava-data-semantics",
+      "version": "0.1.0",
+      "group": "material"
+    },
+    {
+      "id": "distribution-and-uncertainty",
+      "version": "0.1.0",
+      "group": "encoding"
+    },
+    {
+      "id": "spatial-comparison",
+      "version": "0.1.0",
+      "group": "encoding"
+    },
+    {
+      "id": "temporal-observations",
+      "version": "0.1.0",
+      "group": "encoding"
+    },
+    {
+      "id": "ink-wash",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "postmodern-composition",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "fractal-structures",
+      "version": "0.1.0",
+      "group": "algorithm"
+    },
+    {
+      "id": "reaction-diffusion",
+      "version": "0.1.0",
+      "group": "algorithm"
+    },
+    {
+      "id": "processing-sketch-methods",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "document-artwork-navigation",
+      "version": "0.1.0",
+      "group": "interaction"
+    },
+    {
+      "id": "long-form-poster",
+      "version": "0.1.0",
+      "group": "delivery"
+    },
+    {
+      "id": "antv-g2-chart",
+      "version": "0.1.0",
+      "group": "technology"
+    },
+    {
+      "id": "antv-g6-graph",
+      "version": "0.1.0",
+      "group": "encoding"
+    },
+    {
+      "id": "antv-infographic",
+      "version": "0.1.0",
+      "group": "composition"
+    },
+    {
+      "id": "antv-t8-ntv",
+      "version": "0.1.0",
+      "group": "method"
+    },
+    {
+      "id": "artwork-controls",
+      "version": "0.1.2",
+      "group": "interaction"
+    },
+    {
+      "id": "data-color",
+      "version": "0.1.0",
+      "group": "composition"
+    },
+    {
+      "id": "editorial-typography",
+      "version": "0.1.1",
+      "group": "composition"
+    },
+    {
+      "id": "light-and-material",
+      "version": "0.1.2",
+      "group": "style"
+    },
+    {
+      "id": "visual-traditions",
+      "version": "0.1.0",
+      "group": "style"
+    },
+    {
+      "id": "data-sonification",
+      "version": "0.1.0",
+      "group": "encoding"
+    },
+    {
+      "id": "narrative-sequence",
+      "version": "0.1.0",
+      "group": "interaction"
+    },
+    {
+      "id": "participatory-art",
+      "version": "0.1.0",
+      "group": "interaction"
+    },
+    {
+      "id": "sound-design",
+      "version": "0.1.0",
+      "group": "time"
+    }
+  ]
+}

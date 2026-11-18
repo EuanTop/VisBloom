@@ -1,0 +1,42 @@
+/* Lenis owns only this page's smooth scroll, with native document geometry. */
+html[data-portal-paging=true] { scroll-behavior: auto !important; }
+.platform-home .portal-intro { position: relative; }
+.platform-home .physarum-story[data-platform=true] { height: 200svh; }
+.platform-home [data-portal-page]:not([data-portal-page=intro]) { min-height: 100svh; }
+.platform-home .platform-workflow { padding-block: 104px 80px; }
+.platform-home .platform-data { padding-block: 104px 80px; display: grid; align-items: center; }
+.platform-home .platform-delivery { padding-block: 104px 80px; display: flex; flex-direction: column; justify-content: center; }
+.platform-home .portal-start { padding-block: 104px 64px; display: grid; align-items: center; }
+.portal-title-mask { display: block; overflow: hidden; padding-right: .18em; margin-right: -.18em; }
+.portal-title-mask>span { display: block; }
+.portal-flow-connector { width: clamp(40px,5vw,80px); height: 24px; flex-shrink: 0; color: #c5a580; overflow: visible; }
+
+/* One quiet rail; labels appear when they help navigation. */
+.portal-chapters { position: fixed; z-index: 18; right: 16px; top: 50%; transform: translateY(-50%); width: 48px; }
+.platform-home .portal-chapters button { position: relative; display: flex; justify-content: center; align-items: center; width: 48px; height: 44px; padding: 0; }
+.portal-chapters button>i { width: 12px; height: 2px; background: #8b7d9266; transition: width .4s,background .4s; }
+.portal-chapters button[aria-current=step]>i,
+.portal-chapters button:hover>i,
+.portal-chapters button:focus-visible>i { width: 28px; background: #d6b992; }
+.portal-chapters button>span { position: absolute; white-space: nowrap; right: 56px; opacity: 0; pointer-events: none; background: #08050dec; padding: 8px 16px; color: #d6c5b3; transform: translateX(8px); transition: opacity .2s,transform .2s; }
+.portal-chapters button:hover>span,
+.portal-chapters button:focus-visible>span { opacity: 1; transform: none; }
+.portal-chapters>p { white-space: nowrap; text-align: center; color: #b8a389; margin-top: 16px; }
+.platform-home .portal-mobile-page { display: none; }
+@media(max-width:1100px) {
+  .portal-chapters { display: none; }
+  .platform-home .portal-mobile-page { display: inline-flex; gap: 8px; align-items: center; justify-content: center; min-height: 44px; padding: 0; color: #baa58f; white-space: nowrap; }
+}
+@media(max-width:760px) {
+  .platform-home .platform-workflow { padding-block: 104px 64px; }
+  .platform-home .platform-data { padding-block: 104px 64px; }
+  .platform-home .platform-delivery { padding-block: 104px 64px; }
+  .platform-home .portal-start { padding-block: 104px 64px; }
+  .portal-flow-connector { width: 48px; height: 24px; transform: rotate(90deg); align-self: flex-start; margin-block: 8px; margin-left: 32px; }
+  .platform-home .portal-mobile-page { gap: 4px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .platform-home .physarum-story[data-platform=true] { height: 100svh; }
+  .portal-title-mask>span { transform: none !important; }
+  .platform-data-flow>div,.platform-delivery-options>div,.platform-preview-open { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+}

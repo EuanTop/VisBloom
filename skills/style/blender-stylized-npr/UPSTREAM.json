@@ -1,0 +1,35 @@
+{
+  "repository": "EL4CTEO/blender-skills",
+  "commit": "389f28addc79b87b28764898e38e7bf408d14b77",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "EL4CTEO",
+      "url": "https://github.com/EL4CTEO"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-stylized-npr/SKILL.md",
+      "gitBlob": "4364d3340190df213b86e0c466fa8270eb042d32",
+      "bytes": 5843
+    },
+    {
+      "path": "upstream/scripts/_bpyx.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-stylized-npr/scripts/_bpyx.py",
+      "gitBlob": "9048f6909cdd95254e93a7d478785149beaa4b9a",
+      "bytes": 4503
+    },
+    {
+      "path": "upstream/scripts/toon_setup.py",
+      "source": "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-stylized-npr/scripts/toon_setup.py",
+      "gitBlob": "f6f2c35fae1a2ca18fe9c254e267f82aae3d0f42",
+      "bytes": 17108
+    }
+  ]
+}

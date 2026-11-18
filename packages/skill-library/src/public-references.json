@@ -1,0 +1,82 @@
+[
+  {
+    "id": "seven-colors",
+    "title": "Seven Colors",
+    "author": "Jace Yang",
+    "kind": "technique",
+    "url": "https://raw.githubusercontent.com/jaceyang97/practices/698800910f0129993a6dd984e7a308f1a3bf79b6/assets/gallery/p46.webp",
+    "observation": "通过同一组弯曲线条对比印色、色墨密度与留白。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "color-accent-grid",
+    "title": "Color Accent Grid",
+    "author": "Jace Yang",
+    "kind": "technique",
+    "url": "https://raw.githubusercontent.com/jaceyang97/practices/698800910f0129993a6dd984e7a308f1a3bf79b6/assets/gallery/p50.webp",
+    "observation": "用少量有色形体打断高对比网格。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "differential-line",
+    "title": "Differential Line",
+    "author": "Anders Hoff / Inconvergent",
+    "kind": "technique",
+    "url": "https://github.com/inconvergent/differential-line#readme",
+    "observation": "高密度线的边缘与褶皱。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "cathedral-glass",
+    "title": "Cathedral Glass",
+    "author": "Jace Yang",
+    "kind": "technique",
+    "url": "https://raw.githubusercontent.com/jaceyang97/practices/698800910f0129993a6dd984e7a308f1a3bf79b6/assets/gallery/p63.webp",
+    "observation": "暗场中用一小块彩色玻璃给出尺度和焦点。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "aura",
+    "title": "Aura",
+    "author": "Yoichi Kobayashi",
+    "kind": "technique",
+    "url": "https://ykob.github.io/sketch-threejs/sketch/aura.html",
+    "observation": "透光轮廓和本体颜色分开处理。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "puddle",
+    "title": "Puddle",
+    "author": "Yoichi Kobayashi",
+    "kind": "technique",
+    "url": "https://ykob.github.io/sketch-threejs/sketch/puddle.html",
+    "observation": "流体颜色是明快的平涂色面。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "spiral-flower",
+    "title": "Spiral Flower",
+    "author": "Steeve Pommier",
+    "kind": "technique",
+    "url": "https://art.steeve.website/sketches/flowers/flowers-v5-spiral/",
+    "observation": "白底上用细墨线织出花瓣转折。",
+    "terms": "",
+    "license": "MIT"
+  },
+  {
+    "id": "gold-ribbons",
+    "title": "Gold Ribbons",
+    "author": "Steeve Pommier",
+    "kind": "technique",
+    "url": "https://art.steeve.website/sketches/ribbons/ribbons-v15-gold/",
+    "observation": "小范围金色高光和黑色负空间。",
+    "terms": "",
+    "license": "MIT"
+  }
+]

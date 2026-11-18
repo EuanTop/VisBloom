@@ -1,0 +1,23 @@
+{
+  "repository": "maestro-ai-stack/maestro-creative",
+  "commit": "079d9426797bd853993cd99941d141815d192402",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Maestro AI Pte. Ltd.",
+      "url": "https://github.com/maestro-ai-stack"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/motion-principles.md",
+      "source": "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/knowledge/theory/motion-principles.md",
+      "gitBlob": "c4675221fd8ae3766ebc2373cbf58023c32d6ebc",
+      "bytes": 8685
+    }
+  ]
+}

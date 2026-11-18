@@ -1,0 +1,143 @@
+{
+  "repository": "KalarisLabs/research-agent-skills",
+  "commit": "29fe36d26127205057d5e0ed8425f6b0e9a8c13a",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Kalaris Labs",
+      "url": "https://github.com/KalarisLabs"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/SKILL.md",
+      "gitBlob": "d2f57d4aec0ff6a33fc247ff2abd4b7c4e7a8a9d",
+      "bytes": 12822
+    },
+    {
+      "path": "upstream/assets/report_template.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/assets/report_template.md",
+      "gitBlob": "b3810e14407be56bbf805be4c6f3e4ef2dc96c5e",
+      "bytes": 7873
+    },
+    {
+      "path": "upstream/references/bioinformatics_genomics_formats.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/references/bioinformatics_genomics_formats.md",
+      "gitBlob": "162be12d2cba2de6fd82f324f52d90328bce06ff",
+      "bytes": 8882
+    },
+    {
+      "path": "upstream/references/chemistry_molecular_formats.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/references/chemistry_molecular_formats.md",
+      "gitBlob": "bcbb3e153a2d910cdd498bdbbe5156ba397e508a",
+      "bytes": 8568
+    },
+    {
+      "path": "upstream/references/general_scientific_formats.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/references/general_scientific_formats.md",
+      "gitBlob": "936fc400ddcf26ca605c93a83584770d18f3c8ff",
+      "bytes": 11741
+    },
+    {
+      "path": "upstream/references/microscopy_imaging_formats.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/references/microscopy_imaging_formats.md",
+      "gitBlob": "adec932e0ed8cbab8f6101304f50b59a8d1e9022",
+      "bytes": 8585
+    },
+    {
+      "path": "upstream/references/proteomics_metabolomics_formats.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/references/proteomics_metabolomics_formats.md",
+      "gitBlob": "16e4b1c1d20fa34cd33788266f9ace2bbc0eb411",
+      "bytes": 9569
+    },
+    {
+      "path": "upstream/references/spectroscopy_analytical_formats.md",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/references/spectroscopy_analytical_formats.md",
+      "gitBlob": "75053b20313b8d34d58d07e472b53efe41540675",
+      "bytes": 9095
+    },
+    {
+      "path": "upstream/scripts/__init__.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/__init__.py",
+      "gitBlob": "7fb9dd8fa120dd2d00eb2be0c5a4c1c4349c908a",
+      "bytes": 69
+    },
+    {
+      "path": "upstream/scripts/_capabilities.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/_capabilities.py",
+      "gitBlob": "639ae6a71e394686ccef3a28893e516eb53d6ff3",
+      "bytes": 18586
+    },
+    {
+      "path": "upstream/scripts/_common.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/_common.py",
+      "gitBlob": "9ca8011bf46aff5ad4765856e4ea60c325311734",
+      "bytes": 16569
+    },
+    {
+      "path": "upstream/scripts/_structured.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/_structured.py",
+      "gitBlob": "f4ec7a5d2caf509dea944c5e233fe4f30965ab60",
+      "bytes": 14984
+    },
+    {
+      "path": "upstream/scripts/_tabular.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/_tabular.py",
+      "gitBlob": "76da6c0fba6fb46a78fb9a00bd6b31176491d909",
+      "bytes": 36049
+    },
+    {
+      "path": "upstream/scripts/capability_manifest.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/capability_manifest.py",
+      "gitBlob": "243e963b18c52f3be40952a77ce16f6744700b27",
+      "bytes": 5522
+    },
+    {
+      "path": "upstream/scripts/distribution_sensitivity.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/distribution_sensitivity.py",
+      "gitBlob": "47aafdc3a9a09bbed2684defac427efd89da9d09",
+      "bytes": 2320
+    },
+    {
+      "path": "upstream/scripts/eda_analyzer.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/eda_analyzer.py",
+      "gitBlob": "9aed059d863e7bf1bde90957972ac788f3e632d7",
+      "bytes": 10674
+    },
+    {
+      "path": "upstream/scripts/image_inspector.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/image_inspector.py",
+      "gitBlob": "0e2a8e36f5b3915c23a2e690b0813697acdc58ba",
+      "bytes": 7491
+    },
+    {
+      "path": "upstream/scripts/missingness_leakage_audit.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/missingness_leakage_audit.py",
+      "gitBlob": "4e12a2bcb37da001819dce2e2ad1380b87536b8b",
+      "bytes": 3004
+    },
+    {
+      "path": "upstream/scripts/report_scaffold.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/report_scaffold.py",
+      "gitBlob": "a9fc1c9355716fc434b374bd2d31fc0505b7ae5f",
+      "bytes": 4352
+    },
+    {
+      "path": "upstream/scripts/sequence_inspector.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/sequence_inspector.py",
+      "gitBlob": "c0839517816d54034561770a530de954c0f66a77",
+      "bytes": 9820
+    },
+    {
+      "path": "upstream/scripts/tabular_profile.py",
+      "source": "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/scripts/tabular_profile.py",
+      "gitBlob": "e2e05a7f97c9eded6ade0d1a56b7e21c547ea3b0",
+      "bytes": 2093
+    }
+  ]
+}

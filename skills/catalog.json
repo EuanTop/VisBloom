@@ -1,0 +1,3626 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {
+      "id": "data-art",
+      "version": "0.1.0",
+      "directory": "skills/releases/data-art/0.1.0",
+      "description": "现有工作台创作Skill的冻结基线，用于后续组合与效果对照。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "bindings"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web"
+        ],
+        "method": [
+          "existing-baseline"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "2026-11-09由skills/data-art原样冻结。已有工具试用证据不等于艺术效果已通过，尚未完成新旧Skill对照。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.0",
+      "directory": "skills/releases/data-art/0.2.0",
+      "description": "候选主Skill：按当前创作问题引导表达、选择知识并在真实画面中迭代；工具与墨线知识按需读取。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "原创候选文字，依据项目需求和已审读开源调研提炼，未复制上游代码/作品；墨线机制来源在参考中注明。尚未证明新旧Skill效果差异。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.1",
+      "directory": "skills/releases/data-art/0.2.1",
+      "description": "待复测候选：在0.2.0基础上补充媒材与底色的对比关系、保持数据填色可读及实际变化可见性。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "基于2026-11-09四次真实试用后的小幅修订；0.2.0深色底上的墨线变化偏弱。未改被测版本或原作品，0.2.1尚未创作复测。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.2",
+      "directory": "skills/releases/data-art/0.2.2",
+      "description": "主Skill：按当前创作问题选择知识；新增按需发现独立蜡笔材质包，不预设作品风格。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "在0.2.1基础上增加可选材质知识发现；旧版本及评测锁保留。尚未证明广泛艺术效果提升。"
+      }
+    },
+    {
+      "id": "wax-crayon",
+      "version": "0.1.0",
+      "directory": "skills/releases/wax-crayon/0.1.0",
+      "description": "细腻蜡笔/油画棒的纸齿、颜料沉积、方向性叠色和不规则断边，附可移植Canvas2D实现与实作校准。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "wax-crayon",
+          "dry-oil-pastel",
+          "paper-tooth"
+        ],
+        "algorithm": [
+          "pigment-deposition",
+          "distance-field",
+          "stable-randomness"
+        ],
+        "technology": [
+          "canvas2d"
+        ],
+        "composition": [
+          "viewing-scale"
+        ],
+        "delivery": [
+          "resolution-aware-export"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "来自作者已认可的2026-11-10 SkinBloom实作与两次否决反馈；原创参考与可移植模块，未证明跨题材或Skill迁移质量。"
+      }
+    },
+    {
+      "id": "threejs-fundamentals",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-fundamentals/0.1.0",
+      "description": "Three.js场景、相机、坐标与渲染基础",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-fundamentals/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-geometry",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-geometry/0.1.0",
+      "description": "Three.js几何、缓冲属性与实例化",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ],
+        "algorithm": [
+          "instancing",
+          "procedural-geometry"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-geometry/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-materials",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-materials/0.1.0",
+      "description": "Three.js材质、PBR与颜色管理",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ],
+        "style": [
+          "surface-materials"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-materials/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-shaders",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-shaders/0.1.0",
+      "description": "Three.js自定义着色器与GLSL/TSL",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs",
+          "webgl",
+          "glsl",
+          "tsl"
+        ],
+        "algorithm": [
+          "shader-deformation"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-shaders/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-lighting",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-lighting/0.1.0",
+      "description": "Three.js光照、阴影与环境",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ],
+        "composition": [
+          "lighting",
+          "depth"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-lighting/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-textures",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-textures/0.1.0",
+      "description": "Three.js纹理、UV与采样",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-textures/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-performance",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-performance/0.1.0",
+      "description": "Three.js性能、资源与绘制预算",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ],
+        "delivery": [
+          "interactive-web",
+          "resource-budget"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-performance/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-animation",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-animation/0.1.0",
+      "description": "Three.js动画、插值与状态时钟",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ],
+        "time": [
+          "animation",
+          "interpolation"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-animation/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "threejs-interaction",
+      "version": "0.1.0",
+      "directory": "skills/releases/threejs-interaction/0.1.0",
+      "description": "Three.js拾取、拖动与输入",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "threejs"
+        ],
+        "interaction": [
+          "picking",
+          "dragging",
+          "pointer-input"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/skills/threejs-interaction/SKILL.md",
+          "https://github.com/CloudAI-X/threejs-skills/blob/0e181866f095b5f06d005133876e926515390d95/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游例子以独立页面与r186为前提；本工程已有渲染器/共享时钟，不能重复创建renderer或用独立requestAnimationFrame接管作品。按实际锁定版本查API，释放归作品所有的资源。",
+        "authors": [
+          {
+            "name": "CloudAI-X",
+            "url": "https://github.com/CloudAI-X"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "0e181866f095b5f06d005133876e926515390d95"
+      }
+    },
+    {
+      "id": "blender-geometry-nodes",
+      "version": "0.1.0",
+      "directory": "skills/releases/blender-geometry-nodes/0.1.0",
+      "description": "Blender几何节点、域、属性与程序化形态",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "blender",
+          "python"
+        ],
+        "algorithm": [
+          "geometry-nodes",
+          "procedural-geometry"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-geometry-nodes/SKILL.md",
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。这是外部制作工具知识，工作台没有Blender执行适配器。保留可编辑节点/资源与导出边界；按宿主实际版本检查节点和API，不把动漫默认值、引擎偏好当作所有作品标准。脚本仅随源提供，未运行。",
+        "authors": [
+          {
+            "name": "EL4CTEO",
+            "url": "https://github.com/EL4CTEO"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "389f28addc79b87b28764898e38e7bf408d14b77"
+      }
+    },
+    {
+      "id": "blender-stylized-npr",
+      "version": "0.1.0",
+      "directory": "skills/releases/blender-stylized-npr/0.1.0",
+      "description": "Blender非真实感材质、色阶与轮廓",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "blender",
+          "python"
+        ],
+        "style": [
+          "npr",
+          "toon",
+          "outlines"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-stylized-npr/SKILL.md",
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。这是外部制作工具知识，工作台没有Blender执行适配器。保留可编辑节点/资源与导出边界；按宿主实际版本检查节点和API，不把动漫默认值、引擎偏好当作所有作品标准。脚本仅随源提供，未运行。",
+        "authors": [
+          {
+            "name": "EL4CTEO",
+            "url": "https://github.com/EL4CTEO"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "389f28addc79b87b28764898e38e7bf408d14b77"
+      }
+    },
+    {
+      "id": "blender-simulation",
+      "version": "0.1.0",
+      "directory": "skills/releases/blender-simulation/0.1.0",
+      "description": "Blender粒子、布料、流体与模拟设置",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "blender",
+          "python"
+        ],
+        "algorithm": [
+          "simulation",
+          "physics"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-simulation/SKILL.md",
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。这是外部制作工具知识，工作台没有Blender执行适配器。保留可编辑节点/资源与导出边界；按宿主实际版本检查节点和API，不把动漫默认值、引擎偏好当作所有作品标准。脚本仅随源提供，未运行。",
+        "authors": [
+          {
+            "name": "EL4CTEO",
+            "url": "https://github.com/EL4CTEO"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "389f28addc79b87b28764898e38e7bf408d14b77"
+      }
+    },
+    {
+      "id": "blender-export-pipelines",
+      "version": "0.1.0",
+      "directory": "skills/releases/blender-export-pipelines/0.1.0",
+      "description": "Blender资产导出、比例与目标格式",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "blender",
+          "python"
+        ],
+        "delivery": [
+          "asset-export",
+          "gltf",
+          "fbx"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/skills/blender-export-pipelines/SKILL.md",
+          "https://github.com/EL4CTEO/blender-skills/blob/389f28addc79b87b28764898e38e7bf408d14b77/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。这是外部制作工具知识，工作台没有Blender执行适配器。保留可编辑节点/资源与导出边界；按宿主实际版本检查节点和API，不把动漫默认值、引擎偏好当作所有作品标准。脚本仅随源提供，未运行。",
+        "authors": [
+          {
+            "name": "EL4CTEO",
+            "url": "https://github.com/EL4CTEO"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "389f28addc79b87b28764898e38e7bf408d14b77"
+      }
+    },
+    {
+      "id": "p5js-reference",
+      "version": "0.1.0",
+      "directory": "skills/releases/p5js-reference/0.1.0",
+      "description": "p5.js绘图API、实例模式与常见错误",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "p5js",
+          "canvas2d",
+          "javascript"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/romellogoodman/creative-coding-skillpack/blob/69cf2b20232f2e99481f14021100c59fd9f9487b/p5js-reference-skill/SKILL.md",
+          "https://github.com/romellogoodman/creative-coding-skillpack/blob/69cf2b20232f2e99481f14021100c59fd9f9487b/p5js-reference-skill/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。上游针对p5.js 1.x，不能默认新项目也是1.x，也不能把p5js.org/reference永久解释为旧版。先读取实际依赖版本再查对应官方API；本工程未接入p5渲染适配器。只选该目录，其本地MIT许可证不被外推到整个skillpack。",
+        "authors": [
+          {
+            "name": "Romello Goodman",
+            "url": "https://github.com/romellogoodman"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "69cf2b20232f2e99481f14021100c59fd9f9487b"
+      }
+    },
+    {
+      "id": "d3-data-expression",
+      "version": "0.1.0",
+      "directory": "skills/releases/d3-data-expression/0.1.0",
+      "description": "D3比例尺、数据键、布局、力导向与交互范例",
+      "status": "experimental",
+      "facets": {
+        "encoding": [
+          "scales",
+          "data-joins",
+          "relationships"
+        ],
+        "algorithm": [
+          "force-layout",
+          "hierarchy"
+        ],
+        "technology": [
+          "d3",
+          "svg",
+          "javascript"
+        ],
+        "interaction": [
+          "brush",
+          "zoom"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/SKILL.md",
+          "https://github.com/jiannanya/snow-d3/blob/f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。图表目录是实现参考，不是艺术形式上限。上游示例中的随机关系是演示数据，不替换真实观测；外部字符串用文本节点/转义，不能直接拼接tooltip HTML。CDN例子不自动等于离线导出。",
+        "authors": [
+          {
+            "name": "Jiannanya",
+            "url": "https://github.com/jiannanya"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "f9c319c5f5b148f6c1c7d1669bcebb8a97b07b6f"
+      }
+    },
+    {
+      "id": "illustration-ink-sketch",
+      "version": "0.1.0",
+      "directory": "skills/releases/illustration-ink-sketch/0.1.0",
+      "description": "墨线、干笔、飞白与手绘笔触",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "ink",
+          "dry-stroke"
+        ],
+        "algorithm": [
+          "mark-making",
+          "stable-randomness"
+        ],
+        "technology": [
+          "svg",
+          "javascript"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-ink-sketch/SKILL.md",
+          "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。提炼笔触、材质与风格语法；上游固定题材、样例配色、打分阈值不是用户作品的硬规则。保留数据填色和已选形态。附原始脚本/风格参数/文本示例；上游JPG预览未复制，原始固定版本入口可查看。",
+        "authors": [
+          {
+            "name": "Meng To",
+            "url": "https://github.com/MengTo"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "d6324a05ca03ce5f6cdba519318d92176dbc43d2"
+      }
+    },
+    {
+      "id": "illustration-grainy-gouache",
+      "version": "0.1.0",
+      "directory": "skills/releases/illustration-grainy-gouache/0.1.0",
+      "description": "颗粒水粉、颜料覆盖与层次",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "gouache",
+          "pigment-grain"
+        ],
+        "algorithm": [
+          "mark-making",
+          "stable-randomness"
+        ],
+        "technology": [
+          "svg",
+          "javascript"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-grainy-gouache/SKILL.md",
+          "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。提炼笔触、材质与风格语法；上游固定题材、样例配色、打分阈值不是用户作品的硬规则。保留数据填色和已选形态。附原始脚本/风格参数/文本示例；上游JPG预览未复制，原始固定版本入口可查看。",
+        "authors": [
+          {
+            "name": "Meng To",
+            "url": "https://github.com/MengTo"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "d6324a05ca03ce5f6cdba519318d92176dbc43d2"
+      }
+    },
+    {
+      "id": "illustration-halftone-line",
+      "version": "0.1.0",
+      "directory": "skills/releases/illustration-halftone-line/0.1.0",
+      "description": "半调网点与线描视觉语言",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "halftone",
+          "linework"
+        ],
+        "algorithm": [
+          "mark-making",
+          "stable-randomness"
+        ],
+        "technology": [
+          "svg",
+          "javascript"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/agent-skills/illustration/illustration-halftone-line/SKILL.md",
+          "https://github.com/MengTo/Skills/blob/d6324a05ca03ce5f6cdba519318d92176dbc43d2/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。提炼笔触、材质与风格语法；上游固定题材、样例配色、打分阈值不是用户作品的硬规则。保留数据填色和已选形态。附原始脚本/风格参数/文本示例；上游JPG预览未复制，原始固定版本入口可查看。",
+        "authors": [
+          {
+            "name": "Meng To",
+            "url": "https://github.com/MengTo"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "d6324a05ca03ce5f6cdba519318d92176dbc43d2"
+      }
+    },
+    {
+      "id": "visual-composition",
+      "version": "0.1.0",
+      "directory": "skills/releases/visual-composition/0.1.0",
+      "description": "视觉构成、层级、尺度与艺术运动参考",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "composition",
+          "hierarchy",
+          "viewing-scale"
+        ],
+        "style": [
+          "art-movements"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/tree/079d9426797bd853993cd99941d141815d192402/knowledge/theory",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。这些构成知识用于分析参考与具体观看情境，不让商业页面模板、统一审美禁令或形式优先级覆盖创作者意图。",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "color-relationships",
+      "version": "0.1.0",
+      "directory": "skills/releases/color-relationships/0.1.0",
+      "description": "色彩关系、对比、调和与可读性",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "color-relationships",
+          "contrast"
+        ],
+        "encoding": [
+          "color"
+        ],
+        "style": [
+          "palette"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/tree/079d9426797bd853993cd99941d141815d192402/knowledge/theory",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。色彩理论是按作品情境选择的工具。数据色标与艺术配色分别处理；不要求套固定色板、文化联想或所谓通用情绪映射。",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "motion-principles",
+      "version": "0.1.0",
+      "directory": "skills/releases/motion-principles/0.1.0",
+      "description": "运动节奏、缓动与时间组织",
+      "status": "experimental",
+      "facets": {
+        "time": [
+          "rhythm",
+          "easing",
+          "motion"
+        ],
+        "composition": [
+          "perceptual-continuity"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/tree/079d9426797bd853993cd99941d141815d192402/knowledge/theory",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。区分数据时间、作品演化和装饰运动，沿用工作台共享时钟；不要把动画原则机械套在所有动态数据上。",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "generative-art",
+      "version": "0.1.0",
+      "directory": "skills/releases/generative-art/0.1.0",
+      "description": "生成艺术、噪声、粒子与算法选择",
+      "status": "experimental",
+      "facets": {
+        "algorithm": [
+          "noise",
+          "particles",
+          "generative-art"
+        ],
+        "technology": [
+          "p5js",
+          "canvas2d",
+          "javascript"
+        ],
+        "method": [
+          "material-experiment"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/skills/generative-art/SKILL.md",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。算法服务于表达和可控制性，不替换真实数据。上游scaffold、固定输出位置/页面规范属于原宿主，工作台采用自身项目源码与参数接口；未运行其脚本。",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "data-materials",
+      "version": "0.1.0",
+      "directory": "skills/releases/data-materials/0.1.0",
+      "description": "数据材料、格式能力、缺失与采样边界",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data",
+          "scientific-formats",
+          "missingness"
+        ],
+        "encoding": [
+          "data-semantics"
+        ],
+        "technology": [
+          "ava",
+          "python"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/skills/exploratory-data-analysis/SKILL.md",
+          "https://github.com/KalarisLabs/research-agent-skills/blob/29fe36d26127205057d5e0ed8425f6b0e9a8c13a/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。AVA继续是必需数据核心。上游科学数据预检和Python辅助仅在需要的格式/语义问题中使用；不让全面科研审核成为每次调色的前置流程，不因成功读取文件就推断领域意义。脚本原样保留，未运行。",
+        "authors": [
+          {
+            "name": "Kalaris Labs",
+            "url": "https://github.com/KalarisLabs"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "29fe36d26127205057d5e0ed8425f6b0e9a8c13a"
+      }
+    },
+    {
+      "id": "creative-methods",
+      "version": "0.1.0",
+      "directory": "skills/releases/creative-methods/0.1.0",
+      "description": "按创作阶段选择的思考方法参考库",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "analogy",
+          "constraint-experiment",
+          "ideation"
+        ],
+        "composition": [
+          "reference-analysis"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/SKILL.md",
+          "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/LICENSE"
+        ],
+        "note": "上游原文保留；Artwork入口限定使用边界。内容入库，作品效果待批量评估。方法包按需使用，不作为主Skill强制阶段。固定否定前几种想法、强制数量、自评分与方法汇报不成为默认要求；任意挑衅只作用于假设和形式实验，不能修改真实观察。没有被本轮创作效果验证。",
+        "authors": [
+          {
+            "name": "SHL0MS",
+            "url": "https://github.com/NousResearch/hermes-agent/blob/546146a7907633b94a8307544c31713f6d931ae9/optional-skills/creative/creative-ideation/SKILL.md"
+          },
+          {
+            "name": "Nous Research",
+            "url": "https://github.com/NousResearch"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "546146a7907633b94a8307544c31713f6d931ae9"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.3",
+      "directory": "skills/releases/data-art/0.2.3",
+      "description": "主引导：从按属性组织的开放知识库按需检索，读取平台适配说明和必要原文；保留当前作品与人工修改。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "在0.2.2基础上增加通用Skill查找与片段读取说明，移除单一风格硬编码发现提示。批量入库后再集中评估，不逐包进行作品效果试验。"
+      }
+    },
+    {
+      "id": "ava-data-semantics",
+      "version": "0.1.0",
+      "directory": "skills/releases/ava-data-semantics/0.1.0",
+      "description": "为 AVA 查询和数据艺术建立字段含义、记录粒度、单位、关联键和缺失规则。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "ava",
+          "数据口径",
+          "粒度",
+          "缺失",
+          "字段语义",
+          "join"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "distribution-and-uncertainty",
+      "version": "0.1.0",
+      "directory": "skills/releases/distribution-and-uncertainty/0.1.0",
+      "description": "比较数据分布、样本覆盖和不确定性，决定分组、区间及缺失值如何进入画面。",
+      "status": "experimental",
+      "facets": {
+        "encoding": [
+          "distribution",
+          "uncertainty",
+          "分布",
+          "不确定性",
+          "区间",
+          "箱线"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "spatial-comparison",
+      "version": "0.1.0",
+      "directory": "skills/releases/spatial-comparison/0.1.0",
+      "description": "按坐标、邻近关系、地理分组和空间尺度构造地图、球面或网格的数据表达。",
+      "status": "experimental",
+      "facets": {
+        "encoding": [
+          "geospatial",
+          "spatial",
+          "地理",
+          "经纬度",
+          "空间比较",
+          "地图"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "temporal-observations",
+      "version": "0.1.0",
+      "directory": "skills/releases/temporal-observations/0.1.0",
+      "description": "组织时间序列、稀疏观测、变化量和时间驱动的艺术作品。",
+      "status": "experimental",
+      "facets": {
+        "encoding": [
+          "time-series",
+          "时序",
+          "时间序列",
+          "观测",
+          "插值"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "ink-wash",
+      "version": "0.1.0",
+      "directory": "skills/releases/ink-wash/0.1.0",
+      "description": "设计水墨、渗化墨边、积墨与飞白，适用于需要同时保留数据轮廓的作品。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "ink-wash",
+          "水墨",
+          "飞白",
+          "渗化",
+          "dry-brush"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "postmodern-composition",
+      "version": "0.1.0",
+      "directory": "skills/releases/postmodern-composition/0.1.0",
+      "description": "借鉴后现代图形设计的异质网格、断裂层级与错位构成，用于有明确编辑立场的数据作品。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "postmodern",
+          "后现代",
+          "异质网格",
+          "错位",
+          "editorial"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "fractal-structures",
+      "version": "0.1.0",
+      "directory": "skills/releases/fractal-structures/0.1.0",
+      "description": "用分形和递归几何表达层级、分支或尺度关系，控制停止条件、数值边界和渲染成本。",
+      "status": "experimental",
+      "facets": {
+        "algorithm": [
+          "fractal",
+          "分形",
+          "递归",
+          "branching",
+          "lsystem"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "reaction-diffusion",
+      "version": "0.1.0",
+      "directory": "skills/releases/reaction-diffusion/0.1.0",
+      "description": "用反应扩散和局部反馈生成抽象图案，明确数据场、模拟参数和显示材质的关系。",
+      "status": "experimental",
+      "facets": {
+        "algorithm": [
+          "reaction-diffusion",
+          "反应扩散",
+          "gray-scott",
+          "反馈场",
+          "模拟"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "processing-sketch-methods",
+      "version": "0.1.0",
+      "directory": "skills/releases/processing-sketch-methods/0.1.0",
+      "description": "把 Processing 的绘制循环、坐标变换与生成艺术方法迁移到网页创作。",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "processing",
+          "creative-coding",
+          "绘制循环",
+          "坐标栈",
+          "noise"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "document-artwork-navigation",
+      "version": "0.1.0",
+      "directory": "skills/releases/document-artwork-navigation/0.1.0",
+      "description": "组织交互科普、翻页、长页和多章节数据作品，并让屏幕状态与导出行为可控。",
+      "status": "experimental",
+      "facets": {
+        "interaction": [
+          "renderer.document",
+          "文档作品",
+          "翻页",
+          "科普",
+          "长页",
+          "scrollytelling"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "long-form-poster",
+      "version": "0.1.0",
+      "directory": "skills/releases/long-form-poster/0.1.0",
+      "description": "从交互长页、图谱或科普作品导出竖版长图，检查完整内容、真实排版与资源就绪。",
+      "status": "experimental",
+      "facets": {
+        "delivery": [
+          "poster",
+          "长海报",
+          "竖版",
+          "长图",
+          "png",
+          "export"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Artwork 原创适配知识。本批完成结构核验，作品效果待集中试用。"
+      }
+    },
+    {
+      "id": "antv-g2-chart",
+      "version": "0.1.0",
+      "directory": "skills/releases/antv-g2-chart/0.1.0",
+      "description": "用 AntV G2 v5 的图形语法制作统计图，核对多图层、尺度、坐标与交互。",
+      "status": "experimental",
+      "facets": {
+        "technology": [
+          "g2",
+          "antv",
+          "chart-spec"
+        ],
+        "encoding": [
+          "marks",
+          "scale",
+          "数据编码"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/skills/antv-g2-chart/SKILL.md",
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/LICENSE"
+        ],
+        "note": "保留上游 MIT Skill 原文，提供 Artwork 数据与表达适配入口。创作效果待集中试用。",
+        "authors": [
+          {
+            "name": "AntV Visualization Team",
+            "url": "https://github.com/antvis"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "a105fa12a9fa41fccccc2eba7f4b34973628f5d3"
+      }
+    },
+    {
+      "id": "antv-g6-graph",
+      "version": "0.1.0",
+      "directory": "skills/releases/antv-g6-graph/0.1.0",
+      "description": "用 AntV G6 v5 表达网络、树和实体关系，组织节点、边和交互状态。",
+      "status": "experimental",
+      "facets": {
+        "encoding": [
+          "network",
+          "网络",
+          "graph",
+          "关系"
+        ],
+        "technology": [
+          "g6",
+          "antv"
+        ],
+        "interaction": [
+          "selection",
+          "focus"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/skills/antv-g6-graph/SKILL.md",
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/LICENSE"
+        ],
+        "note": "保留上游 MIT Skill 原文，提供 Artwork 数据与表达适配入口。创作效果待集中试用。",
+        "authors": [
+          {
+            "name": "AntV Visualization Team",
+            "url": "https://github.com/antvis"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "a105fa12a9fa41fccccc2eba7f4b34973628f5d3"
+      }
+    },
+    {
+      "id": "antv-infographic",
+      "version": "0.1.0",
+      "directory": "skills/releases/antv-infographic/0.1.0",
+      "description": "用 AntV Infographic 的信息结构组织流程、并列比较、层级和编辑叙事。",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "infographic",
+          "信息图",
+          "流程",
+          "层级"
+        ],
+        "encoding": [
+          "comparison",
+          "hierarchy"
+        ],
+        "technology": [
+          "antv-infographic"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/skills/antv-infographic/SKILL.md",
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/LICENSE"
+        ],
+        "note": "保留上游 MIT Skill 原文，提供 Artwork 数据与表达适配入口。创作效果待集中试用。",
+        "authors": [
+          {
+            "name": "AntV Visualization Team",
+            "url": "https://github.com/antvis"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "a105fa12a9fa41fccccc2eba7f4b34973628f5d3"
+      }
+    },
+    {
+      "id": "antv-t8-ntv",
+      "version": "0.1.0",
+      "directory": "skills/releases/antv-t8-ntv/0.1.0",
+      "description": "用 T8 的实体注释把叙事文字、图形标注和实际数据关联起来。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "data-narrative",
+          "数据叙事",
+          "T8"
+        ],
+        "encoding": [
+          "annotation",
+          "entities"
+        ],
+        "technology": [
+          "antv-t8-ntv"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/skills/antv-t8-ntv/SKILL.md",
+          "https://github.com/antvis/chart-visualization-skills/blob/a105fa12a9fa41fccccc2eba7f4b34973628f5d3/LICENSE"
+        ],
+        "note": "保留上游 MIT Skill 原文，提供 Artwork 数据与表达适配入口。创作效果待集中试用。",
+        "authors": [
+          {
+            "name": "AntV Visualization Team",
+            "url": "https://github.com/antvis"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "a105fa12a9fa41fccccc2eba7f4b34973628f5d3"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.4",
+      "directory": "skills/releases/data-art/0.2.4",
+      "description": "主引导：用 AVA 的实际查询结果选择表达，按需加载创作知识并在作品运行环境里验证。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "补充 AVA 关系探索和文档作品运行指南。效果待集中试用。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.5",
+      "directory": "skills/releases/data-art/0.2.5",
+      "description": "主引导：从数据关系和创作者意图确定视觉主角，试作并比较实际构成，支持观众在作品中实时使用 AVA。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "基于两道多轮试作及用户对视觉质量的反馈，补充视觉构成、表达试作与观众侧 AVA 用法。视觉效果由独立试作记录评估。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.6",
+      "directory": "skills/releases/data-art/0.2.6",
+      "description": "主引导候选：开放题首稿独立试作，先从真实画面取舍构图、形态与交互反馈，再交付。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "根据 0.2.5 的矿物多轮试作，补强 Agent 在首稿前自行完成视觉试作和修正的指引。作为同题单次对照的候选。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.7",
+      "directory": "skills/releases/data-art/0.2.7",
+      "description": "主引导候选：开放的艺术首稿先用真实数据试画面结构，再决定材质、排版与控制；观察数据关系如何组织观看。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "根据作者对矿物 A/B 首稿的否定反馈修订。试验性候选，未进行新一轮作品评估。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.8",
+      "directory": "skills/releases/data-art/0.2.8",
+      "description": "主引导候选：在相同数据状态下比较试作的实际观看与交互效果，保留能让观众发现数据关系的设计。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "由矿物 0.2.5/0.2.7 复测启发，改善不同构图试作的选稿依据；尚未进行作品评估。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.9",
+      "directory": "skills/releases/data-art/0.2.9",
+      "description": "主引导：从数据关系和创作者意图确定视觉主角，试作并比较实际构成，支持观众在作品中实时使用 AVA。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "沿用 0.2.5 的创作引导，同步 Visloom 品牌与 CLI 命令。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.10",
+      "directory": "skills/releases/data-art/0.2.10",
+      "description": "主引导：从数据发现决定作品形式与交互，声明并验证创作者可编辑的画面参数。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "基于两次 Physarum 创作测试，补充数据与成品示例的区别、交互选择和参数验收。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.11",
+      "directory": "skills/releases/data-art/0.2.11",
+      "description": "主引导：用 AVA 找值得表现的关系，比较视觉方向并接续创作者修改。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "精简主引导，移除容易锚定 Physarum 首稿的例子，控件与时间轴独立为按需交互知识。"
+      }
+    },
+    {
+      "id": "artwork-controls",
+      "version": "0.1.0",
+      "directory": "skills/releases/artwork-controls/0.1.0",
+      "description": "按需设计与验证作品控件：点选、筛选、颜色、动画播放、时间轴与种子。",
+      "status": "experimental",
+      "facets": {
+        "interaction": [
+          "controls",
+          "selection",
+          "filtering",
+          "palette-editing"
+        ],
+        "time": [
+          "timeline",
+          "playback",
+          "seeking"
+        ],
+        "technology": [
+          "workbench-cli",
+          "canvas2d",
+          "threejs",
+          "renderer.document"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "原创通用交互 Skill，整理 Visloom 控件与可选播放能力。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.12",
+      "directory": "skills/releases/data-art/0.2.12",
+      "description": "主引导：确定作品目的与表达精度，用 AVA 连接数据与视觉，按作品选择设计语言与制作媒介。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "algorithm": [
+          "stable-randomness"
+        ],
+        "style": [
+          "ink-reference"
+        ],
+        "composition": [
+          "viewing-scale",
+          "visual-direction",
+          "typography",
+          "art-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava",
+          "canvas2d",
+          "threejs",
+          "renderer.document",
+          "ava-viewer"
+        ],
+        "delivery": [
+          "png",
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "intent-guided-iteration",
+          "selective-knowledge",
+          "expression-and-precision",
+          "production-choices"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://github.com/cloveric/claude-drawing-skill/blob/main/lib/inkpaint.py",
+          "https://github.com/MengTo/Skills/blob/main/agent-skills/illustration/illustration-ink-sketch/scripts/ink-kit.mjs"
+        ],
+        "note": "按作者反馈重写方法，表达目的与读数精度可在同件作品中组合，视觉维度和生产工具由作品决定。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.13",
+      "directory": "skills/releases/data-art/0.2.13",
+      "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "原创主引导。六类决策基于资料与案例对照，询问和试作按需。"
+      }
+    },
+    {
+      "id": "data-color",
+      "version": "0.1.0",
+      "directory": "skills/releases/data-color/0.1.0",
+      "description": "数据色彩、分类色标、连续渐变与发散色标。",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "color",
+          "color-scale",
+          "palette"
+        ],
+        "encoding": [
+          "categorical",
+          "sequential",
+          "diverging",
+          "cyclic"
+        ],
+        "style": [
+          "gradient"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://colorbrewer2.org/learnmore/schemes.html",
+          "https://www.datawrapper.de/blog/diverging-vs-sequential-color-scales",
+          "https://www.w3.org/TR/WCAG22/#use-of-color"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "editorial-typography",
+      "version": "0.1.0",
+      "directory": "skills/releases/editorial-typography/0.1.0",
+      "description": "中英 排版、字体、编辑设计、图注和数据数字。",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "editorial",
+          "typography",
+          "bilingual",
+          "annotation"
+        ],
+        "style": [
+          "serif",
+          "sans-serif"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.w3.org/TR/clreq/",
+          "https://www.visualcinnamon.com/portfolio/space-wars/"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "light-and-material",
+      "version": "0.1.0",
+      "directory": "skills/releases/light-and-material/0.1.0",
+      "description": "光照、材质色、反光、高光、玻璃与色散。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "light",
+          "material",
+          "reflective",
+          "sparkle",
+          "iridescence"
+        ],
+        "technology": [
+          "canvas2d",
+          "threejs",
+          "blender"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial",
+          "https://exp-lost-in-parallel-universe.lusion.co/"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "visual-traditions",
+      "version": "0.1.0",
+      "directory": "skills/releases/visual-traditions/0.1.0",
+      "description": "从具体作品研究吉卜力、中世纪、国风、印度风和印刷、手绘等视觉传统。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "visual-traditions",
+          "woodblock",
+          "manuscript",
+          "miniature-painting",
+          "ink"
+        ],
+        "method": [
+          "reference-analysis"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://emilyxie.art/projects/memories_of_qilin"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "data-sonification",
+      "version": "0.1.0",
+      "directory": "skills/releases/data-sonification/0.1.0",
+      "description": "数据声化、声音编码、音高、音色、节奏和听觉比较。",
+      "status": "experimental",
+      "facets": {
+        "encoding": [
+          "sonification",
+          "audio",
+          "pitch",
+          "timbre"
+        ],
+        "time": [
+          "rhythm"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://pages.cs.wisc.edu/~yeaseulkim/assets/papers/2024_erie.pdf",
+          "https://twotone.io/"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "narrative-sequence",
+      "version": "0.1.0",
+      "directory": "skills/releases/narrative-sequence/0.1.0",
+      "description": "叙事顺序、滚动、章节揭示、浏览与并行比较。",
+      "status": "experimental",
+      "facets": {
+        "interaction": [
+          "scroll",
+          "storytelling",
+          "scrollytelling",
+          "chapter-navigation",
+          "browsing"
+        ],
+        "composition": [
+          "reveal",
+          "reading-order"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf",
+          "https://www.hlabs.co.uk/work/turning-climate-science-into-interactive-storytelling"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "participatory-art",
+      "version": "0.1.0",
+      "directory": "skills/releases/participatory-art/0.1.0",
+      "description": "观众参与、匿名留言、情绪交换、留下痕迹与收到回应。",
+      "status": "experimental",
+      "facets": {
+        "interaction": [
+          "participation",
+          "emotional-exchange",
+          "contribution",
+          "response"
+        ],
+        "material": [
+          "visitor-input"
+        ],
+        "method": [
+          "co-creation"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://giorgialupi.com/dear-data",
+          "https://www.lozano-hemmer.com/artworks/pulse_room.php"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.14",
+      "directory": "skills/releases/data-art/0.2.14",
+      "description": "基于同一 AVA 证据比较不同创作表达，再完成可观看首稿。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "原创主引导。六类决策基于资料与案例对照，询问和试作按需。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.15",
+      "directory": "skills/releases/data-art/0.2.15",
+      "description": "以同一 AVA 数据试作不同观看方式，检查无标签画面、材质细节、互动状态与可追溯数据。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "原创主引导。六类决策基于资料与案例对照，询问和试作按需。"
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.16",
+      "directory": "skills/releases/data-art/0.2.16",
+      "description": "先试作画面，以数据、构图、材质及动作组织观看；在真实画面中定位问题并修订。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "原创主引导。六类决策基于资料与案例对照，询问和试作按需。"
+      }
+    },
+    {
+      "id": "light-and-material",
+      "version": "0.1.1",
+      "directory": "skills/releases/light-and-material/0.1.1",
+      "description": "按形体、材质层和光的响应试作；验证反光、高光、色散与数据编码。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "light",
+          "material",
+          "reflective",
+          "sparkle",
+          "iridescence"
+        ],
+        "technology": [
+          "canvas2d",
+          "threejs",
+          "blender"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial",
+          "https://exp-lost-in-parallel-universe.lusion.co/"
+        ],
+        "note": "Visloom 原创指导，列出的原作或文献用于参考。"
+      }
+    },
+    {
+      "id": "artwork-controls",
+      "version": "0.1.1",
+      "directory": "skills/releases/artwork-controls/0.1.1",
+      "description": "先设计观众动作和反馈，再决定作品交互、创作者可调属性与可选播放。",
+      "status": "experimental",
+      "facets": {
+        "interaction": [
+          "controls",
+          "selection",
+          "filtering",
+          "palette-editing"
+        ],
+        "time": [
+          "timeline",
+          "playback",
+          "seeking"
+        ],
+        "technology": [
+          "workbench-cli",
+          "canvas2d",
+          "threejs",
+          "renderer.document"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "原创通用交互 Skill，整理 Visloom 控件与可选播放能力。"
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.0",
+      "directory": "skills/releases/digital-art/0.1.0",
+      "description": "独立数字艺术创作：构思、精准表达、材质和构图、实际看稿与多轮接续。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing"
+        ],
+        "time": [
+          "reveal",
+          "rhythm"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Visloom original. Independent digital art entry grounded in cross-medium case research."
+      }
+    },
+    {
+      "id": "artwork-controls",
+      "version": "0.1.2",
+      "directory": "skills/releases/artwork-controls/0.1.2",
+      "description": "按需设计选取、配色与播放控制，可独立选择隐藏、播放或完整时间轴。",
+      "status": "experimental",
+      "facets": {
+        "interaction": [
+          "controls",
+          "selection",
+          "filtering",
+          "palette-editing"
+        ],
+        "time": [
+          "timeline",
+          "playback",
+          "seeking"
+        ],
+        "technology": [
+          "workbench-cli",
+          "canvas2d",
+          "threejs",
+          "renderer.document"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Visloom原创指导，新增独立作品的播放控件选择。"
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.1",
+      "directory": "skills/releases/digital-art/0.1.1",
+      "description": "独立数字艺术创作：构思、精准表达、材质和构图、实际看稿与多轮接续。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing"
+        ],
+        "time": [
+          "reveal",
+          "rhythm"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Digital art candidate following two open-brief trials. Compare the first obvious scene with a different way to express the same intent, and read captured pixels via the configured local service."
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.17",
+      "directory": "skills/releases/data-art/0.2.17",
+      "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "Adds optional authorized private reference retrieval during creative decisions."
+      }
+    },
+    {
+      "id": "data-art",
+      "version": "0.2.18",
+      "directory": "skills/releases/data-art/0.2.18",
+      "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "Adds on-demand reading of published Visloom community works with the agent host’s web tools."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.2",
+      "directory": "skills/releases/digital-art/0.1.2",
+      "description": "独立数字艺术创作：构思、精准表达、材质和构图、实际看稿与多轮接续。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing"
+        ],
+        "time": [
+          "reveal",
+          "rhythm"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds optional authorized private reference retrieval during creative decisions."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.3",
+      "directory": "skills/releases/digital-art/0.1.3",
+      "description": "独立数字艺术创作：构思、精准表达、材质和构图、实际看稿与多轮接续。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing"
+        ],
+        "time": [
+          "reveal",
+          "rhythm"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds perceptual review of the visible event, explanatory copy, motion and audible playback."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.4",
+      "directory": "skills/releases/digital-art/0.1.4",
+      "description": "独立数字艺术创作：构思、精准表达、材质和构图、实际看稿与多轮接续。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing"
+        ],
+        "time": [
+          "reveal",
+          "rhythm"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds written alternatives, the creator’s selection and joint revision of the treatment and artwork."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.5",
+      "directory": "skills/releases/digital-art/0.1.5",
+      "description": "将创作意图发展成可判断的关键画面、可比较的数字艺术文稿与可运行的试作。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达",
+          "创作草案"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds defining-frame description, visual ambition, early feasibility, and revision through concept and running evidence."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.6",
+      "directory": "skills/releases/digital-art/0.1.6",
+      "description": "形成可判断的数字艺术关键画面、可比较的文稿与可运行的试作，推进情绪转折和声画循环。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds visual readings at multiple scales, emotional turns discovered in preview, and motion and sound checks across loops."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.7",
+      "directory": "skills/releases/digital-art/0.1.7",
+      "description": "用精准表达、视觉吸引力、情绪共鸣和制作可行性自评并迭代独立数字艺术的文稿与试作。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds an evidence-based creative rubric to the treatment and preview workflows, with feasibility assessed separately."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.8",
+      "directory": "skills/releases/digital-art/0.1.8",
+      "description": "逐项自评数字艺术文稿与试作，按四部分复查改稿影响，并在需要时重做表达机制。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Makes subcriterion evidence explicit and carries creative revisions through a cross-dimension review of the whole work."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.9",
+      "directory": "skills/releases/digital-art/0.1.9",
+      "description": "把创作意图转成可比较的数字艺术文稿，探索异质物象的融合，按观众预期和情绪变化迭代。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds shared behaviors for unlikely creative pairings and tests emotional progression against audience expectation."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.10",
+      "directory": "skills/releases/digital-art/0.1.10",
+      "description": "用观众体验评审数字艺术文稿，从 Web 能支持的运动、接触和材质行为推敲关键动作。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Makes the production requirements of expressive motion and high-precision contact explicit during treatment review."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.11",
+      "directory": "skills/releases/digital-art/0.1.11",
+      "description": "用观众体验评审数字艺术文稿，逐项核对制作依赖并验证决定成败的效果。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Splits feasibility into evidence-based subcriteria for assets, motion, contact, rendering, sound, and device presentation."
+      }
+    },
+    {
+      "id": "motion-principles",
+      "version": "0.1.1",
+      "directory": "skills/releases/motion-principles/0.1.1",
+      "description": "运动节奏、接触位置、局部朝向、轮廓与纹理共同演化",
+      "status": "experimental",
+      "facets": {
+        "time": [
+          "rhythm",
+          "easing",
+          "motion",
+          "contact",
+          "attachment",
+          "接触",
+          "沿路径运动"
+        ],
+        "composition": [
+          "perceptual-continuity",
+          "silhouette-growth",
+          "随形"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/tree/079d9426797bd853993cd99941d141815d192402/knowledge/theory",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "Preserves the original Maestro material and adds a project-authored guide to perceptible contact, contour growth, turning and tuning.",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.12",
+      "directory": "skills/releases/digital-art/0.1.12",
+      "description": "从主体用途和观看预期构思数字艺术，按四维修改、比较和试作。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds object use, linked recognition and reveal, expectation, and evidence of essential production dependencies to the treatment and review path."
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.13",
+      "directory": "skills/releases/digital-art/0.1.13",
+      "description": "从主体用途和观看预期构思数字艺术，按四维修改、比较和试作。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "Adds on-demand reading of published Visloom community works with the agent host’s web tools."
+      }
+    },
+    {
+      "id": "visual-composition",
+      "version": "0.1.1",
+      "directory": "skills/releases/visual-composition/0.1.1",
+      "description": "视觉构成、层级、尺度、关键画面与构图变化。",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "composition",
+          "hierarchy",
+          "viewing-scale",
+          "visual-continuity",
+          "构图变化"
+        ],
+        "style": [
+          "art-movements"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/tree/079d9426797bd853993cd99941d141815d192402/knowledge/theory",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "Preserves the original Maestro material and adds a project-authored comparison of opening and defining compositions.",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "motion-principles",
+      "version": "0.1.2",
+      "directory": "skills/releases/motion-principles/0.1.2",
+      "description": "运动节奏、接触与遮挡、形变交接及材料余动。",
+      "status": "experimental",
+      "facets": {
+        "time": [
+          "rhythm",
+          "easing",
+          "motion",
+          "contact",
+          "attachment",
+          "接触",
+          "沿路径运动",
+          "motion-handoff",
+          "回弹"
+        ],
+        "composition": [
+          "perceptual-continuity",
+          "silhouette-growth",
+          "随形"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "adapted",
+        "sources": [
+          "https://github.com/maestro-ai-stack/maestro-creative/tree/079d9426797bd853993cd99941d141815d192402/knowledge/theory",
+          "https://github.com/maestro-ai-stack/maestro-creative/blob/079d9426797bd853993cd99941d141815d192402/LICENSE"
+        ],
+        "note": "Preserves the original Maestro material and adds causal handoffs among contact, occlusion, reveal, and follow-through.",
+        "authors": [
+          {
+            "name": "Maestro AI Pte. Ltd.",
+            "url": "https://github.com/maestro-ai-stack"
+          }
+        ],
+        "license": {
+          "spdx": "MIT",
+          "file": "LICENSE"
+        },
+        "revision": "079d9426797bd853993cd99941d141815d192402"
+      }
+    },
+    {
+      "id": "editorial-typography",
+      "version": "0.1.1",
+      "directory": "skills/releases/editorial-typography/0.1.1",
+      "description": "中英 排版、字体、编辑设计、图注、数字与物件上的字。",
+      "status": "experimental",
+      "facets": {
+        "composition": [
+          "editorial",
+          "typography",
+          "bilingual",
+          "annotation",
+          "object-lettering"
+        ],
+        "style": [
+          "serif",
+          "sans-serif"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.w3.org/TR/clreq/",
+          "https://www.visualcinnamon.com/portfolio/space-wars/"
+        ],
+        "note": "Adds reading order and continuity for lettering that belongs to a changing object."
+      }
+    },
+    {
+      "id": "light-and-material",
+      "version": "0.1.2",
+      "directory": "skills/releases/light-and-material/0.1.2",
+      "description": "光照、材质色、反光、高光以及随曲面变形的显影。",
+      "status": "experimental",
+      "facets": {
+        "style": [
+          "light",
+          "material",
+          "reflective",
+          "sparkle",
+          "iridescence",
+          "surface-reveal",
+          "显影"
+        ],
+        "technology": [
+          "canvas2d",
+          "threejs",
+          "blender"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://threejs.org/docs/#api/en/materials/MeshPhysicalMaterial",
+          "https://exp-lost-in-parallel-universe.lusion.co/"
+        ],
+        "note": "Adds a surface-bound image reveal and checks for continuity of material cues and shape."
+      }
+    },
+    {
+      "id": "sound-design",
+      "version": "0.1.0",
+      "directory": "skills/releases/sound-design/0.1.0",
+      "description": "拟音、声画、静默、动作同步和数字艺术试听。",
+      "status": "experimental",
+      "facets": {
+        "time": [
+          "sound",
+          "foley",
+          "audiovisual",
+          "sync",
+          "拟音",
+          "声画"
+        ],
+        "interaction": [
+          "audible-feedback"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [],
+        "note": "Visloom project guidance for sound cues linked to visible events, gestures, and changes in audience perception."
+      }
+    }
+  ]
+}

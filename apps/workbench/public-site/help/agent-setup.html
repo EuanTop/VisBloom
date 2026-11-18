@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create with your agent · Visloom</title>
+  <link rel="icon" type="image/svg+xml" href="/visloom.svg">
+  <link rel="stylesheet" href="/public-pages.css">
+  <script src="./agent-setup.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="site-brand" href="/" translate="no"><img src="/visloom.svg" alt="" width="32" height="32">Visloom</a>
+    <nav class="guide-nav">
+      <a href="/collection.html" id="gallery">Gallery ↗</a>
+      <a href="?lang=en" lang="en">EN</a>
+      <a href="?lang=zh" lang="zh-CN">中文</a>
+    </nav>
+  </header>
+  <main class="guide">
+    <h1 id="heading">Create with your agent</h1>
+    <p id="instruction">Use a coding agent that can run commands on your computer. The creator kit runs on macOS and Linux with Node.js 22.13 or later.</p>
+    <ol class="guide-steps">
+      <li>
+        <h2 id="paste-heading">Send a prompt to your agent</h2>
+        <p id="paste-detail">Paste this into a new chat. Add an idea or the path to your own data, or start with the built-in observations.</p>
+        <div class="starter">
+          <p id="starter-prompt">Read https://artwork.euantop.work/skills/visloom/SKILL.md and help me make my first interactive artwork. Use my local Visloom setup or help me start one. Ask what I want to make. If I need a starting point, use the built-in Physarum observations. Help me open the draft in the local workbench.</p>
+          <button id="copy-prompt" class="download" type="button" hidden>Copy prompt</button>
+          <output id="copy-status" role="status"></output>
+        </div>
+      </li>
+      <li>
+        <h2 id="preview-heading">Open your first draft</h2>
+        <p id="preview-detail">Open the workbench link your agent gives you. Try the artwork’s controls or tell your agent what you want to change. The local workbench opens without an account.</p>
+      </li>
+      <li>
+        <h2 id="export-heading">Share it when it’s ready</h2>
+        <p id="export-detail">Export an interactive HTML file. If you want a public link, ask your agent to help publish it to your GitHub Pages.</p>
+      </li>
+    </ol>
+    <details class="guide-downloads">
+      <summary id="download-heading">Install the creator kit yourself</summary>
+      <p id="download-detail">Download and unpack the kit. Run <code>npm ci</code> and <code>npm start</code> in the extracted folder, then open <a href="http://127.0.0.1:4318/">127.0.0.1:4318</a>.</p>
+      <div class="downloads">
+        <a id="download-kit" href="/downloads/visloom-creator-kit-0.1.14.tar.gz" download>Download creator kit</a>
+        <a id="open-skill" href="/skills/visloom/SKILL.md" type="text/markdown">Read the Skill ↗</a>
+        <a id="download-skill" href="/downloads/visloom-skill-0.1.14.tar.gz" download>Download the Skill</a>
+      </div>
+    </details>
+  </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.stellar-hero{position:relative;isolation:isolate;overflow:hidden;height:calc(100svh - 84px);min-height:670px;max-height:1060px;background:#080808;color:#ede9e2}
+.experience-stage{position:absolute;inset:-7% -9% 4% 20%;z-index:0;transition:inset 1.4s cubic-bezier(.2,.7,.25,1)}
+.stellar-universe{position:relative;width:100%;height:100%;--pointer-x:50%;--pointer-y:50%}
+.stellar-universe>canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:pan-y;outline-offset:-16px}
+.stellar-universe>canvas:focus-visible{outline:1px solid #d8c49e}
+.stellar-universe[data-dragging=true]>canvas{cursor:grabbing}
+.stellar-lens{display:none}
+.experience-title{position:absolute;z-index:2;left:5vw;top:26%;pointer-events:none;transition:opacity .5s}
+.stellar-edition{font:10px/1.6 ui-monospace,monospace;letter-spacing:.15em;color:#a39b8c;margin:0 0 25px}
+.stellar-edition span{display:inline-block;margin-left:24px;color:#635e55}
+.experience-title h1{font:400 clamp(44px,4.9vw,76px)/1.3 var(--display);letter-spacing:.03em;margin:0;color:#f1eee7}
+.experience-description{font:14px/2.1 var(--body);color:#a49e92;margin:23px 0 34px}
+.space-switch{display:flex;align-items:center;gap:12px;padding:10px 0;color:#e1d5bb;border-bottom:1px solid #d8c49e65;font-size:12px;pointer-events:auto;transition:color .2s}
+.space-switch:hover{color:#fff4d8}.space-switch>svg:last-child{margin-left:20px}
+.experience-source{display:flex;align-items:center;gap:8px;margin-top:23px;font-size:10px;color:#777268;pointer-events:auto}.experience-source:hover{color:#d8c49e}
+.stellar-foot{position:absolute;z-index:3;left:5vw;right:5vw;bottom:22px}
+.stellar-toolbar{display:flex;align-items:center;gap:23px;border-top:1px solid #d8c49e26;padding-top:22px}
+.stellar-play{color:#e1d5bb;flex:none;min-width:34px;min-height:36px}
+.time-scrubber{width:clamp(180px,24vw,360px);flex:none}
+.time-scrubber label{display:flex;align-items:baseline;justify-content:space-between;gap:20px;color:#8e887c;font-size:10px}
+.time-scrubber output{font:12px/1.5 ui-monospace,monospace;font-variant-numeric:tabular-nums;color:#d9c9a6}
+.time-scrubber input{display:block;appearance:none;width:100%;height:25px;margin:0;background:transparent;cursor:ew-resize;touch-action:pan-y}
+.time-scrubber input::-webkit-slider-runnable-track{height:1px;background:linear-gradient(to right,#d7bd8c var(--time-progress),#39352e var(--time-progress))}
+.time-scrubber input::-webkit-slider-thumb{appearance:none;width:7px;height:7px;border-radius:50%;background:#f5dfb0;margin-top:-3px;box-shadow:0 0 9px #e2b86c66}
+.time-scrubber input::-moz-range-track{height:1px;background:#39352e}.time-scrubber input::-moz-range-progress{height:1px;background:#d7bd8c}.time-scrubber input::-moz-range-thumb{width:7px;height:7px;border:0;border-radius:50%;background:#f5dfb0}
+.time-ticks{display:flex;justify-content:space-between;font:9px/1.2 ui-monospace,monospace;color:#625e56}
+.star-shortcuts{display:flex;gap:22px;margin-left:35px}.star-shortcuts button{padding:8px 0;color:#91897b;font-size:11px}.star-shortcuts button:hover,.star-shortcuts button[aria-pressed=true]{color:#f0d4a3}
+.experience-create{display:flex;align-items:center;gap:14px;margin-left:auto;color:#eee5d5;font-size:12px;padding:13px 0}
+.experience-create:hover{color:#e7bf7e}
+.stellar-caption{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-top:16px;color:#635f57;font-size:9px}
+.stellar-caption>span:last-child{display:flex;align-items:center;gap:12px}.stellar-caption i{display:block;width:3px;height:3px;background:#635f57;border-radius:50%}
+.star-reading{position:absolute;z-index:3;right:5vw;top:12%;width:220px;padding:18px 20px;color:#e8dfce;background:#080808c9;backdrop-filter:blur(16px);border-left:1px solid #d8c49e55}
+.star-reading>.icon-button{float:right;min-width:22px;min-height:22px;color:#b5a68f}.star-id{font:9px/1.5 ui-monospace,monospace;color:#968772;margin:0 0 12px}.star-reading h2{font:400 24px/1.4 var(--display);margin:0}.star-reading dl{display:flex;gap:24px;margin:20px 0 0}.star-reading dt{font-size:9px;color:#998e7a}.star-reading dd{margin:6px 0 0;font:17px/1.4 ui-monospace,monospace;color:#e6d5b3}
+.space-exit{position:absolute;z-index:4;left:5vw;top:34px;display:flex;align-items:center;gap:10px;color:#cbbd9f;font-size:12px;padding:10px 0}
+.stellar-hero[data-space=true] .experience-stage{inset:0}.stellar-hero[data-space=true] .experience-title{opacity:0;pointer-events:none}
+.universe-loading{position:absolute;left:0;right:0;top:48%;text-align:center;color:#9e907c;font-size:12px}
+.universe-fallback{position:absolute;inset:0}.universe-fallback img{width:100%;height:100%;object-fit:contain}.universe-fallback p{position:absolute;bottom:15%;left:20%;font-size:11px;color:#a59b89}.stellar-universe:has(.universe-fallback)>canvas{visibility:hidden}
+@media(min-width:1800px){.experience-title,.stellar-foot,.space-exit{left:max(5vw,calc(50% - 800px))}.stellar-foot,.star-reading{right:max(5vw,calc(50% - 800px))}}
+@media(max-width:1050px){.star-shortcuts{margin-left:10px;gap:14px}.stellar-toolbar{gap:16px}.experience-stage{left:13%;right:-18%}.experience-title h1{font-size:55px}}
+@media(max-width:700px){.stellar-hero{height:calc(100svh - 72px);min-height:720px;max-height:1000px}.experience-title{left:24px;top:34px}.stellar-edition{margin-bottom:13px;font-size:9px}.stellar-edition span{margin-left:18px}.experience-title h1{font-size:46px}.experience-description{font-size:12px;line-height:1.8;margin:12px 0 15px}.space-switch{font-size:11px;gap:8px}.experience-source{margin-top:15px;font-size:9px}.experience-stage{inset:12% -29% 7% 0%}.stellar-foot{left:24px;right:24px;bottom:18px}.stellar-toolbar{flex-wrap:wrap;gap:14px;padding-top:16px}.time-scrubber{flex:1;width:auto}.star-shortcuts{order:4;flex-basis:100%;margin:0;gap:23px}.star-shortcuts button{font-size:10px;padding:3px 0}.experience-create{font-size:11px;gap:6px}.stellar-caption{font-size:8px;margin-top:14px;gap:12px}.stellar-caption>span:last-child{gap:7px}.stellar-caption>span:last-child i{display:none}.stellar-caption>span:last-child{font-size:8px;max-width:60%;text-align:right;display:block}.star-reading{top:40%;right:24px;width:195px;padding:15px}.star-reading h2{font-size:21px}.space-exit{left:24px;top:27px}.stellar-hero[data-space=true] .experience-stage{inset:0}}
+@media(prefers-reduced-motion:reduce){.experience-stage,.experience-title{transition:none}}

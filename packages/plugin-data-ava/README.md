@@ -1,0 +1,13 @@
+# AVA required data integration
+
+AVA is the fixed data core. This package isolates upstream CLI/session/result differences; it is not a data-engine selection feature. Only this package depends on unmodified `@antv/ava` **4.0.0**. Deterministic CLI source/schema/profile/query calls use DuckDB and need no additional model key. No private AVA session ID is exposed through the application contract.
+
+Factory: `createAvaPlugin({ directory })`. Dataset IDs are permanent application IDs; raw content and source hashes persist in this private directory. Runtime CLI sessions are disposable. `release(id)` releases only the transient session; the next query reconnects from verified source. Missing/expired sessions reconnect once. Query errors do not trigger blind retries. All child commands use argument arrays with `execFile`, not shell interpolation; AVA owns SQL parsing and read-only guards.
+
+Import inspection explicitly requests `row_count,null_count,min,max,mean`. AVA 4.0.0's default all-column `top_values`/distinct aggregate plan exhausted its 512 MB session budget for the real 20-column, 2808-row SkinBloom table. The adapter uses AVA's public `profile --metrics` option, retaining AVA unchanged and its resource limits. Frequency/distinct analysis is performed with explicit AVA SQL when needed; it is not silently reported as part of the import profile. The formal-case test covers this actual table.
+
+Upgrade: change the single exact dependency and `PINNED_AVA_VERSION`, run `tests/ava.contract.test.ts` against the candidate release, inspect CLI envelope/schema/profile and truncation behavior, then update the root lockfile. Core, UI and artworks must remain unchanged. Do not vendor or patch AVA in this repository. An unavoidable upstream fix belongs in a separate minimal upstream branch/PR with regression evidence; record it here until a release incorporates it.
+
+Sources: [official Agent Skill](https://ava.antv.vision/documentation/agent-skill/), [CLI reference](https://ava.antv.vision/documentation/reference/cli/). Persistent CLI sessions currently require macOS/Linux. File size is bounded to 8 MiB, result rows to 10000, command duration to 60 seconds. `rowCount` on a truncated result is the materialized row count, not an invented total dataset size.
+
+Verified 2026-11-09 against the installed AVA 4.0.0 release: actual synthetic CSV and JSON loading, schema/profile, known SQL aggregation, row truncation, adapter recreation/session release, upstream read-only and syntax errors, CLI-file-reference rejection, and source-hash tampering. No model key was used. Run the full root suite again when upgrading or changing the integration.

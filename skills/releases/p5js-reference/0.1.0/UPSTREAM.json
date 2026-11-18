@@ -1,0 +1,35 @@
+{
+  "repository": "romellogoodman/creative-coding-skillpack",
+  "commit": "69cf2b20232f2e99481f14021100c59fd9f9487b",
+  "license": {
+    "spdx": "MIT",
+    "upstreamPath": "p5js-reference-skill/LICENSE",
+    "localFile": "LICENSE"
+  },
+  "authors": [
+    {
+      "name": "Romello Goodman",
+      "url": "https://github.com/romellogoodman"
+    }
+  ],
+  "files": [
+    {
+      "path": "upstream/LICENSE",
+      "source": "https://github.com/romellogoodman/creative-coding-skillpack/blob/69cf2b20232f2e99481f14021100c59fd9f9487b/p5js-reference-skill/LICENSE",
+      "gitBlob": "04f7f5d3590c4027faa2da4c400fd76e44b6b23a",
+      "bytes": 1072
+    },
+    {
+      "path": "upstream/SKILL.md",
+      "source": "https://github.com/romellogoodman/creative-coding-skillpack/blob/69cf2b20232f2e99481f14021100c59fd9f9487b/p5js-reference-skill/SKILL.md",
+      "gitBlob": "e6593f95bc157caa1e58d59beb85c6bfa778bd49",
+      "bytes": 6241
+    },
+    {
+      "path": "upstream/reference/common-functions.md",
+      "source": "https://github.com/romellogoodman/creative-coding-skillpack/blob/69cf2b20232f2e99481f14021100c59fd9f9487b/p5js-reference-skill/reference/common-functions.md",
+      "gitBlob": "312acf833c880a0317610cb02372407b884a9e03",
+      "bytes": 5682
+    }
+  ]
+}

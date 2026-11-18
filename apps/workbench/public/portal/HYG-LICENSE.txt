@@ -1,0 +1,32 @@
+DATA LICENSE AND ATTRIBUTION
+
+data/stars.csv is a filtered derivative of HYG Database v4.1.
+Attribution: Astronomy Nexus / HYG contributors.
+Original project: https://github.com/astronexus/HYG-Database
+Original data: https://github.com/astronexus/HYG-Database/blob/main/hyg/CURRENT/hygdata_v41.csv
+Original data license: https://github.com/astronexus/HYG-Database/blob/main/hyg/CURRENT/LICENSE
+
+Changes: selected stars with apparent magnitude <= 6.0, valid finite distance
+0 < dist < 100000 pc, and finite nonzero position / finite velocity components;
+retained ten source fields; sorted by magnitude and HYG identifier. No numeric
+values were fabricated or rounded. See provenance.json for exact hashes.
+
+The derived data is licensed under Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0):
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Original license notice, retained:
+
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+This notice describes the dataset, not a grant of rights to Nadieh Bremer's
+reference artwork. No reference image or original artwork source is included.
