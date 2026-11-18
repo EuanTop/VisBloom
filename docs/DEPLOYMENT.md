@@ -113,7 +113,7 @@ npm run --silent visloom -- pages --project PROJECT_ID --revision REVISION --out
 
 目录内的 `index.html`、小写 `cover.jpg` 和 `.nojekyll` 一起提交到该作品的 GitHub Pages 发布目录。默认打开该版本导出的独立页面，等待画面和字体就绪后以 1200 × 900 截图。缺少截图浏览器时运行 `npm exec playwright install chromium`。作者指定镜头或构图时加 `--cover /path/to/chosen.jpg`，建议准备 4:3 的 JPEG。上传前确认 HTML 公开的数据和封面构图。
 
-外部作品由维护者在 [`cases/collection-external.json`](../cases/collection-external.json) 登记 `title`、`author`、公开页面 `url`，可选 `description`。作品集从该页面同目录加载 `cover.jpg`，封面缺失时显示作品名与作者，点击始终打开作者的页面。对外收录可使用作品专用的封面，首页可独立选图。文件发布与相对路径见 [GitHub Pages 配置](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
+作品在 GitHub Pages 上线后，作者可以向 VisBloom 仓库提交 PR，在 [`cases/collection-external.json`](../cases/collection-external.json) 增加作品名 `title`、作者 `author`、公开作品链接 `url` 和可选简介 `description`。维护者也可以直接登记。平台合并并重新部署后，作品会出现在作品集。作品集从该页面同目录加载 `cover.jpg`，封面缺失时显示作品名与作者，点击始终打开作者的页面。对外收录可使用作品专用的封面，首页可独立选图。文件发布与相对路径见 [GitHub Pages 配置](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
 
 ## 独立作品集与公开分享服务
 

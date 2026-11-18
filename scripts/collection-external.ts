@@ -1,4 +1,5 @@
 export interface ExternalWork {
+  localCase?: string;
   title: string;
   author: string;
   url: string;
@@ -28,6 +29,12 @@ export function externalWorkCard(work: ExternalWork, publicPortal: boolean) {
     <a href="${href}">${image}<h2>${title} <span aria-hidden="true">↗</span></h2>${description}</a>
     <p class="work-author">${author}</p>
   </article>` : `<a class="work" href="${href}">${image}<div><h2>${title}</h2><span>${author} ↗</span></div></a>`;
+}
+
+export function externalWorkRedirect(url: string, title: string) {
+  const href = escapeHtml(url);
+  const name = escapeHtml(title);
+  return `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>${name}</title><meta http-equiv="refresh" content="0; url=${href}"><a href="${href}">${name}</a></html>`;
 }
 
 export const externalCoverScript = `<script>

@@ -9,7 +9,7 @@ import { digest } from '../packages/core/src/index.ts';
 import { createEsbuildCompiler } from '../packages/plugin-compiler-esbuild/src/index.ts';
 import { createWebExporter } from '../packages/plugin-export-web/src/index.ts';
 import { caseCatalog, loadCase } from '../apps/server/src/cases.ts';
-import { externalCoverScript, externalWorkCard, type ExternalWork } from './collection-external.ts';
+import { externalCoverScript, externalWorkCard, externalWorkRedirect, type ExternalWork } from './collection-external.ts';
 
 // Bundle the same authored modules used by editable projects. This build step
 // reads committed case data through the same required AVA adapter.
@@ -71,16 +71,23 @@ try{for(const definition of collectionCases.sort((a,b)=>a.collectionOrder-b.coll
   </article>` : `<a class="work" href="${href}">${image}<div><h2>${definition.name}</h2><span>进入作品 ↗</span></div></a>`);
 }
 }finally{await data.dispose?.();await rm(dataDirectory,{recursive:true,force:true});}
-if(collectionCases.some(item=>item.id==='skinbloom-products')){
-  await writeFile(path.join(out,'artworks','skinbloom.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><title>SkinBloom Products</title><meta http-equiv="refresh" content="0; url=./skinbloom-products.html"><a href="./skinbloom-products.html">Open SkinBloom Products</a></html>');
-}
 const externalWorks: ExternalWork[] = JSON.parse(await readFile(path.join(root, 'cases/collection-external.json'), 'utf8'));
+const builtCaseIds = new Set<string>(collectionCases.map(item => item.id));
 for (const work of externalWorks) {
+  if (work.localCase && builtCaseIds.has(work.localCase)) continue;
   cards.push(externalWorkCard(work, publicPortal));
   if (publicPortal) {
     const { title, author, url, description } = work;
-    communityWorks.push({ title, author, url: new URL(url).href, description });
+    const href = new URL(url).href;
+    communityWorks.push({ title, author, url: href, description });
+    if (work.localCase) {
+      await writeFile(path.join(out, 'artworks', encodeURIComponent(work.localCase) + '.html'), externalWorkRedirect(href, title));
+      builtCaseIds.add(work.localCase);
+    }
   }
+}
+if(builtCaseIds.has('skinbloom-products')){
+  await writeFile(path.join(out,'artworks','skinbloom.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><title>SkinBloom Products</title><meta http-equiv="refresh" content="0; url=./skinbloom-products.html"><a href="./skinbloom-products.html">Open SkinBloom Products</a></html>');
 }
 const coverScript = externalWorks.length ? externalCoverScript : '';
 if (publicPortal) {

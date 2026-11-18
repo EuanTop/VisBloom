@@ -10,7 +10,7 @@ import { agentSetup, createLabel, createLink, publicPortal } from './portal-link
 import './platform-home.css';
 
 const ways = [
-  { id: 'agent', image: 'agent', caption: 'SkinBloom · Agent 接续入口', alt: 'SkinBloom 工作台：打开 Agent 接续入口，将当前作品信息交给自己的 Agent。', label: '与 Agent 构思', icon: MessageSquare, title: '继续用你熟悉的 Agent。', description: publicPortal ? '把数据和想法交给自己的 Agent，打开本机预览，再回到对话里改稿。' : '连接工作台，用你熟悉的 Agent 从当前作品继续构思、修改与创作。', detail: '项目 Skill 按需提供数据表达、构成、材质与交互参考。', action: '了解 Agent 接入', href: agentSetup },
+  { id: 'agent', caption: 'SkinBloom · 创作对话示例', label: '与 Agent 构思', icon: MessageSquare, title: '继续用你熟悉的 Agent。', description: publicPortal ? '把数据和想法交给自己的 Agent，打开本机预览，再回到对话里改稿。' : '连接工作台，用你熟悉的 Agent 从当前作品继续构思、修改与创作。', detail: '项目 Skill 按需提供数据表达、构成、材质与交互参考。', action: '了解 Agent 接入', href: agentSetup },
   { id: 'canvas', image: 'canvas', caption: 'SkinBloom · 画面调整', alt: 'SkinBloom 工作台：花瓣画面与右侧参数面板，可直接调整观看方式和绘制参数。', label: '在画面中调整', icon: SlidersHorizontal, title: '想亲手改，就直接动手。', description: '拖动参数，直接观察构图、色彩与细节的变化。', detail: '手动调整保留在同一项目中，Agent 从你的当前状态继续。', action: publicPortal ? '本机接入' : '打开画面调整', href: createLink },
   { id: 'code', image: 'code', caption: 'SkinBloom · 源码编辑', alt: 'SkinBloom 工作台：作品画面和源码编辑器同时可见，在同一项目中改变绘制规则。', label: '用代码改变规则', icon: Braces, title: '表达，不止于现有控件。', description: '打开源码，修改绘制、运动与交互规则，保存后回到画面查看。', detail: '数据、源码与画面状态一起保存，随时回到之前的版本。', action: publicPortal ? '本机接入' : '进入代码工作台', href: createLink },
 ];
@@ -20,6 +20,7 @@ export default function PlatformStory() {
   const reduced = useReducedMotion(), indicatorId = useId();
   const preview = useRef<HTMLDialogElement>(null);
   const active = ways.find(item => item.id === way)!;
+  const previewMotion = { duration: reduced ? 0 : .65, ease: sceneEase };
   return <>
     <div className="page-width" id="platform" data-portal-page="platform">
     <PlatformDirections />
@@ -28,15 +29,19 @@ export default function PlatformStory() {
       <div className="platform-workflow-body">
         <figure className="platform-workbench-view">
           <div className="platform-preview-topline"><span translate="no">SkinBloom</span></div>
-          <motion.button initial={reduced?false:{clipPath:'inset(6% 0% 6% 0%)',scale:.94,y:48,opacity:0}} whileInView={{clipPath:'inset(0% 0% 0% 0%)',scale:1,y:0,opacity:1}} viewport={{amount:.25}} transition={{duration:1.05,ease:sceneEase}} type="button" className="platform-preview-open" onClick={() => preview.current?.showModal()} aria-label={`放大查看${active.caption}`}>
-            <AnimatePresence initial={false}>
-              <motion.img key={active.id} src={`/portal/platform-skinbloom-${active.image}.jpg`} alt={active.alt} width="1600" height="900"
+          <motion.div initial={reduced?false:{clipPath:'inset(6% 0% 6% 0%)',scale:.94,y:48,opacity:0}} whileInView={{clipPath:'inset(0% 0% 0% 0%)',scale:1,y:0,opacity:1}} viewport={{amount:.25}} transition={{duration:1.05,ease:sceneEase}} className="platform-preview" data-example={active.id}>
+            <AnimatePresence initial={false} mode="popLayout">
+              <motion.div key={active.id} className="platform-preview-content" data-example={active.id}
                 initial={reduced ? false : { clipPath: 'inset(0% 100% 0% 0%)', scale: 1.025 }}
                 animate={{ clipPath: 'inset(0% 0% 0% 0%)', scale: 1 }}
-                exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : .65, ease: [.22, 1, .36, 1] }} />
+                exit={{ opacity: 0 }} transition={previewMotion}>
+                {active.image ? <img src={`/portal/platform-skinbloom-${active.image}.jpg`} alt={active.alt} width="1600" height="900"/> : <SkinBloomConversation />}
+              </motion.div>
             </AnimatePresence>
-            <span className="platform-preview-zoom" aria-hidden="true">放大查看 <ArrowUpRight size={15}/></span>
-          </motion.button>
+            <button type="button" className="platform-preview-open" onClick={() => preview.current?.showModal()} aria-label={`放大查看${active.caption}`}>
+              <span className="platform-preview-zoom" aria-hidden="true">放大查看 <ArrowUpRight size={15}/></span>
+            </button>
+          </motion.div>
           <figcaption><span role="status">{active.caption}</span><div className="platform-preview-progress" aria-hidden="true">{ways.map(item => <i key={item.id} data-active={item.id === way}/>)}</div></figcaption>
         </figure>
         <Tabs.Root value={way} onValueChange={setWay} className="platform-ways" orientation="vertical"><Tabs.List aria-label="平台创作方式">{ways.map((item,index) => <Tabs.Trigger key={item.id} value={item.id}><span className="platform-way-number" aria-hidden="true">0{index+1}</span><item.icon size={22} /><span>{item.label}</span><ArrowUpRight className="platform-way-arrow" size={18}/>{item.id===way&&<motion.i layoutId={indicatorId} className="platform-way-indicator" transition={reduced?{duration:0}:{type:'spring',stiffness:350,damping:32}}/>}</Tabs.Trigger>)}</Tabs.List>
@@ -45,7 +50,14 @@ export default function PlatformStory() {
       </div>
     </section>
     </div>
-    <dialog ref={preview} className="platform-preview-dialog" aria-labelledby="platform-preview-title"><div className="platform-preview-dialog-top"><h2 id="platform-preview-title">{active.caption}</h2><button className="icon-button" aria-label="关闭放大预览" onClick={()=>preview.current?.close()}><X size={23}/></button></div><div className="platform-preview-image"><img src={`/portal/platform-skinbloom-${active.image}.jpg`} alt={active.alt} width="1600" height="900"/></div><p>工作台实拍<span className="platform-preview-hint"> · 滚动查看细节</span> · <a href={createLink}>{createLabel} <ArrowUpRight size={14}/></a></p></dialog>
+    <dialog ref={preview} className="platform-preview-dialog" aria-labelledby="platform-preview-title">
+      <div className="platform-preview-dialog-top">
+        <h2 id="platform-preview-title">{active.caption}</h2>
+        <button type="button" className="icon-button" aria-label="关闭放大预览" onClick={() => preview.current?.close()}><X size={23}/></button>
+      </div>
+      {active.image ? <div className="platform-preview-image"><img src={`/portal/platform-skinbloom-${active.image}.jpg`} alt={active.alt} width="1600" height="900"/></div> : <SkinBloomConversation />}
+      <p><span>{active.image ? '工作台实拍' : '创作对话示例'}{active.image && <span className="platform-preview-hint"> · 滚动查看细节</span>}</span><a href={createLink}>{createLabel} <ArrowUpRight size={14}/></a></p>
+    </dialog>
     <section className="platform-data" data-portal-page="data" aria-labelledby="data-heading"><div className="page-width platform-data-layout">
       <div><SceneTitle id="data-heading" lines={['先读懂数据，','再决定怎么表达。']}/><p className="platform-section-copy">导入 CSV 或 JSON，用 AVA 查看字段、分布，完成筛选与聚合。原始材料和处理结果留在项目里，如何表达，由你和 Agent 决定。</p><p className="platform-data-credit"><Database size={17} />以 AVA 为数据基座</p></div>
       <SkinBloomSurface/>
@@ -56,4 +68,17 @@ export default function PlatformStory() {
       <div className="platform-collection-link" id="works"><a className="platform-text-link" href="/collection.html">浏览交互作品集 <ArrowUpRight size={19} /></a></div>
     </section>
   </>;
+}
+
+function SkinBloomConversation() {
+  return <ol className="platform-conversation" aria-label="SkinBloom 创作对话示例">
+    <li>
+      <p className="platform-conversation-speaker">创作者</p>
+      <p>我想把护肤品配方做成一朵花。点一片花瓣，就能查到它对应的成分。花瓣怎么排才方便对照原配方？</p>
+    </li>
+    <li>
+      <p className="platform-conversation-speaker"><MessageSquare size={18} aria-hidden="true" /> Agent</p>
+      <p>我先用 AVA 核对成分顺序和功效标签。花瓣按原清单顺时针排，颜色区分功效，红点标出防腐剂。先用 REFY 的配方试一版，点击花瓣时同步高亮右侧清单。</p>
+    </li>
+  </ol>;
 }

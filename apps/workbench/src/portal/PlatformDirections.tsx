@@ -12,7 +12,7 @@ export default function PlatformDirections() {
     <div className="platform-directions-grid">
       <figure>
         <h3>信息设计</h3>
-        <a className="platform-direction-image" href="https://artwork.euantop.work/artworks/skinbloom-ingredients.html" aria-label="体验 SkinBloom Ingredients">
+        <a className="platform-direction-image" href="https://euantop.github.io/artwork-skinbloom/" aria-label="体验 SkinBloom Ingredients">
           <img src="/portal/skinbloom-petals.jpg" alt="SkinBloom 的彩色配方花瓣、红色防腐剂标记和右侧成分表" width={1280} height={720} loading="lazy" />
           <ArrowUpRight aria-hidden="true" size={18} />
         </a>

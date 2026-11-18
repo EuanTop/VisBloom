@@ -38,5 +38,5 @@ html[data-portal-paging=true] { scroll-behavior: auto !important; }
 @media(prefers-reduced-motion:reduce) {
   .platform-home .physarum-story[data-platform=true] { height: 100svh; }
   .portal-title-mask>span { transform: none !important; }
-  .platform-data-flow>div,.platform-delivery-options>div,.platform-preview-open { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+  .platform-data-flow>div,.platform-delivery-options>div,.platform-preview { opacity: 1 !important; transform: none !important; clip-path: none !important; }
 }

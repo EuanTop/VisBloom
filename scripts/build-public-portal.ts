@@ -13,7 +13,6 @@ const assets = [
   'portal/fonts/SmileySans-OFL.txt',
   'portal/fonts/Unbounded-OFL.txt',
   'portal/skinbloom-petals.jpg',
-  'portal/platform-skinbloom-agent.jpg',
   'portal/platform-skinbloom-canvas.jpg',
   'portal/platform-skinbloom-code.jpg',
 ];

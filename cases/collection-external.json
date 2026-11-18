@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "localCase": "skinbloom-ingredients",
+    "title": "SkinBloom Ingredients",
+    "author": "EuanTop",
+    "url": "https://euantop.github.io/artwork-skinbloom/",
+    "description": "对照两款公开的配方花瓣样本。"
+  },
+  {
+    "localCase": "skinbloom-products",
+    "title": "SkinBloom Products",
+    "author": "EuanTop",
+    "url": "https://euantop.github.io/artwork-skinbloom-products/",
+    "description": "打开七类包装，读原版的护肤科普。"
+  },
+  {
+    "localCase": "martover",
+    "title": "Martover · 农业目标地选择",
+    "author": "EuanTop",
+    "url": "https://euantop.github.io/artwork-martover/",
+    "description": "转动火星球体，查看农业计划的候选陨石坑。"
+  }
+]
