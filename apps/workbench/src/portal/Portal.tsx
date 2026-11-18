@@ -7,7 +7,6 @@ import PlatformStory from './PlatformStory';
 import PlatformHeroCopy from './PlatformHeroCopy';
 import BrandMark from '../BrandMark';
 import { useStudy } from './useStudy';
-import { usePortalAnchor } from './usePortalAnchor';
 import { usePortalPages } from './usePortalPages';
 import PortalChapterNav from './PortalChapterNav';
 import { SceneTitle } from './PortalScene';
@@ -16,8 +15,7 @@ import './physarum-hero.css';
 import './portal-pages.css';
 
 
-export default function Portal() {
-  usePortalAnchor();
+export default function Portal({ onIntroSettled }: { onIntroSettled: () => void }) {
   const pages = usePortalPages();
   const [faq, setFaq] = useState<string | null>(null);
   const [headerSolid, setHeaderSolid] = useState(false);
@@ -52,7 +50,7 @@ export default function Portal() {
       <dialog ref={menu} className="navigation-dialog" onClose={() => menuButton.current?.focus()}><div className="dialog-top"><BrandMark className="app-mark" /><button className="icon-button" aria-label="关闭导航" onClick={closeMenu}><X size={23} /></button></div><nav aria-label="移动端导航"><a href="#practice" onClick={closeMenu}>怎么创作 <ArrowUpRight /></a><a href="/collection.html" onClick={closeMenu}>作品集 <ArrowUpRight /></a><a href={agentSetup}>{publicPortal ? createLabel : 'Agent 接入'} <ArrowUpRight /></a>{!publicPortal&&<a href="/">打开工作台 <ArrowUpRight /></a>}</nav>{playback&&<button className="portal-menu-playback" disabled={!playback.ready} onClick={playback.toggle}>{playback.playing?<Pause size={16}/>:<Play size={16}/>} {playbackLabel}</button>}</dialog>
     </header>
     <main id="content">
-      <div className="portal-intro" data-portal-page="intro"><Suspense fallback={<section className="physarum-story" data-platform="true" aria-labelledby="platform-title"><div className="physarum-hero"><PlatformHeroCopy /></div></section>}><PhysarumHero study={study} platform onPlaybackChange={setPlayback}/></Suspense></div>
+      <div className="portal-intro" data-portal-page="intro"><Suspense fallback={<section className="physarum-story" data-platform="true" aria-labelledby="platform-title"><div className="physarum-hero"><PlatformHeroCopy /></div></section>}><PhysarumHero study={study} platform onPlaybackChange={setPlayback} onIntroSettled={onIntroSettled}/></Suspense></div>
       <PlatformStory />
       <section className="portal-start" data-portal-page="start" aria-labelledby="start-heading"><div className="page-width">
         <div className="portal-start-top"><div><SceneTitle id="start-heading" lines={['开始你的第一件作品。']}/><p>{publicPortal ? '打开创作指南，把提示词发给你常用的编程 Agent。可以带上自己的想法，也可以用内置的观测数据试做一件作品。' : '带上数据、参考和想法，连接你自己的 Agent。也可以先打开工作台，熟悉画面与编辑方式。'}</p></div><motion.div className="portal-start-actions" initial={false} whileInView={{y:[16,0]}} viewport={{amount:.5}} transition={{duration:.8,ease:[.22,1,.36,1]}}><a className="portal-primary" href={agentSetup}>{publicPortal ? '打开创作指南' : '接入自己的 Agent'} <ArrowUpRight size={23} /></a>{!publicPortal&&<a className="portal-secondary" href="/">打开工作台 <ArrowUpRight size={18} /></a>}</motion.div></div>

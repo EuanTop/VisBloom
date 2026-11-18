@@ -132,19 +132,20 @@
   margin: 0;
   padding: clamp(18px, 3vw, 44px);
   list-style: none;
-  color: #eaedf5;
+  color: #efe5d4;
 }
 .platform-preview[data-example=agent],
-.platform-preview-dialog .platform-conversation { background: radial-gradient(ellipse at 100% 0%, #354961, #252f3e 72%); border-radius: 22px; }
+.platform-preview-dialog .platform-conversation { background: radial-gradient(ellipse at 100% 0%, #33271b, #211a13 72%); border-radius: 22px; }
 .platform-conversation li { display: grid; gap: 5px; max-inline-size: min(88%, 36em); }
 .platform-conversation-creator { justify-self: end; }
 .platform-conversation-agent { justify-self: start; }
-.platform-conversation .platform-conversation-speaker { display: flex; align-items: center; gap: 6px; padding-inline: 6px; color: #d3dae8; font-weight: 600; }
+.platform-conversation .platform-conversation-speaker { display: flex; align-items: center; gap: 6px; padding-inline: 6px; color: #cbb18c; font-weight: 600; }
 .platform-conversation-creator .platform-conversation-speaker { justify-content: end; }
+.platform-conversation-agent .platform-conversation-speaker { color: var(--portal-caption); }
 .platform-conversation .platform-conversation-bubble { padding: 12px 16px; line-height: 1.75; }
-.platform-conversation-creator .platform-conversation-bubble { background: #e2def7; color: #242036; border-radius: 20px 20px 5px 20px; }
-.platform-conversation-agent .platform-conversation-bubble { background: #43536a; color: #f1f2f8; border-radius: 20px 20px 20px 5px; }
-.platform-preview-dialog:has(.platform-conversation) { width: min(820px, 96vw); }
+.platform-conversation-creator .platform-conversation-bubble { background: #5c452b; color: #f3e6d0; border-radius: 20px 20px 5px 20px; }
+.platform-conversation-agent .platform-conversation-bubble { background: #3f3048; color: #eee5f0; border-radius: 20px 20px 20px 5px; }
+.platform-preview-dialog:has(.platform-conversation) { width: min(820px, 96vw); background: #17120e; }
 .platform-preview-zoom { position: absolute; right: 16px; bottom: 16px; z-index: 2; padding: 8px 16px; display: flex; gap: 8px; align-items: center; color: #ddd1c2; background: #08050de8; opacity: 0; transition: opacity .2s; }
 .platform-preview-open:hover .platform-preview-zoom,
 .platform-preview-open:focus-visible .platform-preview-zoom { opacity: 1; }
@@ -154,7 +155,7 @@
 .platform-preview-progress>i[data-active=true] { width: 48px; background: #d1b18d; }
 .platform-ways { min-width: 0; }
 .platform-ways [role=tablist] { display: flex; flex-direction: column; gap: 0; position: relative; }
-.platform-ways [role=tab] { display: flex; align-items: center; width: 100%; gap: 16px; padding: 16px 8px 16px 24px; min-height: 64px; border-bottom: 1px solid #c5a58025; color: #a89aaf; text-align: left; position: relative; transition: color .2s; }
+.platform-ways [role=tab] { display: flex; align-items: center; width: 100%; gap: 16px; padding: 16px 8px 16px 24px; min-height: 64px; border-bottom: 1px solid #c5a58025; color: var(--portal-caption); text-align: left; position: relative; transition: color .2s; }
 .platform-ways [role=tab]:hover { color: #d5c3b2; }
 .platform-ways [role=tab] svg { width: 24px; height: 24px; }
 .platform-ways [role=tab] .platform-way-arrow { width: 16px; height: 16px; margin-left: auto; opacity: 0; transform: translate(-5px,5px); transition: opacity .25s,transform .25s; }
@@ -319,6 +320,7 @@
 /* One GPU canvas stays behind every chapter; content and controls stay above it. */
 .physarum-stage.platform-global-art { position: fixed; inset: 0; z-index: 0; pointer-events: none; clip-path: none; }
 .platform-global-art>canvas { outline-offset: -6px; }
+.physarum-cover-fallback { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .6; }
 .portal-header-actions, .portal-workbench-actions { display: flex; align-items: center; gap: 12px; }
 .platform-home .portal-github-link { color: var(--white); }
 .platform-home .portal-github-link:hover { color: #f0cfab; }

@@ -8,6 +8,48 @@
     <title>Visloom · 数据可视化创作工具</title><link rel="icon" type="image/svg+xml" href="/visloom.svg">
     <link rel="preload" href="/portal/fonts/display-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/portal/fonts/display-cn-v2-full.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      html, body { background: #08050d; }
+      html:has(#root[inert]) { overflow: hidden; scrollbar-gutter: stable; }
+      #root[inert] { opacity: 0; }
+      #portal-loader {
+        position: fixed; inset: 0; z-index: 9999;
+        display: grid; place-content: center; justify-items: center; gap: 18px;
+        background: #08050d; color: #e8cc9f;
+        font: 14px/1.6 system-ui, sans-serif;
+        transition: opacity 280ms ease-out;
+      }
+      #portal-loader[data-ready] { opacity: 0; pointer-events: none; }
+      .portal-loader-mark { display: block; animation: portal-mark 3s linear infinite; }
+      #portal-load-status, #portal-loader noscript p { margin: 0; }
+      #portal-load-retry { border: 0; padding: 6px 10px; background: #372b1c; color: #f1d7aa; font: inherit; cursor: pointer; }
+      @keyframes portal-mark { to { transform: rotate(1turn); } }
+      @media (prefers-reduced-motion: reduce) {
+        #portal-loader { transition: none; }
+        .portal-loader-mark { animation: none; }
+      }
+    </style>
   </head>
-  <body><div id="root"></div><script type="module" src="/src/portal/main.tsx"></script></body>
+  <body>
+    <div id="root" inert></div>
+    <div id="portal-loader">
+      <img class="portal-loader-mark" src="/visloom.svg" width="54" height="54" alt="Visloom" />
+      <p id="portal-load-status" role="status">正在加载</p>
+      <button id="portal-load-retry" type="button" hidden>重新加载</button>
+      <noscript><style>#portal-load-status { display: none; }</style><p>启用 JavaScript 后即可打开 Visloom。</p></noscript>
+    </div>
+    <script>
+      {
+        const loader = document.getElementById('portal-loader');
+        const retry = document.getElementById('portal-load-retry');
+        retry.addEventListener('click', () => location.reload());
+        setTimeout(() => {
+          if (!loader.isConnected || loader.hasAttribute('data-ready') || !retry.hidden) return;
+          document.getElementById('portal-load-status').textContent = '加载时间较长';
+          retry.hidden = false;
+        }, 12000);
+      }
+    </script>
+    <script type="module" src="/src/portal/main.tsx"></script>
+  </body>
 </html>

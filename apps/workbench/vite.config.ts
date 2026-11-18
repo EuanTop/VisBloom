@@ -7,7 +7,10 @@ const entry = (file: string) => fileURLToPath(new URL(file, import.meta.url));
 export default defineConfig(({ mode }) => {
   const publicPortal = mode === 'public-portal';
   const creatorKit = mode === 'creator-kit';
-  const input: Record<string, string> = publicPortal ? { portal: entry('./portal.html') } : creatorKit ? { workbench: entry('./index.html') } : {
+  const input: Record<string, string> = publicPortal ? {
+    portal: entry('./portal.html'),
+    physarum: entry('./artworks/physarum.html'),
+  } : creatorKit ? { workbench: entry('./index.html') } : {
     workbench: entry('./index.html'),
     portal: entry('./portal.html'),
   };

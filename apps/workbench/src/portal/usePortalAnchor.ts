@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 const SETTLE_WINDOW_MS = 6000;
 const SCROLL_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'PageUp', 'PageDown', 'Home', 'End', ' ', 'Spacebar']);
 
@@ -94,8 +92,4 @@ export function watchPortalAnchor(win: Window, doc: Document): () => void {
     stopSettling();
     win.removeEventListener('hashchange', onHashChange);
   };
-}
-
-export function usePortalAnchor() {
-  useEffect(() => watchPortalAnchor(window, document), []);
 }

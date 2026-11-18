@@ -43,12 +43,21 @@ try{for(const definition of collectionCases.sort((a,b)=>a.collectionOrder-b.coll
     if(!publicPortal){await mkdir(path.dirname(publicPath),{recursive:true});await writeFile(publicPath,bytes);}
     await mkdir(path.dirname(outputPath),{recursive:true});await writeFile(outputPath,bytes);
   }
-  const project:Project={id:'collection-'+definition.id,name:definition.name,preset:definition.id,renderer:definition.renderer,revision:1,updatedAt:new Date(0).toISOString(),
-    files:work.files,codeHash:await digest(work.files.map(f=>f.path+':'+f.hash).join('\n')),notes:'',schema:work.schema,
-    state:{parameters:Object.fromEntries(work.schema.map(p=>[p.id,p.default])),mapping:{field:Object.keys(rows[0]??{})[0]??'',transform:'linear',target:'weight'},seed:42,time:0,paused:!publicPortal},
-    result:{id:'collection-data',datasetId:'',sql:'',columns:Object.keys(rows[0]??{}),rows,rowCount:rows.length,truncated:false,createdAt:new Date(0).toISOString()}};
-  const artifact=await exporter.export(project,await compiler.compile(project));
-  await writeFile(path.join(out,'artworks',definition.id+'.html'),artifact.bytes);
+  const columns=Object.keys(rows[0]??{});
+  if(publicPortal&&definition.id==='physarum'){
+    const directory=path.join(out,'collection/physarum');
+    const csvCell=(value:unknown)=>typeof value==='string'?'"'+value.replaceAll('"','""')+'"':String(value??'');
+    const csv=[columns.join(','),...rows.map(row=>columns.map(key=>csvCell(row[key])).join(','))].join('\n');
+    await writeFile(path.join(directory,'ava-observations.csv'),csv+'\n');
+    await writeFile(path.join(directory,'growth.csv'),work.content);
+  }else{
+    const project:Project={id:'collection-'+definition.id,name:definition.name,preset:definition.id,renderer:definition.renderer,revision:1,updatedAt:new Date(0).toISOString(),
+      files:work.files,codeHash:await digest(work.files.map(f=>f.path+':'+f.hash).join('\n')),notes:'',schema:work.schema,
+      state:{parameters:Object.fromEntries(work.schema.map(p=>[p.id,p.default])),mapping:{field:columns[0]??'',transform:'linear',target:'weight'},seed:42,time:0,paused:!publicPortal},
+      result:{id:'collection-data',datasetId:'',sql:'',columns,rows,rowCount:rows.length,truncated:false,createdAt:new Date(0).toISOString()}};
+    const artifact=await exporter.export(project,await compiler.compile(project));
+    await writeFile(path.join(out,'artworks',definition.id+'.html'),artifact.bytes);
+  }
   const cover = publicPortal && 'publicThumbnail' in definition ? definition.publicThumbnail : definition.thumbnail;
   const caption = publicPortal && 'publicCaption' in definition ? definition.publicCaption : definition.caption;
   const href = '/artworks/' + definition.id + '.html';
