@@ -142,11 +142,10 @@ export default function SkinBloomSurface() {
     };
   }, [reduced]);
   const interactive = ready && !reduced;
-  return <figure className="platform-material-study" data-interactive={interactive}>
+  return <div className="platform-material-study" data-interactive={interactive}>
     <button className="platform-material-surface" ref={host} type="button" disabled={!interactive}
       onClick={() => setRetain(value => !value)} aria-pressed={retain} aria-label={retain ? '恢复 SkinBloom 材质的鼠标显色交互' : '保留 SkinBloom 材质原色'}>
       <img src="/portal/platform-skinbloom-canvas.jpg" alt="SkinBloom 花瓣的蜡笔颗粒与叠色局部，取自工作台实拍。" loading="lazy" />
     </button>
-    <figcaption><span>SkinBloom · 材质局部</span></figcaption>
-  </figure>;
+  </div>;
 }

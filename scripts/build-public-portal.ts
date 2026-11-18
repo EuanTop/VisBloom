@@ -8,6 +8,7 @@ const portal = path.join(root, 'dist/portal');
 
 const assets = [
   'visloom.svg',
+  'portal/ava-logo.svg',
   'portal/fonts/display-latin.woff2',
   'portal/fonts/display-cn-v2-full.woff2',
   'portal/fonts/SmileySans-OFL.txt',

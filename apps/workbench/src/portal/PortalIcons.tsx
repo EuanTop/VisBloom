@@ -17,6 +17,7 @@ import { SlidersHorizontalIcon as SlidersHorizontalGlyph } from '@phosphor-icons
 import { SparkleIcon as SparklesGlyph } from '@phosphor-icons/react/dist/csr/Sparkle';
 import { ArrowsOutIcon as ExpandGlyph } from '@phosphor-icons/react/dist/csr/ArrowsOut';
 import { XIcon as XGlyph } from '@phosphor-icons/react/dist/csr/X';
+import { GithubLogoIcon as GitHubGlyph } from '@phosphor-icons/react/dist/csr/GithubLogo';
 import { GlobeHemisphereWestIcon as GlobeGlyph } from '@phosphor-icons/react/dist/csr/GlobeHemisphereWest';
 import { MapTrifoldIcon as MapGlyph } from '@phosphor-icons/react/dist/csr/MapTrifold';
 import { CopyIcon as CopyGlyph } from '@phosphor-icons/react/dist/csr/Copy';
@@ -44,6 +45,7 @@ export const RotateCcw = styled(RotateCcwGlyph, 'bold');
 export const SlidersHorizontal = styled(SlidersHorizontalGlyph, 'fill');
 export const Sparkles = styled(SparklesGlyph, 'fill');
 export const X = styled(XGlyph, 'bold');
+export const GitHub = styled(GitHubGlyph, 'fill');
 export const Globe = styled(GlobeGlyph, 'fill');
 export const MapView = styled(MapGlyph, 'fill');
 

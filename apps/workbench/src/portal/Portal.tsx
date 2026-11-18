@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import { AnimatePresence, MotionConfig, motion } from 'motion/react';
-import { ArrowDown, ArrowUpRight, ChevronDown, FileJson, Globe, LoaderCircle, Menu, MessageSquare, MousePointer2, Pause, Play, X } from './PortalIcons';
+import { ArrowDown, ArrowUpRight, ChevronDown, FileJson, GitHub, Globe, LoaderCircle, Menu, MessageSquare, MousePointer2, Pause, Play, X } from './PortalIcons';
 import type {HeroPlayback} from './PhysarumHero';
 const PhysarumHero=lazy(()=>import('./PhysarumHero'));
 import PlatformStory from './PlatformStory';
@@ -11,7 +11,7 @@ import { usePortalAnchor } from './usePortalAnchor';
 import { usePortalPages } from './usePortalPages';
 import PortalChapterNav from './PortalChapterNav';
 import { SceneTitle } from './PortalScene';
-import { agentSetup, createLabel, createLink, portalHome, publicPortal } from './portal-links';
+import { agentSetup, createLabel, createLink, portalHome, projectRepository, publicPortal } from './portal-links';
 import './physarum-hero.css';
 import './portal-pages.css';
 
@@ -40,9 +40,15 @@ export default function Portal() {
     <header className="site-header" data-solid={headerSolid}>
       <a className="small-brand" href={portalHome} aria-label="Visloom 首页"><BrandMark className="app-mark" /><span className="brand-wordmark" translate="no">Visloom</span></a>
       <nav className="main-nav" aria-label="主要导航"><a href="#practice">怎么创作</a><a href="/collection.html">作品集</a>{!publicPortal&&<a href={agentSetup}>Agent 接入</a>}</nav>
-      <div className="portal-workbench-actions">{playback&&pages.current>1&&<button className="icon-button" disabled={!playback.ready} aria-label={playbackLabel} title={playbackLabel} onClick={playback.toggle}>{playback.playing?<Pause size={16}/>:<Play size={16}/>}</button>}<a className="workbench-link" href={createLink}>{publicPortal ? createLabel : '工作台'} <ArrowUpRight size={17} /></a></div>
-      <button className="portal-mobile-page" type="button" disabled={pages.current===pages.chapters.length-1} onClick={()=>pages.goTo(pages.current+1)} aria-label={`第 ${pages.current + 1} 页，共 ${pages.chapters.length} 页${pages.current<pages.chapters.length-1?'，前往下一页':'，最后一页'}`}>{String(pages.current + 1).padStart(2,'0')} / {String(pages.chapters.length).padStart(2,'0')}{pages.current<pages.chapters.length-1&&<ArrowDown size={16}/>}</button>
-      <button ref={menuButton} className="menu-button icon-button" aria-label="打开导航" aria-haspopup="dialog" onClick={() => menu.current?.showModal()}><Menu size={22} /></button>
+      <div className="portal-header-actions">
+        <div className="portal-workbench-actions">
+          {playback && pages.current > 1 && <button className="icon-button" disabled={!playback.ready} aria-label={playbackLabel} title={playbackLabel} onClick={playback.toggle}>{playback.playing ? <Pause size={16} /> : <Play size={16} />}</button>}
+          <a className="workbench-link" href={createLink}>{publicPortal ? createLabel : '工作台'} <ArrowUpRight size={17} /></a>
+        </div>
+        <button className="portal-mobile-page" type="button" disabled={pages.current === pages.chapters.length - 1} onClick={() => pages.goTo(pages.current + 1)} aria-label={`第 ${pages.current + 1} 页，共 ${pages.chapters.length} 页${pages.current < pages.chapters.length - 1 ? '，前往下一页' : '，最后一页'}`}>{String(pages.current + 1).padStart(2, '0')} / {String(pages.chapters.length).padStart(2, '0')}{pages.current < pages.chapters.length - 1 && <ArrowDown size={16} />}</button>
+        <a className="icon-button portal-github-link" href={projectRepository} aria-label="Visloom GitHub 仓库" title="GitHub"><GitHub size={23} /></a>
+        <button ref={menuButton} className="menu-button icon-button" aria-label="打开导航" aria-haspopup="dialog" onClick={() => menu.current?.showModal()}><Menu size={22} /></button>
+      </div>
       <dialog ref={menu} className="navigation-dialog" onClose={() => menuButton.current?.focus()}><div className="dialog-top"><BrandMark className="app-mark" /><button className="icon-button" aria-label="关闭导航" onClick={closeMenu}><X size={23} /></button></div><nav aria-label="移动端导航"><a href="#practice" onClick={closeMenu}>怎么创作 <ArrowUpRight /></a><a href="/collection.html" onClick={closeMenu}>作品集 <ArrowUpRight /></a><a href={agentSetup}>{publicPortal ? createLabel : 'Agent 接入'} <ArrowUpRight /></a>{!publicPortal&&<a href="/">打开工作台 <ArrowUpRight /></a>}</nav>{playback&&<button className="portal-menu-playback" disabled={!playback.ready} onClick={playback.toggle}>{playback.playing?<Pause size={16}/>:<Play size={16}/>} {playbackLabel}</button>}</dialog>
     </header>
     <main id="content">
@@ -54,7 +60,12 @@ export default function Portal() {
         {study.online === false && <p className="service-info" role="status">保存作品前，请连接自己的工作台服务。</p>}
       </div></section>
     </main>
-    <footer className="site-footer page-width"><a className="footer-name" href={portalHome}><BrandMark className="app-mark" /><span className="brand-wordmark" translate="no">Visloom</span></a><div><a href="/portal/credits.html">材料与开源致谢<ArrowUpRight size={13} /></a><a href={agentSetup}>Agent 接入<ArrowUpRight size={13} /></a></div><a className="footer-note" href="/collection.html">浏览作品集 <ArrowUpRight size={13} /></a></footer>
+    <footer className="site-footer page-width">
+      <a className="footer-name" href={portalHome}><BrandMark className="app-mark" /><span className="brand-wordmark" translate="no">Visloom</span></a>
+      <div><a href="/portal/credits.html">材料与开源致谢<ArrowUpRight size={13} /></a><a href={agentSetup}>Agent 接入<ArrowUpRight size={13} /></a></div>
+      <a className="footer-note" href="/collection.html">浏览作品集 <ArrowUpRight size={13} /></a>
+      <p className="portal-footer-legal"><span>© 2026 Visloom</span><a href={`${projectRepository}/blob/main/LICENSE`} rel="license">CC BY-NC 4.0</a></p>
+    </footer>
     <PortalChapterNav current={pages.current} goTo={pages.goTo} chapters={pages.chapters}/>
     <AnimatePresence>{study.error && <motion.div className="error-notice" role="alert" initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}><p>{study.error}</p><button className="icon-button" aria-label="关闭错误提示" onClick={study.clearError}><X size={18} /></button></motion.div>}</AnimatePresence>
     {study.busy && <div className="busy-notice" role="status"><LoaderCircle size={17} className="spin" />正在准备作品副本…</div>}

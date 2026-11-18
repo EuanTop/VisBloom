@@ -59,8 +59,16 @@ export default function PlatformStory() {
       <p><span>{active.image ? '工作台实拍' : '创作对话示例'}{active.image && <span className="platform-preview-hint"> · 滚动查看细节</span>}</span><a href={createLink}>{createLabel} <ArrowUpRight size={14}/></a></p>
     </dialog>
     <section className="platform-data" data-portal-page="data" aria-labelledby="data-heading"><div className="page-width platform-data-layout">
-      <div><SceneTitle id="data-heading" lines={['先读懂数据，','再决定怎么表达。']}/><p className="platform-section-copy">导入 CSV 或 JSON，用 AVA 查看字段、分布，完成筛选与聚合。原始材料和处理结果留在项目里，如何表达，由你和 Agent 决定。</p><p className="platform-data-credit"><Database size={17} />以 AVA 为数据基座</p></div>
-      <SkinBloomSurface/>
+      <div>
+        <SceneTitle id="data-heading" lines={['先读懂数据，', '再决定怎么表达。']} />
+        <p className="platform-section-copy">导入 CSV 或 JSON，用 AVA 查看字段、分布，完成筛选与聚合。原始材料和处理结果留在项目里，如何表达，由你和 Agent 决定。</p>
+        <a className="platform-data-credit" href="https://github.com/antvis/AVA">
+          <img src="/portal/ava-logo.svg" alt="" width="50" height="22" loading="lazy" />
+          <span>以 AVA 为数据基座</span>
+          <ArrowUpRight size={14} />
+        </a>
+      </div>
+      <SkinBloomSurface />
       <motion.div className="platform-data-flow" aria-label="从导入数据、理解整理到视觉表达的工作流程" initial={reduced?false:'hidden'} whileInView="visible" viewport={{amount:.3}} variants={sceneStagger}><motion.div variants={sceneItem}><span className="platform-data-type">CSV <i>/</i> JSON</span><h3>带上你的材料</h3><p>保留原始数据与来源</p></motion.div><FlowConnector delay={.2}/><motion.div variants={sceneItem}><Database size={32} /><h3>理解与整理</h3><p>字段 · 分布 · 筛选 · 聚合</p></motion.div><FlowConnector delay={.4}/><motion.div variants={sceneItem}><span className="platform-data-type platform-expression">形 · 色 · 动</span><h3>成为视觉表达</h3><p>把数据关系写进作品</p></motion.div></motion.div>
     </div></section>
     <section className="platform-delivery page-width" data-portal-page="delivery" aria-labelledby="delivery-heading"><div className="platform-section-heading"><SceneTitle id="delivery-heading" lines={['让作品，','走出工作台。']}/><p>保存画面，分享交互，嵌入你的网站。<br />作品的下一站，由你决定。</p></div>
@@ -72,13 +80,13 @@ export default function PlatformStory() {
 
 function SkinBloomConversation() {
   return <ol className="platform-conversation" aria-label="SkinBloom 创作对话示例">
-    <li>
+    <li className="platform-conversation-creator">
       <p className="platform-conversation-speaker">创作者</p>
-      <p>我想把护肤品配方做成一朵花。点一片花瓣，就能查到它对应的成分。花瓣怎么排才方便对照原配方？</p>
+      <p className="platform-conversation-bubble">我想把护肤品配方做成一朵花。点一片花瓣，就能查到它对应的成分。花瓣怎么排才方便对照原配方？</p>
     </li>
-    <li>
-      <p className="platform-conversation-speaker"><MessageSquare size={18} aria-hidden="true" /> Agent</p>
-      <p>我先用 AVA 核对成分顺序和功效标签。花瓣按原清单顺时针排，颜色区分功效，红点标出防腐剂。先用 REFY 的配方试一版，点击花瓣时同步高亮右侧清单。</p>
+    <li className="platform-conversation-agent">
+      <p className="platform-conversation-speaker"><MessageSquare size={16} /> Agent</p>
+      <p className="platform-conversation-bubble">我先用 AVA 核对成分顺序和功效标签。花瓣按原清单顺时针排，颜色区分功效，红点标出防腐剂。先用 REFY 的配方试一版，点击花瓣时同步高亮右侧清单。</p>
     </li>
   </ol>;
 }
