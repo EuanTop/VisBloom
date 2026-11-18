@@ -136,10 +136,10 @@
   font: 400 var(--portal-text)/1.7 var(--body);
 }
 .platform-preview[data-example=agent],
-.platform-preview-dialog .platform-conversation { background: radial-gradient(ellipse at 85% 0%, #242033 0%, transparent 62%), #121017; }
+.platform-preview-dialog .platform-conversation { background: linear-gradient(145deg, #344358, #252d3b 72%); }
 .platform-conversation li { max-width: 45em; }
-.platform-conversation li:first-child { margin-left: clamp(12px, 4vw, 72px); padding: 12px 16px; background: #26212d; }
-.platform-conversation li:last-child { padding-inline-start: 16px; border-inline-start: 2px solid #bb9a77; }
+.platform-conversation li:first-child { margin-left: clamp(12px, 4vw, 72px); padding: 12px 16px; background: #414e64; }
+.platform-conversation li:last-child { padding: 12px 16px; background: #222a37; border-inline-start: 2px solid #c8a785; }
 .platform-conversation .platform-conversation-speaker { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; color: #e4ccad; font-weight: 600; }
 .platform-preview-dialog:has(.platform-conversation) { width: min(820px, 96vw); }
 .platform-preview-zoom { position: absolute; right: 16px; bottom: 16px; z-index: 2; padding: 8px 16px; display: flex; gap: 8px; align-items: center; color: #ddd1c2; background: #08050de8; opacity: 0; transition: opacity .2s; }

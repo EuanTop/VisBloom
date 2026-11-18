@@ -11,7 +11,7 @@ Read the brief and the relevant guide under Create and revise before developing 
 
 ## Local workbench
 
-Use an existing Visloom installation when it has the creative guide for this brief. Otherwise download the [creator kit](https://artwork.euantop.work/downloads/visloom-creator-kit-0.1.14.tar.gz), compare its SHA-256 with [the published checksum](https://artwork.euantop.work/downloads/SHA256SUMS), and extract it into a user-writable directory. Run `npm ci` in the extracted `visloom-creator-kit` directory. The kit uses Node.js 22.13+ on macOS or Linux. On an older Artwork installation, use `npm run --silent art --` in place of `npm run --silent visloom --`.
+Use an existing Visloom installation when it has the creative guide for this brief. Otherwise download the [creator kit](https://visloom.euantop.work/downloads/visloom-creator-kit-0.1.15.tar.gz), compare its SHA-256 with [the published checksum](https://visloom.euantop.work/downloads/SHA256SUMS), and extract it into a user-writable directory. Run `npm ci` in the extracted `visloom-creator-kit` directory. The kit uses Node.js 22.13+ on macOS or Linux. On an older Artwork installation, use `npm run --silent art --` in place of `npm run --silent visloom --`.
 
 From that directory, start the local service with `npm start` as a background task and open `http://127.0.0.1:4318/` on the creator's machine. If the port is occupied, verify the service before reusing it, or use a different `PORT` and set `ART_WORKBENCH_URL` for CLI calls. Use `npm run --silent visloom -- projects` to confirm the connection. Local workbench use does not require a Visloom or GitHub account. A remote agent's loopback is separate from the creator's machine.
 
@@ -26,4 +26,4 @@ Once the creator chooses a treatment, use it as a working draft. Preview at view
 
 When the creator approves a finished work, offer to publish that version to their GitHub Pages. Wait for the creator to request publication before uploading files. After verifying the published work, return the viewing link and iframe so they can share it with their community.
 
-For a request to publish or update a public work, read [the GitHub Pages guide](https://artwork.euantop.work/skills/visloom/references/publish.md). Keep previews and exports local unless the creator explicitly asks to publish. Keep authentication with the local GitHub CLI and let the creator approve any browser sign-in.
+For a request to publish or update a public work, read [the GitHub Pages guide](https://visloom.euantop.work/skills/visloom/references/publish.md). Keep previews and exports local unless the creator explicitly asks to publish. Keep authentication with the local GitHub CLI and let the creator approve any browser sign-in.

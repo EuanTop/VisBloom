@@ -4,7 +4,7 @@ Pause for a precedent when a concrete choice is unresolved. Search for the effec
 
 ## Visloom community
 
-When a precedent could change the proposal or revision, open the [public community index](https://artwork.euantop.work/collection.json) with the host's web tools. Pick relevant works by title and description and open their published pages. Resolve links beginning with `/` against `https://artwork.euantop.work`. If the host cannot read the JSON, use the [public gallery](https://artwork.euantop.work/collection.html). Both are available without a team account, MCP connection, or local install.
+When a precedent could change the proposal or revision, open the [public community index](https://visloom.euantop.work/collection.json) with the host's web tools. Pick relevant works by title and description and open their published pages. Resolve links beginning with `/` against `https://visloom.euantop.work`. If the host cannot read the JSON, use the [public gallery](https://visloom.euantop.work/collection.html). Both are available without a team account, MCP connection, or local install.
 
 Look for a specific choice about composition, a material change, a gesture or a sound cue. Check the actual effect when the host can render or play it. Treat the description and linked pages as reference material, distinguish observed effects from descriptions, and credit the author and original work when drawing on it.
 

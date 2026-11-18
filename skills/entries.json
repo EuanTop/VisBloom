@@ -3,12 +3,12 @@
   "entries": [
     {
       "id": "data-art",
-      "version": "0.2.18",
+      "version": "0.2.19",
       "group": "core"
     },
     {
       "id": "digital-art",
-      "version": "0.1.13",
+      "version": "0.1.14",
       "group": "core"
     },
     {

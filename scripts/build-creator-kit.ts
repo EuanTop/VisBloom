@@ -43,7 +43,7 @@ try {
   await copy('apps/workbench/public/help/agent-setup.html', 'dist/workbench/help/agent-setup.html');
   await copy('apps/workbench/public/portal/fonts', 'dist/workbench/portal/fonts');
   await copy('dist/portal/collection/physarum.png', 'dist/workbench/collection/physarum.png');
-  await write('dist/workbench/collection.html', '<!doctype html><meta charset="utf-8"><a href="https://artwork.euantop.work/collection.html">Visloom 作品集</a>');
+  await write('dist/workbench/collection.html', '<!doctype html><meta charset="utf-8"><a href="https://visloom.euantop.work/collection.html">Visloom 作品集</a>');
 
   for (const file of ['artwork.ts', 'controls.json', 'bindings.json', 'files.json']) await copy(`cases/physarum/${file}`);
   const physarumFiles = JSON.parse(await readFile(path.join(root, 'cases/physarum/files.json'), 'utf8')) as { source: string }[];
@@ -103,7 +103,7 @@ try {
   await copy('skills/entries.json');
   await copy('skills/default.lock.json');
   await copy('apps/workbench/public-site/skills/visloom', 'skills/visloom');
-  const files = ['visloom-creator-kit-0.1.14.tar.gz', 'visloom-skill-0.1.14.tar.gz'];
+  const files = ['visloom-creator-kit-0.1.15.tar.gz', 'visloom-skill-0.1.15.tar.gz'];
   archive(staging, 'visloom-creator-kit', files[0]);
   archive(path.join(portal, 'skills'), 'visloom', files[1]);
   const sums = await Promise.all(files.map(async file => {

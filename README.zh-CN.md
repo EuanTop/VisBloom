@@ -8,14 +8,14 @@
 
 <p align="center">
   <strong><a href="#做第一件作品">开始创作</a></strong> ·
-  <a href="https://artwork.euantop.work/collection.html">作品集</a> ·
+  <a href="https://visloom.euantop.work/collection.html">作品集</a> ·
   <a href="README.md">English</a>
 </p>
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://artwork.euantop.work/artworks/physarum.html"><img src="apps/workbench/public/collection/physarum.png" alt="深色背景上发光的粒子长成分枝网络" width="480"></a><br>
+      <a href="https://visloom.euantop.work/artworks/physarum.html"><img src="apps/workbench/public/collection/physarum.png" alt="深色背景上发光的粒子长成分枝网络" width="480"></a><br>
       <strong>生长之间</strong><br>
       看黏菌扫描里的亮度和变化如何驱动粒子生长。
     </td>
@@ -29,7 +29,7 @@
 
 ## 做第一件作品
 
-**1. 在 Agent 里构思。** 把[接入指南](https://artwork.euantop.work/help/agent-setup.html?lang=zh)的提示词发给能在本机执行命令的编程 Agent。可以从一个念头、一张图或一份本地数据开始。想试一试内置作品，就让它打开《生长之间》，把分枝调得更细一些。
+**1. 在 Agent 里构思。** 把[接入指南](https://visloom.euantop.work/help/agent-setup.html?lang=zh)的提示词发给能在本机执行命令的编程 Agent。可以从一个念头、一张图或一份本地数据开始。想试一试内置作品，就让它打开《生长之间》，把分枝调得更细一些。
 
 **2. 在工作台改稿。** 打开 Agent 给你的本地预览。可以拖参数、直接改源码，也可以回到对话里把修改交给 Agent。画面、参数、源码和版本都保存在同一个项目里。
 
@@ -69,4 +69,4 @@ npm run dev
 
 ## 许可与致谢
 
-VisBloom 的原创代码和原创 Skills 采用 [CC BY-NC 4.0（署名–非商业性使用）](LICENSE)。第三方代码、改编 Skills、作品、字体和数据沿用各自许可。见[作品及依赖致谢](https://artwork.euantop.work/portal/credits.html)和 [Skill 来源目录](skills/catalog.json)。
+VisBloom 的原创代码和原创 Skills 采用 [CC BY-NC 4.0（署名–非商业性使用）](LICENSE)。第三方代码、改编 Skills、作品、字体和数据沿用各自许可。见[作品及依赖致谢](https://visloom.euantop.work/portal/credits.html)和 [Skill 来源目录](skills/catalog.json)。

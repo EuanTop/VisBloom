@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "roots": [
-    "data-art@0.2.18"
+    "data-art@0.2.19"
   ],
   "skills": [
     {
       "record": {
         "id": "data-art",
-        "version": "0.2.18",
-        "directory": "skills/releases/data-art/0.2.18",
+        "version": "0.2.19",
+        "directory": "skills/releases/data-art/0.2.19",
         "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
         "status": "experimental",
         "facets": {
@@ -49,7 +49,7 @@
             "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
             "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
           ],
-          "note": "Adds on-demand reading of published Visloom community works with the agent host’s web tools."
+          "note": "Updates the public Visloom links to visloom.euantop.work."
         }
       },
       "resources": [
@@ -91,11 +91,11 @@
         {
           "path": "SKILL.md",
           "bytes": 3981,
-          "sha256": "038daed154a9bb973ebf9059344ee34f4873ad810a49f8ad1f9d171cffa7f0f5"
+          "sha256": "7a884b7a8f85255c75828e96f14daf1fdca9a7c00521be07e7f14e242e850f35"
         }
       ],
-      "digest": "a762ff3eb3968358fd2efe48c4d3548fca5d5fd54c5d40fb4e77a23433168550"
+      "digest": "aabd870791e50ddfa5303c717791ccc6fa771cfa889e2cf1d77da18ed98dbc0b"
     }
   ],
-  "digest": "0d3f1bc3a04b3d379c2adb2f223f02a243a875de6f826f400abf16f00a665231"
+  "digest": "517090b257fa8055b3072e5f79a66948fefac4fcb632092b42045997ea0b219f"
 }

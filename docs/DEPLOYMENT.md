@@ -2,7 +2,7 @@
 
 Visloom 的网页界面可以作为静态文件托管。网页不内置 Agent，也不代管 AI 模型密钥；创作者继续在已有的 Agent 中使用项目 Skill / CLI。AVA、项目文件、编译和保存留在创作者自己运行的工作台服务中。
 
-公共作品与 Agent 安装入口位于 [Visloom 门户](https://artwork.euantop.work/)。以下说明本机创作服务和可选的自托管方式。
+公共作品与 Agent 安装入口位于 [Visloom 门户](https://visloom.euantop.work/)。以下说明本机创作服务和可选的自托管方式。
 
 ## 方式一：全部在本机运行
 
