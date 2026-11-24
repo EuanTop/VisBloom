@@ -14,7 +14,7 @@ if (isChinese) {
     instruction: '请使用能在你电脑上运行命令的编程 Agent。本机工具包适用于 macOS 和 Linux，需要 Node.js 22.13 或更高版本。',
     'paste-heading': '把提示词发给你的 Agent',
     'paste-detail': '粘贴到一段新对话里。可以加上你的创作想法或本机数据路径，也可以用内置观测数据起步。',
-    'starter-prompt': '请读取 https://visloom.euantop.work/skills/visbloom/SKILL.md，帮我做第一件交互作品。先使用已有的 VisBloom，或帮我在本机启动。问我想做什么。如果我还没想法，就从内置的黏菌观测数据开始。做好初稿后，帮我在本机工作台打开它。',
+    'starter-prompt': '请读取 https://visbloom.euantop.work/skills/visbloom/SKILL.md，帮我做第一件交互作品。先使用已有的 VisBloom，或帮我在本机启动。问我想做什么。如果我还没想法，就从内置的黏菌观测数据开始。做好初稿后，帮我在本机工作台打开它。',
     'copy-prompt': '复制提示词',
     'preview-heading': '打开作品初稿',
     'preview-detail': '打开 Agent 给你的工作台链接，试试作品的控件，或回到对话里告诉 Agent 想改什么。本机工作台无需注册。',

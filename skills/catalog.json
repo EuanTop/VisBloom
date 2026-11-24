@@ -2981,6 +2981,53 @@
       }
     },
     {
+      "id": "data-art",
+      "version": "0.2.21",
+      "directory": "skills/releases/data-art/0.2.21",
+      "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
+      "status": "experimental",
+      "facets": {
+        "material": [
+          "structured-data"
+        ],
+        "encoding": [
+          "data-relationships",
+          "bindings"
+        ],
+        "composition": [
+          "visual-direction"
+        ],
+        "interaction": [
+          "creator-continuation"
+        ],
+        "technology": [
+          "workbench-cli",
+          "ava"
+        ],
+        "delivery": [
+          "standalone-web",
+          "poster"
+        ],
+        "method": [
+          "creative-decisions",
+          "co-creation",
+          "prototype-comparison"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+          "https://content.ieeevis.org/year/2023/paper_v-full-1009.html",
+          "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
+          "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
+        ],
+        "note": "更新 VisBloom 公开作品集和主 Skill 的域名。"
+      }
+    },
+    {
       "id": "digital-art",
       "version": "0.1.2",
       "directory": "skills/releases/digital-art/0.1.2",
@@ -3667,6 +3714,54 @@
           "https://www.moma.org/collection/works/81074"
         ],
         "note": "统一项目名为 VisBloom，沿用原始资料及署名。"
+      }
+    },
+    {
+      "id": "digital-art",
+      "version": "0.1.16",
+      "directory": "skills/releases/digital-art/0.1.16",
+      "description": "从主体用途和观看预期构思数字艺术，按四维修改、比较和试作。",
+      "status": "experimental",
+      "facets": {
+        "method": [
+          "precise-expression",
+          "digital-art",
+          "creative-direction",
+          "creative-review",
+          "创作构思",
+          "精准表达",
+          "创作草案",
+          "自评",
+          "情绪转折"
+        ],
+        "composition": [
+          "visual-direction",
+          "finishing",
+          "构图",
+          "材质"
+        ],
+        "time": [
+          "reveal",
+          "rhythm",
+          "loop"
+        ],
+        "interaction": [
+          "audience-gesture"
+        ],
+        "delivery": [
+          "standalone-web"
+        ]
+      },
+      "requires": [],
+      "conflicts": [],
+      "provenance": {
+        "kind": "project",
+        "sources": [
+          "https://camilleutterback.com/projects/text-rain/",
+          "https://www.kentridge.studio/william-kentridge-projects/drawings-for-projection/",
+          "https://www.moma.org/collection/works/81074"
+        ],
+        "note": "更新 VisBloom 公开作品集和主 Skill 的域名。"
       }
     },
     {

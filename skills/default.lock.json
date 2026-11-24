@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "roots": [
-    "data-art@0.2.20"
+    "data-art@0.2.21"
   ],
   "skills": [
     {
       "record": {
         "id": "data-art",
-        "version": "0.2.20",
-        "directory": "skills/releases/data-art/0.2.20",
+        "version": "0.2.21",
+        "directory": "skills/releases/data-art/0.2.21",
         "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
         "status": "experimental",
         "facets": {
@@ -49,7 +49,7 @@
             "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
             "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
           ],
-          "note": "统一项目名为 VisBloom，沿用原始资料及署名。"
+          "note": "更新 VisBloom 公开作品集和主 Skill 的域名。"
         }
       },
       "resources": [
@@ -90,12 +90,12 @@
         },
         {
           "path": "SKILL.md",
-          "bytes": 3985,
-          "sha256": "9cc83ec073beaf9998524c3594e10356794d0154ef1dbced5ed24e14f049c39f"
+          "bytes": 3987,
+          "sha256": "63b1a13fccfa0f651a2b8595d42f23d7ff9f5e4cb9be189f044eec8b96f7348b"
         }
       ],
-      "digest": "06749847c7c7e7444a232285d67286f2deedb5abdc693b9ef92c4150e47ad82e"
+      "digest": "4657f8c774902a9c4811fbe8e2420906354f92dd739d004c7680a4924106e3db"
     }
   ],
-  "digest": "cadba1eca5f116cabf9a3a47c7c8981c36b45f8f0106337aab355d308d5282de"
+  "digest": "300030bdf3030515fe0e448dd0a68bc98ed2c0d2f4eb8915fbc9cd2be957e190"
 }
