@@ -8,8 +8,8 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const portal = path.join(root, 'dist/portal');
 const downloads = path.join(portal, 'downloads');
-const staging = await mkdtemp(path.join(tmpdir(), 'visloom-creator-kit-'));
-const kit = path.join(staging, 'visloom-creator-kit');
+const staging = await mkdtemp(path.join(tmpdir(), 'visbloom-creator-kit-'));
+const kit = path.join(staging, 'visbloom-creator-kit');
 await mkdir(downloads, { recursive: true });
 
 async function write(relative: string, content: string) {
@@ -28,8 +28,8 @@ function archive(base: string, member: string, filename: string) {
 
 try {
   const manifest = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8'));
-  const { start, visloom, art, mcp } = manifest.scripts;
-  await write('package.json', JSON.stringify({ ...manifest, scripts: { start, visloom, art, mcp } }, null, 2));
+  const { start, visbloom, mcp } = manifest.scripts;
+  await write('package.json', JSON.stringify({ ...manifest, scripts: { start, visbloom, mcp } }, null, 2));
   await copy('package-lock.json');
   for (const app of ['agent', 'server', 'workbench']) await copy(`apps/${app}/package.json`);
   for (const app of ['agent', 'server', 'share-server']) await copy(`apps/${app}/src`);
@@ -39,11 +39,11 @@ try {
     await copy(`packages/${pkg.name}/src`);
   }
   await copy('dist/creator-workbench', 'dist/workbench');
-  await copy('apps/workbench/public/visloom.svg', 'dist/workbench/visloom.svg');
+  await copy('apps/workbench/public/visbloom.svg', 'dist/workbench/visbloom.svg');
   await copy('apps/workbench/public/help/agent-setup.html', 'dist/workbench/help/agent-setup.html');
   await copy('apps/workbench/public/portal/fonts', 'dist/workbench/portal/fonts');
   await copy('dist/portal/collection/physarum.png', 'dist/workbench/collection/physarum.png');
-  await write('dist/workbench/collection.html', '<!doctype html><meta charset="utf-8"><a href="https://visloom.euantop.work/collection.html">Visloom 作品集</a>');
+  await write('dist/workbench/collection.html', '<!doctype html><meta charset="utf-8"><a href="https://visloom.euantop.work/collection.html">VisBloom 作品集</a>');
 
   for (const file of ['artwork.ts', 'controls.json', 'bindings.json', 'files.json']) await copy(`cases/physarum/${file}`);
   const physarumFiles = JSON.parse(await readFile(path.join(root, 'cases/physarum/files.json'), 'utf8')) as { source: string }[];
@@ -102,10 +102,10 @@ try {
   await write('skills/catalog.json', JSON.stringify(catalog, null, 2));
   await copy('skills/entries.json');
   await copy('skills/default.lock.json');
-  await copy('apps/workbench/public-site/skills/visloom', 'skills/visloom');
-  const files = ['visloom-creator-kit-0.1.15.tar.gz', 'visloom-skill-0.1.15.tar.gz'];
-  archive(staging, 'visloom-creator-kit', files[0]);
-  archive(path.join(portal, 'skills'), 'visloom', files[1]);
+  await copy('apps/workbench/public-site/skills/visbloom', 'skills/visbloom');
+  const files = ['visbloom-creator-kit-0.1.16.tar.gz', 'visbloom-skill-0.1.16.tar.gz'];
+  archive(staging, 'visbloom-creator-kit', files[0]);
+  archive(path.join(portal, 'skills'), 'visbloom', files[1]);
   const sums = await Promise.all(files.map(async file => {
     const digest = createHash('sha256').update(await readFile(path.join(downloads, file))).digest('hex');
     return `${digest}  ${file}`;

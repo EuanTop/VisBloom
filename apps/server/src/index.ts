@@ -211,7 +211,7 @@ wss.on('connection',socket=>{
   socket.on('close',()=>{thumbnails.disconnect(thumbnailSession);for(const[id,a]of applied)if(a.socket===socket)applied.delete(id);});
 });
 if(!process.argv.includes('--production'))vite=await createViteServer({configFile:path.join(root,'apps/workbench/vite.config.ts'),server:{middlewareMode:true,ws:{server}},appType:'spa'});
-server.listen(port,bindHost,()=>console.log(`Visloom ${base}`));
+server.listen(port,bindHost,()=>console.log(`VisBloom ${base}`));
 
 // File observations use the same hash/revision path as the editor. Do not infer an author's intent.
 const watchers=new Map<string,ReturnType<typeof watch>>(),debounces=new Map<string,ReturnType<typeof setTimeout>>();

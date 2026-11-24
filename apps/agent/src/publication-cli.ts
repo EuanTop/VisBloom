@@ -1,6 +1,6 @@
 import { CLIError } from './cli-support.ts';
 export async function runPublications(args:string[]){
-  if(!args.length||args.includes('--help')){console.log('art share create --project ID --revision N\nart share list --project ID\nart share revoke --project ID --id LINK_ID\n创建选定版本的观看链接及嵌入链接。仅在创作者明确要求分享后执行；不会上传笔记、历史或编辑权限。本机默认生成本机链接，公开链接需配置分享服务。');return;}
+  if(!args.length||args.includes('--help')){console.log('npm run --silent visbloom -- share create --project ID --revision N\nnpm run --silent visbloom -- share list --project ID\nnpm run --silent visbloom -- share revoke --project ID --id LINK_ID\n创建选定版本的观看链接及嵌入链接。仅在创作者明确要求分享后执行；不会上传笔记、历史或编辑权限。本机默认生成本机链接，公开链接需配置分享服务。');return;}
   const [command,...rest]=args;
   if(!['create','list','revoke'].includes(command))throw new CLIError('usage','share 支持 create / list / revoke',2);
   const flags:Record<string,string>={};

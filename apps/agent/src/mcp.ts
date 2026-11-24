@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { dataColumnKinds } from '@art/contracts';
 import { request, projectId, base, authHeaders } from './client.ts';
 serveStdio(()=>{
-  const server=new McpServer({name:'visloom',version:'0.1.0'});
+  const server=new McpServer({name:'visbloom',version:'0.1.0'});
   const id=z.string().optional().describe('Project ID; omitted selects the latest project');
   const text=(value:unknown)=>({content:[{type:'text' as const,text:JSON.stringify(value,null,2)}]});
   function tool(name:string,description:string,inputSchema:any,action:(input:any)=>Promise<unknown>,readOnly=false,openWorld=false,destructive=false){
@@ -33,7 +33,7 @@ serveStdio(()=>{
   tool('artwork_unshare','Revoke an explicitly selected viewing link. Requires the creator’s request.',z.object({projectId:z.string(),id:z.string().regex(/^[a-f0-9]{32}$/)}),async i=>{await request(`/api/projects/${i.projectId}/publications/${i.id}`,'DELETE');return {revoked:true,id:i.id};},false,true,true);
   tool('job_status','Read the true export/capture completion state; only completed means a file is ready.',z.object({id:z.string()}),i=>request(`/api/jobs/${i.id}`),true);
   server.registerTool('artwork_read_capture', {
-    description: 'Read the image pixels of a completed Visloom PNG capture. Use the job ID returned by capture. This reads an existing capture and includes its exact project and revision.',
+    description: 'Read the image pixels of a completed VisBloom PNG capture. Use the job ID returned by capture. This reads an existing capture and includes its exact project and revision.',
     inputSchema: z.object({ id: z.uuid() }),
     annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
   }, async ({ id }) => {

@@ -13,7 +13,7 @@ const retry = document.getElementById('portal-load-retry') as HTMLButtonElement;
 async function loadPortalFonts() {
   const faces = await Promise.all([
     document.fonts.load('400 56px Smiley', '数字艺术与数据可视化'),
-    document.fonts.load('500 14px Unbounded', 'Visloom'),
+    document.fonts.load('500 14px Unbounded', 'VisBloom'),
   ]);
   if (faces.some(group => !group.length)) throw new Error('Homepage font is unavailable');
   await document.fonts.ready;

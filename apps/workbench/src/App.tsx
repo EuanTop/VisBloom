@@ -127,7 +127,7 @@ export default function App() {
       const url=new URL(location.href);url.searchParams.set('project',next.id);history.replaceState(null,'',url);
     }
     projectRef.current = next; setProject(next);setEmpty(false);
-    document.title=`${next.name} · Visloom`;
+    document.title=`${next.name} · VisBloom`;
     if (!notesDirty.current) setNotes(next.notes);
   }, []);
 
@@ -344,7 +344,7 @@ export default function App() {
 
   const newProjectDialog=<WorkbenchDialog labelledBy="new-project-title" className="new-project-dialog" onClose={()=>setNewProject(false)}><form onSubmit={event=>{event.preventDefault();createProject();}}><div className="modal-heading"><h2 id="new-project-title">新建作品</h2><button className="icon-button" type="button" aria-label="关闭新建作品" onClick={()=>setNewProject(false)}><Icon name="close"/></button></div><label htmlFor="project-name">作品名称</label><input autoFocus id="project-name" value={newName} onChange={event=>setNewName(event.target.value)} placeholder="为作品命名"/><fieldset className="preset-options"><legend>选择起点</legend>{cases.map(item=><button type="button" key={item.id} aria-pressed={newPreset===item.id} onClick={()=>setNewPreset(item.id)}><span><strong>{item.name}</strong><small>{item.description}</small></span>{newPreset===item.id&&<Icon name="check" size={17}/>}</button>)}</fieldset>{error&&<p className="dialog-feedback is-error" role="alert">{error}</p>}<button type="submit" className="primary-button" disabled={Boolean(busy)}>创建作品<Icon name="arrow" size={16}/></button></form></WorkbenchDialog>;
 
-  if(!project&&empty)return <main className="empty-workbench"><a className="brand" href="/" aria-label="Visloom 工作台"><BrandMark className="brand-mark"/><span className="brand-wordmark" translate="no">Visloom</span></a><div><h1>开始一件新作品</h1><button className="primary-button" onClick={()=>setNewProject(true)}><Icon name="plus" size={18}/>新建作品</button><a href="/">返回首页<Icon name="arrow" size={15}/></a></div>{newProject&&newProjectDialog}</main>;
+  if(!project&&empty)return <main className="empty-workbench"><a className="brand" href="/" aria-label="VisBloom 工作台"><BrandMark className="brand-mark"/><span className="brand-wordmark" translate="no">VisBloom</span></a><div><h1>开始一件新作品</h1><button className="primary-button" onClick={()=>setNewProject(true)}><Icon name="plus" size={18}/>新建作品</button><a href="/">返回首页<Icon name="arrow" size={15}/></a></div>{newProject&&newProjectDialog}</main>;
 
   if (!project) return <main className="loading-screen"><BrandMark className="brand-mark"/>{error||getConnection().disabled?<><h1>连接你的创作服务</h1><ConnectionPanel initiallyOpen/><a className="text-button" href="/collection.html">先浏览作品集 ↗</a></>:<><p>打开你的创作空间</p><span className="loading-line"/></>}</main>;
   const sourcePaths = [...new Set([...project.files.map(file => file.path), ...Object.keys(drafts)])];
@@ -374,7 +374,7 @@ export default function App() {
       ...(agentDirectory?[`工程目录：${agentDirectory}`]:[]),
       `创作引导：${(!project.dataset && !project.result && digitalArtSkill) || agentSkill}。请先读取，再通过项目 CLI 接续。`,
       `服务地址通过 ART_WORKBENCH_URL=${getConnection().url} 指定。`,
-      `先读取最新状态：npm run --silent art -- context --project ${project.id}`,
+      `先读取最新状态：npm run --silent visbloom -- context --project ${project.id}`,
       '修改前核对最新 revision 与文件 hash，保留创作者已经做出的调整。',
     ].join('\n');
     if (!navigator.clipboard) { setError('当前浏览器无法复制作品信息，请检查剪贴板权限后重试'); return; }
@@ -390,7 +390,7 @@ export default function App() {
   const saveLabel=busy||(hasDraft?'尚未保存':renderError?'画面待修复':'已保存');
   return <main className={`atelier ${showInspector?'inspector-open':''} ${panel==='data'&&inspectorOpen?'data-wide':''} ${panel?'with-panel':''} ${focusMode?'focus-mode':''}`}>
     <header className="app-header">
-      <a className="brand" href="/" aria-label="Visloom 工作台"><BrandMark className="brand-mark"/><span className="brand-wordmark" translate="no">Visloom</span></a>
+      <a className="brand" href="/" aria-label="VisBloom 工作台"><BrandMark className="brand-mark"/><span className="brand-wordmark" translate="no">VisBloom</span></a>
       <div className="project-switcher">
         <h1 className="project-title"><button id="project-switcher" className="project-switch-button" aria-expanded={projectOpen} aria-haspopup="dialog" onClick={()=>{setExportOpen(false);setProjectOpen(!projectOpen);}} title={project.name}><span>{project.name}</span><Icon name="down" size={13}/></button></h1>
         {projectOpen&&<WorkbenchPopover triggerId="project-switcher" labelledBy="projects-label" className="projects-popover" onClose={()=>setProjectOpen(false)}>

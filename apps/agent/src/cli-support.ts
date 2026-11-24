@@ -17,7 +17,7 @@ export function parseArguments(argv: string[]): Arguments {
   if (!argv.length || (argv.length === 1 && ['--help', '-h', 'help'].includes(argv[0]))) return { help: true, options: {} };
   let [command, ...rest] = argv;
   if (command === 'help') { command = rest.shift() ?? ''; rest.push('--help'); }
-  if (!Object.hasOwn(flags, command)) throw new CLIError('usage', `未知命令：${command}。使用 npm run --silent visloom -- --help 查看命令。`, 2);
+  if (!Object.hasOwn(flags, command)) throw new CLIError('usage', `未知命令：${command}。使用 npm run --silent visbloom -- --help 查看命令。`, 2);
   const result: Arguments = { command, help: false, options: {} };
   for (let index = 0; index < rest.length; index++) {
     const token = rest[index] === '-h' ? '--help' : rest[index];
@@ -79,8 +79,8 @@ export async function writeOutput(filename: string, bytes: string | Uint8Array, 
     return { path: target, bytes: typeof bytes === 'string' ? Buffer.byteLength(bytes) : bytes.byteLength };
   } finally { await unlink(temporary).catch(() => {}); }
 }
-const prefix = 'npm run --silent visloom --';
-export const globalHelp = `Visloom CLI — 通过本机服务读取、修改和交付作品
+const prefix = 'npm run --silent visbloom --';
+export const globalHelp = `VisBloom CLI — 通过本机服务读取、修改和交付作品
 
 用法：${prefix} <command> [flags]
       ${prefix} <command> --help

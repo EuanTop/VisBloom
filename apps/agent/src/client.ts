@@ -9,7 +9,7 @@ export class RequestError extends Error {
 export async function request(path:string,method='GET',body?:unknown,timeoutMs=60000){
   let response:Response;
   try{response=await fetch(base+path,{method,headers:{'content-type':'application/json','x-art-actor':'agent',...authHeaders()},body:body===undefined?undefined:JSON.stringify(body),signal:AbortSignal.timeout(timeoutMs),redirect:'error'});}
-  catch(error){throw new RequestError('service_unavailable',`Cannot reach Visloom at ${base}: ${error instanceof Error?error.message:String(error)}`);}
+  catch(error){throw new RequestError('service_unavailable',`Cannot reach VisBloom at ${base}: ${error instanceof Error?error.message:String(error)}`);}
   let value:any;
   try{value=response.status===204?null:await response.json();}catch{throw new RequestError('invalid_response','Workbench returned a non-JSON response',response.status);}
   if(!response.ok)throw new RequestError((typeof value?.error==='object'?value.error.code:value?.error)??'operation_failed',value?.error?.message??value?.message??`HTTP ${response.status}`,response.status);return value;

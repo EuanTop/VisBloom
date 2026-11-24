@@ -5,7 +5,7 @@
 创建空项目：
 
 ```sh
-npm run --silent art -- create --name "我的作品" --preset blank --renderer renderer.document
+npm run --silent visbloom -- create --name "我的作品" --preset blank --renderer renderer.document
 ```
 
 然后通过 `import`、`query --apply`、`files` 写入实际数据与模块。修改前读取当前 revision 和文件 hash，保留界面修改。

@@ -3,11 +3,11 @@ import { fileURLToPath } from 'node:url';
 import { loadSuite, parseConfig, prepareEvaluation, type Condition } from './evaluation-kit.ts';
 import { CLIError } from './cli-support.ts';
 const root = fileURLToPath(new URL('../../../', import.meta.url));
-const help = `Visloom Skill evaluation — 固定材料与条件，准备独立测试包（不执行Agent）
+const help = `VisBloom Skill evaluation — 固定材料与条件，准备独立测试包（不执行Agent）
 
-art eval list [--all]
-art eval check
-art eval prepare --task TASK_ID --config run-config.json --out NEW_DIRECTORY
+npm run --silent visbloom -- eval list [--all]
+npm run --silent visbloom -- eval check
+npm run --silent visbloom -- eval prepare --task TASK_ID --config run-config.json --out NEW_DIRECTORY
   --candidate candidate.lock.json [--arms candidate]
 
 默认只比较current,candidate，需要真实且不同于基线的candidate锁文件。

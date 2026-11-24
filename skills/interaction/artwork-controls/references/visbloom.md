@@ -1,4 +1,4 @@
-# Visloom control contracts
+# VisBloom control contracts
 
 ## Creator controls and viewer interaction
 

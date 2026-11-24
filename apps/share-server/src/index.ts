@@ -45,4 +45,4 @@ app.delete('/api/publications/:id',async c=>{
   await store.plugin.revoke(p.projectId,p.id);await unlink(path.join(caps,p.id));return c.body(null,204);
 });
 app.get('/health',c=>c.json({ready:true}));
-createServer(getRequestListener(app.fetch)).listen(port,process.env.SHARE_HOST??'127.0.0.1',()=>console.log(`Visloom sharing ${origin}`));
+createServer(getRequestListener(app.fetch)).listen(port,process.env.SHARE_HOST??'127.0.0.1',()=>console.log(`VisBloom sharing ${origin}`));

@@ -1,8 +1,8 @@
 # 自己的 Agent，自己的创作服务
 
-Visloom 的网页界面可以作为静态文件托管。网页不内置 Agent，也不代管 AI 模型密钥；创作者继续在已有的 Agent 中使用项目 Skill / CLI。AVA、项目文件、编译和保存留在创作者自己运行的工作台服务中。
+VisBloom 的网页界面可以作为静态文件托管。网页不内置 Agent，也不代管 AI 模型密钥；创作者继续在已有的 Agent 中使用项目 Skill / CLI。AVA、项目文件、编译和保存留在创作者自己运行的工作台服务中。
 
-公共作品与 Agent 安装入口位于 [Visloom 门户](https://visloom.euantop.work/)。以下说明本机创作服务和可选的自托管方式。
+公共作品与 Agent 安装入口位于 [VisBloom 门户](https://visloom.euantop.work/)。以下说明本机创作服务和可选的自托管方式。
 
 ## 方式一：全部在本机运行
 
@@ -108,7 +108,7 @@ server.on('upgrade', (req, socket, head) => {
 从确认的版本生成发布目录。
 
 ```sh
-npm run --silent visloom -- pages --project PROJECT_ID --revision REVISION --out NEW_DIRECTORY
+npm run --silent visbloom -- pages --project PROJECT_ID --revision REVISION --out NEW_DIRECTORY
 ```
 
 目录内的 `index.html`、小写 `cover.jpg` 和 `.nojekyll` 一起提交到该作品的 GitHub Pages 发布目录。默认打开该版本导出的独立页面，等待画面和字体就绪后以 1200 × 900 截图。缺少截图浏览器时运行 `npm exec playwright install chromium`。作者指定镜头或构图时加 `--cover /path/to/chosen.jpg`，建议准备 4:3 的 JPEG。上传前确认 HTML 公开的数据和封面构图。
@@ -121,7 +121,7 @@ npm run --silent visloom -- pages --project PROJECT_ID --revision REVISION --out
 
 完整构建生成 `collection.html` 和作品集内各作品的独立 HTML。作品集按案例配置选用封面；公开构建可使用与公开数据范围相符的封面。Martover 的作品入口由火星球体开始，作品集取用其首屏。构建作品时由 AVA 读取案例数据。
 
-工作台「分享」或 `art share create --project ID --revision N` 创建冻结版本，返回观看与嵌入URL；list列出自己的链接，revoke撤回一个明确ID。默认发布适配器返回127.0.0.1本机链接，这不是互联网部署。链接保存在发布目录，重启后保留；作者之后的编辑不会改变该快照，重新发布产生新链接。
+工作台「分享」或 `npm run --silent visbloom -- share create --project ID --revision N` 创建冻结版本，返回观看与嵌入URL；list列出自己的链接，revoke撤回一个明确ID。默认发布适配器返回127.0.0.1本机链接，这不是互联网部署。链接保存在发布目录，重启后保留；作者之后的编辑不会改变该快照，重新发布产生新链接。
 
 需要互联网链接时，先在自己的公开主机运行独立分享服务，在HTTPS代理后配置：
 

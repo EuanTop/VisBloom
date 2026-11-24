@@ -113,7 +113,7 @@ async function toolResult(run: () => Promise<{ result: unknown; preview?: Previe
 }
 
 function referenceServer(library: ReturnType<typeof makeLibrary>) {
-  const server = new McpServer({ name: 'visloom-references', version: '0.1.0' });
+  const server = new McpServer({ name: 'visbloom-references', version: '0.1.0' });
   server.registerTool('references_search', {
     description: 'Find authorized creative precedents using a focused design question and optional medium or mechanism keywords. Send only the relevant question.',
     annotations: readOnly,

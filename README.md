@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="apps/workbench/public/visloom.svg" alt="" width="56" height="56">
+  <img src="apps/workbench/public/visbloom.svg" alt="" width="56" height="56">
 </p>
 
 <h1 align="center">VisBloom</h1>

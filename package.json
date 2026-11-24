@@ -1,5 +1,5 @@
 {
-  "name": "visloom",
+  "name": "visbloom",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -19,8 +19,7 @@
     "check": "tsc --noEmit",
     "test": "vitest run",
     "mcp": "tsx apps/agent/src/mcp.ts",
-    "visloom": "tsx apps/agent/src/cli.ts",
-    "art": "tsx apps/agent/src/cli.ts",
+    "visbloom": "tsx apps/agent/src/cli.ts",
     "share:serve": "tsx apps/share-server/src/index.ts"
   },
   "devDependencies": {

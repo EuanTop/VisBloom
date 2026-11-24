@@ -3,12 +3,12 @@
   "entries": [
     {
       "id": "data-art",
-      "version": "0.2.19",
+      "version": "0.2.20",
       "group": "core"
     },
     {
       "id": "digital-art",
-      "version": "0.1.14",
+      "version": "0.1.15",
       "group": "core"
     },
     {
@@ -118,7 +118,7 @@
     },
     {
       "id": "motion-principles",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "group": "time"
     },
     {
@@ -213,7 +213,7 @@
     },
     {
       "id": "artwork-controls",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "group": "interaction"
     },
     {

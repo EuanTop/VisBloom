@@ -1,6 +1,6 @@
 ---
 name: data-art
-description: Develop a data artwork with a creator in Visloom. Connect audience intent, evidence, design language and participation, present meaningful creative choices, and carry decisions across conversation, canvas and code.
+description: Develop a data artwork with a creator in VisBloom. Connect audience intent, evidence, design language and participation, present meaningful creative choices, and carry decisions across conversation, canvas and code.
 ---
 
 # Data art with a creator
@@ -24,6 +24,6 @@ Proceed directly when the direction is clear. When viable directions differ in a
 
 ## Make, inspect, continue
 
-When a composition, material, gesture or timing decision would benefit from a precedent, look for relevant work in the [public Visloom community](https://visloom.euantop.work/collection.html) using the host’s web tools. See the [creative reference guide](https://visloom.euantop.work/skills/visloom/references/creative-references.md) for the public index and inspecting work. Use the host’s private reference tools when authorized. Call `references_search` with the specific design question, `references_get` to pick evidence, and `references_evidence` for a detail. Use the evidence to make a concrete choice in this piece. Continue with a public reference or the local reference search when the tools or relevant evidence are unavailable.
+When a composition, material, gesture or timing decision would benefit from a precedent, look for relevant work in the [public VisBloom community](https://visloom.euantop.work/collection.html) using the host’s web tools. See the [creative reference guide](https://visloom.euantop.work/skills/visbloom/references/creative-references.md) for the public index and inspecting work. Use the host’s private reference tools when authorized. Call `references_search` with the specific design question, `references_get` to pick evidence, and `references_evidence` for a detail. Use the evidence to make a concrete choice in this piece. Continue with a public reference or the local reference search when the tools or relevant evidence are unavailable.
 
-Use `npm run --silent visloom -- skills find --query QUERY` for a concrete specialist need and read only the relevant entry and resources. Apply the selected AVA result when it drives the work. Inspect the actual piece at its intended size and, where relevant, in a second state that reveals something new. Verify what the data claims, revise the expression and try the intended interaction. Preserve accepted choices in later rounds. Use [workbench operations](references/workbench.md) for revisions, rendering and export. Show the work and the decisions that matter. Publish at the creator's request.
+Use `npm run --silent visbloom -- skills find --query QUERY` for a concrete specialist need and read only the relevant entry and resources. Apply the selected AVA result when it drives the work. Inspect the actual piece at its intended size and, where relevant, in a second state that reveals something new. Verify what the data claims, revise the expression and try the intended interaction. Preserve accepted choices in later rounds. Use [workbench operations](references/workbench.md) for revisions, rendering and export. Show the work and the decisions that matter. Publish at the creator's request.

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "roots": [
-    "data-art@0.2.19"
+    "data-art@0.2.20"
   ],
   "skills": [
     {
       "record": {
         "id": "data-art",
-        "version": "0.2.19",
-        "directory": "skills/releases/data-art/0.2.19",
+        "version": "0.2.20",
+        "directory": "skills/releases/data-art/0.2.20",
         "description": "主引导，围绕创作目的、证据、表达、感官、参与与交付协作。",
         "status": "experimental",
         "facets": {
@@ -49,7 +49,7 @@
             "https://www.designcouncil.org.uk/resources/framework-for-innovation/",
             "https://xiaohanp.github.io/pdf/CHI_26_DesignTrace.pdf"
           ],
-          "note": "Updates the public Visloom links to visloom.euantop.work."
+          "note": "统一项目名为 VisBloom，沿用原始资料及署名。"
         }
       },
       "resources": [
@@ -75,8 +75,8 @@
         },
         {
           "path": "references/production.md",
-          "bytes": 1932,
-          "sha256": "553092b794444a26e016efba86e7096c5f0b695fa2e1ee14489f83f8f1eaeeec"
+          "bytes": 1934,
+          "sha256": "0262eb809c2208fdc8b1789c46b45343940cb39c188b5b05143157a6c5496b0a"
         },
         {
           "path": "references/visual-direction.md",
@@ -85,17 +85,17 @@
         },
         {
           "path": "references/workbench.md",
-          "bytes": 5612,
-          "sha256": "6ef68d228279f95dd2a9c121f4451a331b3c140f370e650ea4c4327043902186"
+          "bytes": 5613,
+          "sha256": "18fe4a80a8ed42e13d16a8601b80ff645af76dd99d6fa5522555a5aad88ae3cd"
         },
         {
           "path": "SKILL.md",
-          "bytes": 3981,
-          "sha256": "7a884b7a8f85255c75828e96f14daf1fdca9a7c00521be07e7f14e242e850f35"
+          "bytes": 3985,
+          "sha256": "9cc83ec073beaf9998524c3594e10356794d0154ef1dbced5ed24e14f049c39f"
         }
       ],
-      "digest": "aabd870791e50ddfa5303c717791ccc6fa771cfa889e2cf1d77da18ed98dbc0b"
+      "digest": "06749847c7c7e7444a232285d67286f2deedb5abdc693b9ef92c4150e47ad82e"
     }
   ],
-  "digest": "517090b257fa8055b3072e5f79a66948fefac4fcb632092b42045997ea0b219f"
+  "digest": "cadba1eca5f116cabf9a3a47c7c8981c36b45f8f0106337aab355d308d5282de"
 }

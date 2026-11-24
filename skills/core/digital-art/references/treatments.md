@@ -6,7 +6,7 @@ Identify the parts the creator has already decided and leave the open parts avai
 
 When a familiar action matters, ask what makes it worth doing here. Waiting can be anchored by the object or event that someone is waiting for. Find a clue the work can carry before the turn, such as a date already marked on a real object, a recurring sound or a shape that has something to complete. Let that clue shape the proposal.
 
-Read [precise expression](expression.md) and use the Visloom specialist catalog to resolve specific creative or technical questions. Consult precedents when they can change a decision. Carry over an observable principle from a reference and explain its use in this piece.
+Read [precise expression](expression.md) and use the VisBloom specialist catalog to resolve specific creative or technical questions. Consult precedents when they can change a decision. Carry over an observable principle from a reference and explain its use in this piece.
 
 Draft two or three ways for the experience to work. Change the material, action or relationship that carries the meaning across the alternatives. Changing the palette or renderer alone gives another version of the same idea.
 
@@ -31,7 +31,7 @@ Use the [four-part creative rubric](review.md) to score each treatment. When a w
 
 ## Judge what the treatment would cost to make
 
-Ground the treatment in the work's native viewing environment. In Visloom, specify what the viewer can open as a standalone digital artwork and how it behaves there. Video can be an export or a material inside the work. A still, an autonomous sequence and an encounter driven by the audience are different choices.
+Ground the treatment in the work's native viewing environment. In VisBloom, specify what the viewer can open as a standalone digital artwork and how it behaves there. Video can be an export or a material inside the work. A still, an autonomous sequence and an encounter driven by the audience are different choices.
 
 Before recommending a direction, name the production route and its actual dependencies. For a fixed view with controllable strokes, shapes and occlusion, assess a layered Canvas 2D or SVG route. Consider a spatial renderer if viewpoint, depth or changing light is essential to the image. Identify any missing source asset, performance, model or simulation and describe a simpler route that preserves the defining image. Specify the smallest later study that would settle the main risk. Plan it in words while the creator is reviewing ideas.
 

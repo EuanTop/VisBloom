@@ -16,4 +16,4 @@ Artwork adaptation: the top-level SKILL.md is a local integration entry, with a 
 
 区分数据时间、作品演化和装饰运动，沿用工作台共享时钟；不要把动画原则机械套在所有动态数据上。
 
-The Visloom additions in `references/contact-and-motion.md` cover contact points, paths, changing contours and motion review. They were written for this project. Original attribution and permissions apply to the retained upstream material.
+The VisBloom additions in `references/contact-and-motion.md` cover contact points, paths, changing contours and motion review. They were written for this project. Original attribution and permissions apply to the retained upstream material.

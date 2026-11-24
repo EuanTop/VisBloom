@@ -2,7 +2,7 @@
 
 ## Connect and read
 
-From the supplied repository root, use `npm run --silent visloom -- --help`, then `context --project ID`; set `ART_WORKBENCH_URL` for the supplied service. Use an explicit project ID throughout. Context is compact: files and complete results are fetched separately. Read file hashes before editing; retain eventCursor, use `context --after CURSOR` for changes, and follow hasMoreEvents. Use --out for large outputs, not --full by default.
+From the supplied repository root, use `npm run --silent visbloom -- --help`, then `context --project ID`; set `ART_WORKBENCH_URL` for the supplied service. Use an explicit project ID throughout. Context is compact: files and complete results are fetched separately. Read file hashes before editing; retain eventCursor, use `context --after CURSOR` for changes, and follow hasMoreEvents. Use --out for large outputs, not --full by default.
 
 For a new work use the designated project or `create --preset blank`; case presets contain finished source. Do not switch renderer or install another engine implicitly. CLI is the default entry; MCP is another adapter to the same state.
 

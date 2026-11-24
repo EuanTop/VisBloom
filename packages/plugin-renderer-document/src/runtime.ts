@@ -50,8 +50,8 @@ export function boot(createArtwork: DocumentArtworkFactory): void {
   function send(type: string, data: Record<string, unknown> = {}): void {
     if (disposed) return;
     if (!standalone) window.parent.postMessage({ channel: 'art-runtime-v1', type, ...data }, '*');
-    else if (type === 'applied') document.documentElement.dataset.visloomRender = 'ready';
-    else if (type === 'error') document.documentElement.dataset.visloomRender = 'error';
+    else if (type === 'applied') document.documentElement.dataset.visbloomRender = 'ready';
+    else if (type === 'error') document.documentElement.dataset.visbloomRender = 'error';
   }
   function report(error: unknown, requestId?: string): void {
     const message = error instanceof Error ? error.message : String(error);

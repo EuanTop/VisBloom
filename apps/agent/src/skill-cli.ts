@@ -5,20 +5,20 @@ import { axes, entryGroups, createLock, createBundle, verifyLock, verifyBundle, 
 import { CLIError, writeOutput } from './cli-support.ts';
 
 const root = fileURLToPath(new URL('../../../', import.meta.url));
-export const skillHelp = `Visloom Skills — 本地目录、版本与组合（无需工作台服务）
+export const skillHelp = `VisBloom Skills — 本地目录、版本与组合（无需工作台服务）
 
-npm run --silent visloom -- skills list [--axis style] [--tag ink]
-npm run --silent visloom -- skills entries [--group style] [--axis technology] [--tag canvas2d]
-npm run --silent visloom -- skills find [--query "threejs glsl"] [--axis style] [--tag ink] [--limit 8] [--offset 0]
-npm run --silent visloom -- skills show --id data-art@0.1.0
-npm run --silent visloom -- skills read --id data-art@0.1.0 [--file SKILL.md] [--start-line 1 --lines 80] [--out skill.md]
-npm run --silent visloom -- skills check
-npm run --silent visloom -- skills active [--select wax-crayon@0.1.0]
-npm run --silent visloom -- skills lock --select data-art@0.1.0 [--out skills.lock.json]
-npm run --silent visloom -- skills verify --lock skills.lock.json
-npm run --silent visloom -- skills bundle --lock skills.lock.json --out NEW_DIRECTORY
-npm run --silent visloom -- skills verify --bundle DIRECTORY
-npm run --silent visloom -- skills diff --from old.lock.json --to new.lock.json
+npm run --silent visbloom -- skills list [--axis style] [--tag ink]
+npm run --silent visbloom -- skills entries [--group style] [--axis technology] [--tag canvas2d]
+npm run --silent visbloom -- skills find [--query "threejs glsl"] [--axis style] [--tag ink] [--limit 8] [--offset 0]
+npm run --silent visbloom -- skills show --id data-art@0.1.0
+npm run --silent visbloom -- skills read --id data-art@0.1.0 [--file SKILL.md] [--start-line 1 --lines 80] [--out skill.md]
+npm run --silent visbloom -- skills check
+npm run --silent visbloom -- skills active [--select wax-crayon@0.1.0]
+npm run --silent visbloom -- skills lock --select data-art@0.1.0 [--out skills.lock.json]
+npm run --silent visbloom -- skills verify --lock skills.lock.json
+npm run --silent visbloom -- skills bundle --lock skills.lock.json --out NEW_DIRECTORY
+npm run --silent visbloom -- skills verify --bundle DIRECTORY
+npm run --silent visbloom -- skills diff --from old.lock.json --to new.lock.json
 
 select 为逗号分隔的精确 id@version，依赖自动解析，不自动挑选创作方向。
 属性：${axes.join(', ')}。list/show只读元数据；read按需读取一个实际资源，返回其hash。
@@ -37,7 +37,7 @@ const allowed: Record<string, string[]> = {
 export async function runSkills(argv: string[]) {
   if (!argv.length || argv[0] === '--help' || argv[0] === 'help') { console.log(skillHelp); return; }
   const [command, ...rest] = argv;
-  if (!Object.hasOwn(allowed, command)) throw new CLIError('usage', '未知Skill命令；使用 art skills --help。', 2);
+  if (!Object.hasOwn(allowed, command)) throw new CLIError('usage', '未知Skill命令；使用 npm run --silent visbloom -- skills --help。', 2);
   if (rest.length === 1 && ['--help', '-h'].includes(rest[0])) { console.log(skillHelp); return; }
   const options: Record<string, string | boolean> = {};
   for (let i = 0; i < rest.length; i++) {

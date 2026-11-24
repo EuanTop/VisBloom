@@ -7,7 +7,7 @@ const publicAssets = path.join(root, 'apps/workbench/public');
 const portal = path.join(root, 'dist/portal');
 
 const assets = [
-  'visloom.svg',
+  'visbloom.svg',
   'portal/ava-logo.svg',
   'portal/fonts/display-latin.woff2',
   'portal/fonts/display-cn-v2-full.woff2',

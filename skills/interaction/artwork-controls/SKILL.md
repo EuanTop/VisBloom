@@ -1,6 +1,6 @@
 ---
 name: artwork-controls
-description: Design, implement and verify artwork controls when a viewer needs to explore the work or a creator wants to edit specific visual decisions. Covers selection, filters, color, animation playback, timeline and seed in Visloom.
+description: Design, implement and verify artwork controls when a viewer needs to explore the work or a creator wants to edit specific visual decisions. Covers selection, filters, color, animation playback, timeline and seed in VisBloom.
 ---
 
 # Artwork controls
@@ -13,4 +13,4 @@ Distinguish recorded time, the order of discrete observations and the artwork’
 
 ## Implement and check
 
-Use [playback choices](references/playback-choices.md) for pieces that run on their own or only need a play button. Use [Visloom control contracts](references/visloom.md) for the inspector, viewer interaction and optional renderer playback. Exercise an actual control at two meaningfully different values. Check the expected visual or data change, preserve unrelated state, and reopen to verify a saved creator setting. Check the standalone work for any public interaction. When a work is meant to be static, check that the opening preview needs no playback and shows no stray transport or seed.
+Use [playback choices](references/playback-choices.md) for pieces that run on their own or only need a play button. Use [VisBloom control contracts](references/visbloom.md) for the inspector, viewer interaction and optional renderer playback. Exercise an actual control at two meaningfully different values. Check the expected visual or data change, preserve unrelated state, and reopen to verify a saved creator setting. Check the standalone work for any public interaction. When a work is meant to be static, check that the opening preview needs no playback and shows no stray transport or seed.

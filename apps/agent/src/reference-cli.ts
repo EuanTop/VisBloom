@@ -6,7 +6,7 @@ import publicReferences from '../../../packages/skill-library/src/public-referen
 import { rankReferences, type ReferenceEntry } from '../../../packages/skill-library/src/reference-ranking.ts';
 
 const root = fileURLToPath(new URL('../../../reference-library/', import.meta.url));
-const help = `Visloom artwork references
+const help = `VisBloom artwork references
 
 references find --query "quiet repetition waiting" [--limit 6]
 references find --query "光随曲面变化"

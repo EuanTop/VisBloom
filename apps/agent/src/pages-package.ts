@@ -36,7 +36,7 @@ async function captureCover(html: Uint8Array) {
       serviceWorkers: 'block',
       acceptDownloads: false,
     });
-    const entry = 'http://visloom-cover.invalid/index.html';
+    const entry = 'http://visbloom-cover.invalid/index.html';
     await context.routeWebSocket('**/*', socket => socket.close());
     await context.route('**/*', route => route.request().url() === entry
       ? route.fulfill({ body: Buffer.from(html), contentType: 'text/html; charset=utf-8' })
@@ -46,12 +46,12 @@ async function captureCover(html: Uint8Array) {
     page.on('pageerror', () => { runtimeFailed = true; });
     await page.goto(entry, { waitUntil: 'load', timeout: 15_000 });
     await page.waitForFunction(() => {
-      const status = document.documentElement.dataset.visloomRender;
+      const status = document.documentElement.dataset.visbloomRender;
       return status === 'error' || (status === 'ready' && document.fonts.status === 'loaded');
     }, undefined, { timeout: 15_000 });
     // Leave time for a work's entrance animation after the renderer draws its first frame.
     await wait(1800);
-    if (runtimeFailed || await page.locator('html').getAttribute('data-visloom-render') !== 'ready') {
+    if (runtimeFailed || await page.locator('html').getAttribute('data-visbloom-render') !== 'ready') {
       throw new Error('Artwork render failed');
     }
     return await page.screenshot({ type: 'jpeg', quality: 92, timeout: 10_000 });

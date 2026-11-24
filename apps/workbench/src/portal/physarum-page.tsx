@@ -18,9 +18,9 @@ function PhysarumPage() {
     <div className="physarum-page">
       <header className="site-header">
         <div className="physarum-page-brand">
-          <a className="small-brand" href={portalHome} aria-label="Visloom 首页">
+          <a className="small-brand" href={portalHome} aria-label="VisBloom 首页">
             <BrandMark className="app-mark" />
-            <span className="brand-wordmark" translate="no">Visloom</span>
+            <span className="brand-wordmark" translate="no">VisBloom</span>
           </a>
           <h1 id="physarum-title">生长之间</h1>
         </div>
